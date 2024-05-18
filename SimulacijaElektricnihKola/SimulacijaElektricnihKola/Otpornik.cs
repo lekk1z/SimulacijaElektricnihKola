@@ -16,6 +16,13 @@ namespace SimulacijaElektricnihKola
             this.duzina = duzina;
             this.poluprecnik = poluprecnik;
         }
+        public Otpornik(Otpornik<TMaterijal> otpornik):base(otpornik.Ime)
+        {
+            otpornik.duzina=this.duzina;
+            otpornik.poluprecnik=this.poluprecnik;
+            otpornik.materijal=this.materijal;
+            
+        }
         public override double IzracunajOtpor()
         {
             return materijal.specificnaOtpornost * (duzina / (poluprecnik * poluprecnik * Math.PI));

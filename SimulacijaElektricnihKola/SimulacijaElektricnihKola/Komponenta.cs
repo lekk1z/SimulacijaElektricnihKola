@@ -9,7 +9,7 @@ namespace SimulacijaElektricnihKola
 {
     abstract class Komponenta
     {
-        string Ime { get; }
+        public string Ime { get; }
         public Komponenta(string ime)
         {
             Ime = ime;
