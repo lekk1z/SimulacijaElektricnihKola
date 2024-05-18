@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\aleks\\Documents\\GitHub\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\aleks\\documents\\github\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\otpornik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\otpornik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\aleks\\documents\\github\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\imaterijali.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\imaterijali.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\aleks\\documents\\github\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\komponenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\komponenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\aleks\\documents\\github\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -14,11 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IMaterijali.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Documents\\GitHub\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\IMaterijali.cs",
+              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\IMaterijali.cs",
+              "ToolTip": "C:\\Users\\aleks\\Documents\\GitHub\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\IMaterijali.cs",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\IMaterijali.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T15:47:33.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Otpornik.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Documents\\GitHub\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Otpornik.cs",
+              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Otpornik.cs",
+              "ToolTip": "C:\\Users\\aleks\\Documents\\GitHub\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Otpornik.cs",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Otpornik.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T15:37:23.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Komponenta.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\Documents\\GitHub\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Komponenta.cs",
+              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Komponenta.cs",
+              "ToolTip": "C:\\Users\\aleks\\Documents\\GitHub\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Komponenta.cs",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Komponenta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T15:33:17.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\aleks\\Documents\\GitHub\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Form1.cs",
