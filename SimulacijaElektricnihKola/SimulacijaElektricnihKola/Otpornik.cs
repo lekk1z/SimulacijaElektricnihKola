@@ -23,7 +23,7 @@ namespace SimulacijaElektricnihKola
             otpornik.materijal=this.materijal;
             
         }
-        public override double IzracunajOtpor()
+        public  double IzracunajOtpor()
         {
             return materijal.specificnaOtpornost * (duzina / (poluprecnik * poluprecnik * Math.PI));
         }

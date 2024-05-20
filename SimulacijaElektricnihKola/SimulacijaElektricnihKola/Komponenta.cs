@@ -7,7 +7,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace SimulacijaElektricnihKola
 {
-    abstract class Komponenta
+    public abstract class Komponenta
     {
         public string Ime { get; }
         public Komponenta(string ime)
@@ -15,6 +15,6 @@ namespace SimulacijaElektricnihKola
             Ime = ime;
         }
 
-        public abstract double IzracunajOtpor();
+       // public abstract double IzracunajOtpor();
     }
 }
