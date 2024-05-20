@@ -21,11 +21,11 @@ namespace SimulacijaElektricnihKola
         {
             // Kreiraj komponente
             Baterija baterija1 = new Baterija("Baterija1", 9);  // 9 V baterija
-            Otpor otpor1 = new Otpor("Otpor1", 100);  // 100 Ω otpornik
-            Otpor otpor2 = new Otpor("Otpor2", 200);  // 200 Ω otpornik
+            Otpornik<Srebro> otpor1 = new Otpornik<Srebro>("Otpor1", 100);  // 100 Ω otpornik
+            Otpornik<Srebro> otpor2 = new Otpornik<Srebro>("Otpor2", 200);  // 200 Ω otpornik
 
             // Kreiraj serijsku vezu
-            SerijskaVeza serijskaVeza = new SerijskaVeza("Serijska veza");
+            SerijskaVeza<Srebro> serijskaVeza = new SerijskaVeza<Srebro>("Serijska veza");
             serijskaVeza.DodajKomponentu(baterija1);
             serijskaVeza.DodajKomponentu(otpor1);
             serijskaVeza.DodajKomponentu(otpor2);
@@ -34,12 +34,12 @@ namespace SimulacijaElektricnihKola
             maskedTextBox1.Text = serijskaVeza.ToString();
 
             // Kreiraj paralelnu vezu
-            ParalelnaVeza paralelnaVeza = new ParalelnaVeza("Paralelna veza");
-            paralelnaVeza.DodajKomponentu(new Otpor("Otpor3", 50));  // 50 Ω otpornik
-            paralelnaVeza.DodajKomponentu(new Otpor("Otpor4", 100));  // 100 Ω otpornik
+            ParalelnaVeza<Srebro> paralelnaVeza = new ParalelnaVeza<Srebro>("Paralelna veza");
+            paralelnaVeza.DodajKomponentu(new Otpornik<Srebro>("Otpor3", 50));  // 50 Ω otpornik
+            paralelnaVeza.DodajKomponentu(new Otpornik<Srebro>("Otpor4", 100));  // 100 Ω otpornik
 
             // Kreiraj kolo koje sadrži serijsku i paralelnu vezu
-            SerijskaVeza glavnoKolo = new SerijskaVeza("Glavno kolo");
+            SerijskaVeza<Srebro> glavnoKolo = new SerijskaVeza<Srebro>("Glavno kolo");
             glavnoKolo.DodajKomponentu(serijskaVeza);
             glavnoKolo.DodajKomponentu(paralelnaVeza);
 

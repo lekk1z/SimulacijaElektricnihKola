@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimulacijaElektricnihKola
 {
-    internal class EkvivalentniOtpornik<TMaterijal>:Otpornik<TMaterijal> where TMaterijal:IMaterijali<TMaterijal>
+    internal class EkvivalentniOtpornik<TMaterijal>:Otpornik<TMaterijal> where TMaterijal:IMaterijali
     {
         List<Otpornik<TMaterijal>> otpornici;
         public void DodajOtpornik(Otpornik<TMaterijal> novi)

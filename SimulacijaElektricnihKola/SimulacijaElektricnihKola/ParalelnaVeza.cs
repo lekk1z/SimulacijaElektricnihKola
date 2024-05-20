@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimulacijaElektricnihKola
 {
-    public class ParalelnaVeza : Veza
+    public class ParalelnaVeza<TMaterijal> : Veza where TMaterijal : IMaterijali
     {
         public ParalelnaVeza(string ime) : base(ime) { }
 
@@ -15,9 +15,9 @@ namespace SimulacijaElektricnihKola
             double recipročniOtpor = 0;
             foreach (var komponenta in Komponente)
             {
-                if (komponenta is Otpor)
+                if (komponenta is Otpornik<TMaterijal>)
                 {
-                    recipročniOtpor += 1 / ((Otpor)komponenta).OtporVrednost;
+                    recipročniOtpor += 1 / ((Otpornik<TMaterijal>)komponenta).OtporVrednost;
                 }
                 else if (komponenta is Veza)
                 {

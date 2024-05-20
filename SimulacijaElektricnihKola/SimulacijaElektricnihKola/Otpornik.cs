@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace SimulacijaElektricnihKola
 {
-    internal class Otpornik<TMaterijal> : Komponenta where TMaterijal:IMaterijali<TMaterijal>
+    internal class Otpornik<TMaterijal> : Komponenta where TMaterijal:IMaterijali
     {
         double duzina;
         double poluprecnik;
         TMaterijal materijal;
+        double otporvrednost;
+
+        public double OtporVrednost { get => otporvrednost; set => otporvrednost = value; }
+
         public Otpornik(double duzina, double poluprecnik, string ime):base(ime)
         {
             this.duzina = duzina;
@@ -23,7 +27,11 @@ namespace SimulacijaElektricnihKola
             otpornik.materijal=this.materijal;
             
         }
-        public  double IzracunajOtpor()
+        public Otpornik(string ime, double otpor) : base(ime)
+        {
+            OtporVrednost = otpor;
+        }
+        public double IzracunajOtpor()
         {
             return materijal.specificnaOtpornost * (duzina / (poluprecnik * poluprecnik * Math.PI));
         }

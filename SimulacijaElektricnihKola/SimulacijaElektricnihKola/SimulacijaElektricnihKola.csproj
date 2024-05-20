@@ -56,12 +56,12 @@
     </Compile>
     <Compile Include="IMaterijali.cs" />
     <Compile Include="Komponenta.cs" />
-    <Compile Include="Otpor.cs" />
     <Compile Include="Otpornik.cs" />
     <Compile Include="ParalelnaVeza.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerijskaVeza.cs" />
+    <Compile Include="Srebro.cs" />
     <Compile Include="Veza.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
