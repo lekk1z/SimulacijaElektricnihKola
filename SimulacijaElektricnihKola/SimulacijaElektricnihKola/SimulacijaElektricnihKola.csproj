@@ -56,6 +56,8 @@
     </Compile>
     <Compile Include="IMaterijali.cs" />
     <Compile Include="Komponenta.cs" />
+    <Compile Include="Naizmenicna Struja\INaizmenicnaStruja.cs" />
+    <Compile Include="Naizmenicna Struja\TermogenaOtpornost.cs" />
     <Compile Include="Otpornik.cs" />
     <Compile Include="ParalelnaVeza.cs" />
     <Compile Include="Program.cs" />
