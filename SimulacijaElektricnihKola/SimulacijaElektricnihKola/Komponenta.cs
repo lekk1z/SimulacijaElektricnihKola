@@ -15,6 +15,6 @@ namespace SimulacijaElektricnihKola
             Ime = ime;
         }
 
-       // public abstract double IzracunajOtpor();
+       public abstract double IzracunajOtpor();
     }
 }

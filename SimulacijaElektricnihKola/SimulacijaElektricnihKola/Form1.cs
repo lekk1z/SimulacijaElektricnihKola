@@ -21,8 +21,8 @@ namespace SimulacijaElektricnihKola
         {
             // Kreiraj komponente
             Baterija baterija1 = new Baterija("Baterija1", 9);  // 9 V baterija
-            Otpornik<Srebro> otpor1 = new Otpornik<Srebro>("Otpor1", 100);  // 100 Ω otpornik
-            Otpornik<Srebro> otpor2 = new Otpornik<Srebro>("Otpor2", 200);  // 200 Ω otpornik
+            Otpornik<Srebro> otpor1 = new Otpornik<Srebro>("Otpor1", 250);  // 100 Ω otpornik
+            Otpornik<Srebro> otpor2 = new Otpornik<Srebro>("Otpor2", 500);  // 200 Ω otpornik
 
             // Kreiraj serijsku vezu
             SerijskaVeza<Srebro> serijskaVeza = new SerijskaVeza<Srebro>("Serijska veza");

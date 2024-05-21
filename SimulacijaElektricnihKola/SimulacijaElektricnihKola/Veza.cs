@@ -20,19 +20,18 @@ namespace SimulacijaElektricnihKola
             Komponente.Add(komponenta);
         }
 
-        public abstract double IzracunajUkupanOtpor();
         public abstract double IzracunajUkupanNapon();
 
         public double IzracunajStruju()
         {
             double ukupanNapon = IzracunajUkupanNapon();
-            double ukupanOtpor = IzracunajUkupanOtpor();
+            double ukupanOtpor = IzracunajOtpor();
             return ukupanOtpor == 0 ? double.PositiveInfinity : ukupanNapon / ukupanOtpor;
         }
 
         public override string ToString()
         {
-            return $"{Ime} - Ukupan otpor: {IzracunajUkupanOtpor()} Ω, Struja: {IzracunajStruju()} A";
+            return $"{Ime} - Ukupan otpor: {IzracunajOtpor()} Ω, Struja: {IzracunajStruju()} A";
         }
     }
 }

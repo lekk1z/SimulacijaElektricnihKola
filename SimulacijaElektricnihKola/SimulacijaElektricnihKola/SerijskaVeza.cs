@@ -10,7 +10,7 @@ namespace SimulacijaElektricnihKola
     {
         public SerijskaVeza(string ime) : base(ime) { }
 
-        public override double IzracunajUkupanOtpor()
+        public override double IzracunajOtpor()
         {
             double ukupanOtpor = 0;
             foreach (var komponenta in Komponente)
@@ -21,7 +21,7 @@ namespace SimulacijaElektricnihKola
                 }
                 else if (komponenta is Veza)
                 {
-                    ukupanOtpor += ((Veza)komponenta).IzracunajUkupanOtpor();
+                    ukupanOtpor += ((Veza)komponenta).IzracunajOtpor();
                 }
             }
             return ukupanOtpor;
@@ -43,5 +43,6 @@ namespace SimulacijaElektricnihKola
             }
             return ukupanNapon;
         }
+
     }
 }

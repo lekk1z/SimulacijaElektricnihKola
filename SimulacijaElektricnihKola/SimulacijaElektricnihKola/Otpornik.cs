@@ -31,7 +31,7 @@ namespace SimulacijaElektricnihKola
         {
             OtporVrednost = otpor;
         }
-        public double IzracunajOtpor()
+        public override double IzracunajOtpor()
         {
             return materijal.specificnaOtpornost * (duzina / (poluprecnik * poluprecnik * Math.PI));
         }

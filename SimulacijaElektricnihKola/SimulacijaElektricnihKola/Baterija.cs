@@ -13,5 +13,10 @@ namespace SimulacijaElektricnihKola
         {
             Napon = napon;
         }
+
+        public override double IzracunajOtpor()
+        {
+            return 0;
+        }
     }
 }
