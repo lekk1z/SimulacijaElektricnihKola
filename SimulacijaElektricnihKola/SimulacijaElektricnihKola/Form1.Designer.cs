@@ -30,6 +30,9 @@
         {
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.btnfajl = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // maskedTextBox1
@@ -46,11 +49,36 @@
             this.maskedTextBox2.Size = new System.Drawing.Size(455, 22);
             this.maskedTextBox2.TabIndex = 2;
             // 
+            // btnfajl
+            // 
+            this.btnfajl.Location = new System.Drawing.Point(12, 12);
+            this.btnfajl.Name = "btnfajl";
+            this.btnfajl.Size = new System.Drawing.Size(75, 23);
+            this.btnfajl.TabIndex = 3;
+            this.btnfajl.Text = "Otvori fajl";
+            this.btnfajl.UseVisualStyleBackColor = true;
+            this.btnfajl.Click += new System.EventHandler(this.btnfajl_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(12, 59);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(188, 244);
+            this.listBox1.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnfajl);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
             this.Name = "Form1";
@@ -65,6 +93,9 @@
 
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.Button btnfajl;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
