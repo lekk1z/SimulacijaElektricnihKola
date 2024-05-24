@@ -1,0 +1,8 @@
+o otpornik1 250
+o otpornik2 500
+b baterija1 9
+s serijska1 baterija1-otpornik1-otpornik2
+o otpornik3 50
+o otpornik4 100
+p paralelna1 otpornik3-otpornik4
+s glavna serijska1-paralelna1
