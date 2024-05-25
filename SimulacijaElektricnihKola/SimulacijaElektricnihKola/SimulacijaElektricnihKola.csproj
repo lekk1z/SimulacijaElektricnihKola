@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,14 +56,21 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IMaterijali.cs" />
+    <Compile Include="Kalem.cs" />
+    <Compile Include="KoloNaizmenica.cs" />
     <Compile Include="Komponenta.cs" />
+    <Compile Include="KomponentaNaizmenicna.cs" />
+    <Compile Include="Kondenzator.cs" />
     <Compile Include="Naizmenicna Struja\INaizmenicnaStruja.cs" />
     <Compile Include="Naizmenicna Struja\TermogenaOtpornost.cs" />
     <Compile Include="Otpornik.cs" />
+    <Compile Include="OtpornikN.cs" />
     <Compile Include="ParalelnaVeza.cs" />
+    <Compile Include="ParalelnaVezaN.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerijskaVeza.cs" />
+    <Compile Include="SerijskaVezaN.cs" />
     <Compile Include="Srebro.cs" />
     <Compile Include="Veza.cs" />
     <EmbeddedResource Include="Form1.resx">

@@ -25,6 +25,7 @@ namespace SimulacijaElektricnihKola
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            /*
             // Kreiraj komponente
             Baterija baterija1 = new Baterija("Baterija1", 9);  // 9 V baterija
             Otpornik<Srebro> otpor1 = new Otpornik<Srebro>("Otpor1", 250);  // 100 Ω otpornik
@@ -51,6 +52,46 @@ namespace SimulacijaElektricnihKola
 
             // Ispis informacija o glavnom kolu
             maskedTextBox2.Text =  glavnoKolo.ToString();
+            */
+            // Primer korišćenja klasa
+            OtpornikN rezistor1 = new OtpornikN { Ime = "R1", Otpor = 10 }; // Otpornik od 10 oma
+            Kondenzator kondenzator= new Kondenzator { Ime = "C1", Kapacitet = 0.000159 }; // Kondenzator od 0.00159 farada
+            Kalem kalem = new Kalem { Ime = "L1", Induktivnost = 0.03 }; // Kalem od 0.03 henrija
+
+            double napon = 5;
+            double frk = 50; 
+            // Kreiranje redne veze komponenata
+            SerijskaVezaN srVz1 = new SerijskaVezaN
+            {
+                Ime = "srVz1",
+                Komponente = new KomponentaNaizmenicna[] { rezistor1 }
+            };
+
+            // Kreiranje paralelne veze komponenata
+            ParalelnaVezaN prlVz1 = new ParalelnaVezaN
+            {
+                Ime = "prlVz1",
+                Komponente = new KomponentaNaizmenicna[] { kondenzator, kalem }
+            };
+
+            // Kreiranje kombinovane veze (redna veza koja sadrži paralelnu vezu)
+            SerijskaVezaN srVz2 = new SerijskaVezaN
+            {
+                Ime = "srVz2",
+                Komponente = new KomponentaNaizmenicna[] { srVz1, prlVz1 }
+            };
+
+            // Kreiranje kola sa kombinovanom vezom
+            KoloNaizmenica kolo = new KoloNaizmenica
+            {
+                Komponete = new KomponentaNaizmenicna[] { srVz2 }
+            };
+
+            // Računanje struje u kolu
+            double current = kolo.IzracunajTrenutnuStruju(napon, frk);
+
+            // Ispis rezultata
+            maskedTextBox2.Text=current.ToString();
         }
 
         private void btnfajl_Click(object sender, EventArgs e)
@@ -167,6 +208,11 @@ namespace SimulacijaElektricnihKola
                     MessageBox.Show($"Error reading file: {ex.Message}");
                 }
             }
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
