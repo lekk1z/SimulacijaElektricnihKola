@@ -72,6 +72,12 @@
     <Compile Include="SerijskaVeza.cs" />
     <Compile Include="SerijskaVezaN.cs" />
     <Compile Include="Srebro.cs" />
+    <Compile Include="Teorija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teorija.Designer.cs">
+      <DependentUpon>Teorija.cs</DependentUpon>
+    </Compile>
     <Compile Include="Veza.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -85,6 +91,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Teorija.resx">
+      <DependentUpon>Teorija.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -37,24 +37,27 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(229, 178);
+            this.maskedTextBox1.Location = new System.Drawing.Point(172, 145);
+            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(455, 22);
+            this.maskedTextBox1.Size = new System.Drawing.Size(342, 20);
             this.maskedTextBox1.TabIndex = 1;
             this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(229, 222);
+            this.maskedTextBox2.Location = new System.Drawing.Point(172, 180);
+            this.maskedTextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(455, 22);
+            this.maskedTextBox2.Size = new System.Drawing.Size(342, 20);
             this.maskedTextBox2.TabIndex = 2;
             // 
             // btnfajl
             // 
-            this.btnfajl.Location = new System.Drawing.Point(12, 12);
+            this.btnfajl.Location = new System.Drawing.Point(9, 10);
+            this.btnfajl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnfajl.Name = "btnfajl";
-            this.btnfajl.Size = new System.Drawing.Size(75, 23);
+            this.btnfajl.Size = new System.Drawing.Size(56, 19);
             this.btnfajl.TabIndex = 3;
             this.btnfajl.Text = "Otvori fajl";
             this.btnfajl.UseVisualStyleBackColor = true;
@@ -67,21 +70,22 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 59);
+            this.listBox1.Location = new System.Drawing.Point(9, 48);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(188, 244);
+            this.listBox1.Size = new System.Drawing.Size(142, 199);
             this.listBox1.TabIndex = 4;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnfajl);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
