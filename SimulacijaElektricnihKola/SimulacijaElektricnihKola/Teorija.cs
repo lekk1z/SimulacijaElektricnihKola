@@ -26,6 +26,7 @@ namespace SimulacijaElektricnihKola
         {
             this.Close();
            // formaLS.Show();
+           //saska je radila
         }
     }
 }
