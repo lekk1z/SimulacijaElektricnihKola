@@ -78,6 +78,12 @@
     <Compile Include="Teorija.Designer.cs">
       <DependentUpon>Teorija.cs</DependentUpon>
     </Compile>
+    <Compile Include="Testovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testovi.Designer.cs">
+      <DependentUpon>Testovi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Veza.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -93,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="Teorija.resx">
       <DependentUpon>Teorija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testovi.resx">
+      <DependentUpon>Testovi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

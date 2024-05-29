@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SimulacijaElektricnihKola
-{
+{ 
+     
     public partial class Teorija: Form
     {
         public Teorija()

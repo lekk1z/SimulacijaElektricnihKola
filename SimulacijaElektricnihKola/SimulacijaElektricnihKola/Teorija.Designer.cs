@@ -46,13 +46,12 @@
             // 
             // btnNazad
             // 
-            this.btnNazad.Location = new System.Drawing.Point(732, 12);
+            this.btnNazad.Location = new System.Drawing.Point(738, 12);
             this.btnNazad.Name = "btnNazad";
-            this.btnNazad.Size = new System.Drawing.Size(56, 56);
+            this.btnNazad.Size = new System.Drawing.Size(50, 52);
             this.btnNazad.TabIndex = 1;
             this.btnNazad.Text = "<";
             this.btnNazad.UseVisualStyleBackColor = true;
-            this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
             // 
             // Teorija
             // 
