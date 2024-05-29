@@ -45,6 +45,7 @@ namespace SimulacijaElektricnihKola
 			objasnjenjebtn.SetBounds( Width/6 - sirinaBttn/2, Height/2, sirinaBttn, visinaBttn );
 			objasnjenjebtn.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( objasnjenjebtn );
+            objasnjenjebtn.Click += Objasnjenjebtn_Click;
 
 			//button test
 			Button testbtn = new Button();
@@ -55,6 +56,7 @@ namespace SimulacijaElektricnihKola
 			testbtn.SetBounds( Width/2 - sirinaBttn/2, Height/2, sirinaBttn, visinaBttn );
 			testbtn.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( testbtn );
+            testbtn.Click += Testbtn_Click; ;
 
 			//button simulacija
 			Button simulacijabttn = new Button();
@@ -65,9 +67,30 @@ namespace SimulacijaElektricnihKola
 			simulacijabttn.SetBounds( 5*Width/6 - sirinaBttn / 2, Height/2, sirinaBttn, visinaBttn );
 			simulacijabttn.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( simulacijabttn );
+            simulacijabttn.Click += Simulacijabttn_Click;
 
 		
-
 		}
-	}
+
+		Simulacija simulacijaForma = new Simulacija();
+        private void Simulacijabttn_Click(object sender, EventArgs e)
+        {
+            simulacijaForma.Show();
+            this.Hide();
+        }
+
+		Testovi testoviForma = new Testovi();
+        private void Testbtn_Click(object sender, EventArgs e)
+        {
+            testoviForma.Show();
+            this.Hide();
+        }
+
+        Teorija teorijaForma = new Teorija();
+        private void Objasnjenjebtn_Click(object sender, EventArgs e)
+        {
+            teorijaForma.Show();
+            this.Hide();
+        }
+    }
 }

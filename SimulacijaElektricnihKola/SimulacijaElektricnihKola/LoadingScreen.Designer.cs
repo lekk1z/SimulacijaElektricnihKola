@@ -28,17 +28,18 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.SuspendLayout();
-			// 
-			// LoadingScreen
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Name = "LoadingScreen";
-			this.Text = "LoadingScreen";
-			this.Load += new System.EventHandler(this.LoadingScreen_Load);
-			this.ResumeLayout(false);
+            this.SuspendLayout();
+            // 
+            // LoadingScreen
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "LoadingScreen";
+            this.Text = "LoadingScreen";
+            this.Load += new System.EventHandler(this.LoadingScreen_Load);
+            this.ResumeLayout(false);
 
 		}
 
