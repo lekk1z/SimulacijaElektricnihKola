@@ -32,7 +32,7 @@
             this.btnTest2 = new System.Windows.Forms.Button();
             this.btnTest3 = new System.Windows.Forms.Button();
             this.btnTest4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxOpisZadataka = new System.Windows.Forms.TextBox();
             this.btnNazad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -69,15 +69,15 @@
             this.btnTest4.TabIndex = 3;
             this.btnTest4.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tbxOpisZadataka
             // 
-            this.textBox1.Location = new System.Drawing.Point(131, 72);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(535, 312);
-            this.textBox1.TabIndex = 4;
+            this.tbxOpisZadataka.Location = new System.Drawing.Point(131, 72);
+            this.tbxOpisZadataka.Multiline = true;
+            this.tbxOpisZadataka.Name = "tbxOpisZadataka";
+            this.tbxOpisZadataka.ReadOnly = true;
+            this.tbxOpisZadataka.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxOpisZadataka.Size = new System.Drawing.Size(535, 312);
+            this.tbxOpisZadataka.TabIndex = 4;
             // 
             // btnNazad
             // 
@@ -95,7 +95,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnNazad);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxOpisZadataka);
             this.Controls.Add(this.btnTest4);
             this.Controls.Add(this.btnTest3);
             this.Controls.Add(this.btnTest2);
@@ -113,7 +113,7 @@
         private System.Windows.Forms.Button btnTest2;
         private System.Windows.Forms.Button btnTest3;
         private System.Windows.Forms.Button btnTest4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxOpisZadataka;
         private System.Windows.Forms.Button btnNazad;
     }
 }
