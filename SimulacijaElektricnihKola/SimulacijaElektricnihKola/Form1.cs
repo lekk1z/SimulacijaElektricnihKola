@@ -214,6 +214,11 @@ namespace SimulacijaElektricnihKola
         {
 
         }
-       
-    }
+        LoadingScreen p = new LoadingScreen();
+		private void button1_Click( object sender, EventArgs e )
+		{
+            p.Show();
+            this.Hide();
+		}
+	}
 }

@@ -50,3 +50,5 @@ C:\Users\gruja\Source\Repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricn
 C:\Users\gruja\Source\Repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.csproj.CoreCompileInputs.cache
 C:\Users\gruja\Source\Repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.exe
 C:\Users\gruja\Source\Repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.pdb
+C:\Users\gruja\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.LoadingScreen.resources
+C:\Users\gruja\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.Testovi.resources

@@ -61,6 +61,12 @@
     <Compile Include="Komponenta.cs" />
     <Compile Include="KomponentaNaizmenicna.cs" />
     <Compile Include="Kondenzator.cs" />
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Naizmenicna Struja\INaizmenicnaStruja.cs" />
     <Compile Include="Naizmenicna Struja\TermogenaOtpornost.cs" />
     <Compile Include="Otpornik.cs" />
@@ -87,6 +93,9 @@
     <Compile Include="Veza.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
