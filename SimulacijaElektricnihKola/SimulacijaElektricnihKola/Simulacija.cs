@@ -26,5 +26,11 @@ namespace SimulacijaElektricnihKola
         {
 
         }
+
+        private void btnNazad_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form1.loading.Show();
+        }
     }
 }

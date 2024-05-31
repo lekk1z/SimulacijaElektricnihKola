@@ -18,8 +18,9 @@ namespace SimulacijaElektricnihKola
         {
             InitializeComponent();
             btnNazad.Show();
+            tbxOpisZadataka.Hide();
         }
-        // loadingscreen formaLS = new loadingscreen();
+        
         private void btnTest3_Click( object sender, EventArgs e )
         {
             btnTest1.Hide();
@@ -42,7 +43,20 @@ namespace SimulacijaElektricnihKola
 
         private void btnNazad_Click( object sender, EventArgs e )
         {
-            if( btnTest1.Visible && btnTest2.Visible && btnTest3.Visible && btnTest4.Visible ) ; // formaLS.Show();
+           
+        }
+        private void Testovi_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnNazad_Click_1(object sender, EventArgs e)
+        {
+         
+            if (btnTest1.Visible || btnTest2.Visible || btnTest3.Visible || btnTest4.Visible)
+            {
+                this.Visible = false;
+                Form1.loading.Show();
+            }
             else
             {
                 btnTest1.Show();
@@ -51,12 +65,6 @@ namespace SimulacijaElektricnihKola
                 btnTest4.Show();
                 tbxOpisZadataka.Hide();
             }
-           //saska je radila
-        }
-
-        private void Testovi_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

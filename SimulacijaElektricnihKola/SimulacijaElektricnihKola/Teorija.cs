@@ -17,7 +17,6 @@ namespace SimulacijaElektricnihKola
         {
             InitializeComponent();
         }
-       // loadingscreen formaLS = new loadingscreen();
         private void tbxTeorija_TextChanged( object sender, EventArgs e )
         {
             tbxTeorija.Text = "ovde treba nesto da pise";
@@ -26,9 +25,6 @@ namespace SimulacijaElektricnihKola
         private void btnNazad_Click( object sender, EventArgs e )
         {
             this.Close();
-
-           // formaLS.Show();
-           //saska je radila
         }
 
         private void Teorija_FormClosed(object sender, FormClosedEventArgs e)
