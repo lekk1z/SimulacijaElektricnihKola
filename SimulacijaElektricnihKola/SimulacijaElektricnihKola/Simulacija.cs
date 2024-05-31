@@ -16,5 +16,15 @@ namespace SimulacijaElektricnihKola
         {
             InitializeComponent();
         }
+
+        private void Simulacija_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Simulacija_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

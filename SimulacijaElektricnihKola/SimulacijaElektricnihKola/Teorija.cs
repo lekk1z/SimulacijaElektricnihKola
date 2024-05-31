@@ -26,8 +26,20 @@ namespace SimulacijaElektricnihKola
         private void btnNazad_Click( object sender, EventArgs e )
         {
             this.Close();
+
            // formaLS.Show();
            //saska je radila
+        }
+
+        private void Teorija_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnNazad_Click_1(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form1.loading.Show();
         }
     }
 }

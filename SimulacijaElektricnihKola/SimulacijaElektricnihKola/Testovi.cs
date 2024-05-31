@@ -53,5 +53,10 @@ namespace SimulacijaElektricnihKola
             }
            //saska je radila
         }
+
+        private void Testovi_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

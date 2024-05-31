@@ -67,7 +67,6 @@
     <Compile Include="LoadingScreen.Designer.cs">
       <DependentUpon>LoadingScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Naizmenicna Struja\INaizmenicnaStruja.cs" />
     <Compile Include="Naizmenicna Struja\TermogenaOtpornost.cs" />
     <Compile Include="Otpornik.cs" />
     <Compile Include="OtpornikN.cs" />
@@ -112,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Simulacija.resx">
+      <DependentUpon>Simulacija.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Teorija.resx">
       <DependentUpon>Teorija.cs</DependentUpon>
     </EmbeddedResource>

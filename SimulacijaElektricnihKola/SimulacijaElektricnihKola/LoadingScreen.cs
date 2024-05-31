@@ -92,5 +92,10 @@ namespace SimulacijaElektricnihKola
             teorijaForma.Show();
             this.Hide();
         }
+
+        private void LoadingScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+			Application.Exit();
+        }
     }
 }

@@ -14,6 +14,11 @@ namespace SimulacijaElektricnihKola
 {
     public partial class Form1 : Form
     {
+        public static Form1 forma1= new Form1();
+        public static LoadingScreen loading = new LoadingScreen();
+        public static Simulacija simulacija=new Simulacija();
+        public static Teorija teorija=new Teorija();
+        public static Testovi testovi=new Testovi();
         static List<Otpornik<Srebro>> otpornici=new List<Otpornik<Srebro>>();
         static List<SerijskaVeza<Srebro>> serijskeVeze = new List<SerijskaVeza<Srebro>>();
         static List<ParalelnaVeza<Srebro>> paralelneVeze = new List<ParalelnaVeza<Srebro>>();
@@ -214,11 +219,15 @@ namespace SimulacijaElektricnihKola
         {
 
         }
-        LoadingScreen p = new LoadingScreen();
 		private void button1_Click( object sender, EventArgs e )
 		{
-            p.Show();
+            loading.Show();
             this.Hide();
 		}
-	}
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+    }
 }

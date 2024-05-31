@@ -2,7 +2,7 @@
 
 namespace SimulacijaElektricnihKola.Naizmenicna_Struja
 {
-    internal class TermogenaOtpornost<TMaterijal> : Otpornik<TMaterijal>, INaizmenicnaStruja where TMaterijal : IMaterijali
+    internal class TermogenaOtpornost<TMaterijal> : Otpornik<TMaterijal> where TMaterijal : IMaterijali
     {
         public double naponAmplituda { get; }
        public  double naponEfektivna { get { return naponAmplituda / Math.Sqrt(2); } }
