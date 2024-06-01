@@ -58,26 +58,28 @@ namespace SimulacijaElektricnihKola
         private void btnTest2_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
-
 		}
         private void btnTest3_Click( object sender, EventArgs e )
         {
             KliknutoDugme();
-            tbxOpisZadataka.Text = "Zadatak 3\nU datom kolu:\nR = Xl = 10 Ω\nXc = 20 Ω\nU = 5sin314t(5I\n\nNaci jednacinu struje kroz nerazgranati deo kola (u zavisnosti od vremena).";
-            tbxOpisZadataka.Text = $"\n\nPitanja:\n1. Sta u datom kolu predstavlja R?\nR u datom kolu predstavlja {unosResenja}.\n";
+            tbxOpisZadataka.Text += "Zadatak 3\r\nU datom kolu:\r\nR = Xl = 10 Ω\r\nXc = 20 Ω\r\nU = 5sin314t(5I)\r\n\r\nNaci jednacinu struje kroz nerazgranati deo kola (u zavisnosti od vremena).";
+            tbxOpisZadataka.Text += $"\r\nPitanja:\r\n1. Sta u datom kolu predstavlja R?\r\nR u datom kolu predstavlja {unosResenja}.";
             upisanaResenja.Add(unosResenja.Text); 
-            tbxOpisZadataka.Text = $"2. Sta u datom kolu predstavlja L?\nL u datom kolu predstavlja{unosResenja}";
+            tbxOpisZadataka.Text += $"\r\n2. Sta u datom kolu predstavlja L?\r\nL u datom kolu predstavlja {unosResenja}";
 			upisanaResenja.Add( unosResenja.Text );
-			tbxOpisZadataka.Text = $"3. Sta u datom kolu predstavlja C?\nC u datom kolu predstavlja{unosResenja}";
+			tbxOpisZadataka.Text += $"\r\n3. Sta u datom kolu predstavlja C?\r\nC u datom kolu predstavlja {unosResenja}";
 			upisanaResenja.Add( unosResenja.Text );
-			tbxOpisZadataka.Text = $"4. Koja je frekvencija napona?\nFrekvencija napona je: {unosResenja}";
+			tbxOpisZadataka.Text += $"\r\n4. Koja je frekvencija napona?\r\nFrekvencija napona je: {unosResenja}";
 			upisanaResenja.Add( unosResenja.Text );
-			tbxOpisZadataka.Text = $"5. Koja je amplituda napona?\namplituda napona je: {unosResenja}";
+			tbxOpisZadataka.Text += $"\r\n5. Koja je amplituda napona?\r\namplituda napona je: {unosResenja}";
 			upisanaResenja.Add( unosResenja.Text );
 		}
 		private void btnTest4_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
+			tbxOpisZadataka.Text += "Fazorski diagram datog kola:\r\n U1 - napon na termogenom kolu\r\n " +
+				"U2 - napon na induktivnom, odnosno kapacitivnom otpotu\r\n I1 - jacina struje kroz nerazgranati deo kola\r\n " +
+				"I2 - jacina struje kroz kapacitivni otpor\r\n I3-jacina struje kroz induktivni otpor\r\n U - napon na krajevima veze izovoru ";
 
 		}
 
@@ -100,6 +102,7 @@ namespace SimulacijaElektricnihKola
 			btnTest2.SetBounds( x2, y1, bttnWidth, bttnHeight );
 			btnTest3.SetBounds( x1, y2, bttnWidth, bttnHeight );
 			btnTest4.SetBounds( x2, y2, bttnWidth, bttnHeight );
+
 			btnNazad.SetBounds( Width - Width/12, Height/50, Width/17, Width/17 );
 
             tbxOpisZadataka.SetBounds(x1,y1, Width - 2*Width/6, Height - 2*Height/6 );
