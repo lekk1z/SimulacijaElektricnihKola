@@ -39,7 +39,6 @@ namespace SimulacijaElektricnihKola
 		{
             this.Width = 1200;
             this.Height = 800;
-            SetSize();
             rtbTeorija.SelectionAlignment = HorizontalAlignment.Center;
             rtbTeorija.SelectionStart = rtbTeorija.Text.IndexOf("JEDNOSMERNA STRUJA");
             rtbTeorija.SelectionLength = "JEDNOSMERNA STRUJA".Length;
@@ -57,7 +56,9 @@ namespace SimulacijaElektricnihKola
             rtbTeorija.SelectionLength = "DRUGI KIRHOFOV ZAKON".Length;
             rtbTeorija.SelectionFont = new Font(rtbTeorija.Font, FontStyle.Bold);
 
-        }
+			SetSize();
+
+		}
 
         private void Teorija_ResizeEnd( object sender, EventArgs e )
 		{
@@ -65,14 +66,10 @@ namespace SimulacijaElektricnihKola
 		}
         public void SetSize()
         {
-			rtbTeorija.SetBounds( 0, 0, 9*Width/10, 9*Height/10 );
+			rtbTeorija.SetBounds( 0, 0, 9*Width/10, ClientSize.Height );
+            rtbTeorija.Font = new Font("", Width/70, FontStyle.Regular);
 			btnNazad.SetBounds( Width - Width/12, Height/50, Width/17, Width/17 );
 			btnNazad.Font = new Font( "", Width/50, FontStyle.Bold );
 		}
-
-        private void rtbTeorija_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

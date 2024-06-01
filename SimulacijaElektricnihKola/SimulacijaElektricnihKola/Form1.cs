@@ -96,7 +96,7 @@ namespace SimulacijaElektricnihKola
             double current = kolo.IzracunajTrenutnuStruju(napon, frk);
 
             // Ispis rezultata
-            maskedTextBox2.Text=kolo.Faza(napon,frk).ToString();
+           // maskedTextBox2.Text=kolo.Faza(napon,frk).ToString();
         }
 
         private void btnfajl_Click(object sender, EventArgs e)
