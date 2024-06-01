@@ -37,5 +37,20 @@ namespace SimulacijaElektricnihKola
             this.Visible = false;
             Form1.loading.Show();
         }
-    }
+
+		private void Teorija_Load( object sender, EventArgs e )
+		{
+            SetSize();
+		}
+
+		private void Teorija_ResizeEnd( object sender, EventArgs e )
+		{
+            SetSize();
+		}
+        public void SetSize()
+        {
+			tbxTeorija.SetBounds( 0, 0, 9*Width/10, 9*Height/10 );
+			btnNazad.SetBounds( Width - Width/12, Height/50, Width/17, Width/17 );
+		}
+	}
 }

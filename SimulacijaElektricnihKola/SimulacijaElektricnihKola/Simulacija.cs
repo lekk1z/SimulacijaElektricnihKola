@@ -24,13 +24,22 @@ namespace SimulacijaElektricnihKola
 
         private void Simulacija_Load(object sender, EventArgs e)
         {
+			SetSize();
+		}
 
-        }
-
-        private void btnNazad_Click(object sender, EventArgs e)
+		private void btnNazad_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             Form1.loading.Show();
         }
-    }
+
+		private void Simulacija_ResizeEnd( object sender, EventArgs e )
+		{
+            SetSize();
+		}
+        public void SetSize()
+        {
+			btnNazad.SetBounds( Width - Width/12, Height/50, Width/17, Width/17 );
+		}
+	}
 }

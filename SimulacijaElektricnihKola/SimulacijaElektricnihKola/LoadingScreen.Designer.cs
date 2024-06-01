@@ -28,20 +28,21 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.SuspendLayout();
-            // 
-            // LoadingScreen
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "LoadingScreen";
-            this.Text = "LoadingScreen";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoadingScreen_FormClosed);
-            this.Load += new System.EventHandler(this.LoadingScreen_Load);
-            this.ResumeLayout(false);
+			this.SuspendLayout();
+			// 
+			// LoadingScreen
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.ClientSize = new System.Drawing.Size(800, 461);
+			this.MinimumSize = new System.Drawing.Size(500, 500);
+			this.Name = "LoadingScreen";
+			this.Text = "LoadingScreen";
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoadingScreen_FormClosed);
+			this.Load += new System.EventHandler(this.LoadingScreen_Load);
+			this.ResizeEnd += new System.EventHandler(this.LoadingScreen_ResizeEnd);
+			this.ResumeLayout(false);
 
 		}
 

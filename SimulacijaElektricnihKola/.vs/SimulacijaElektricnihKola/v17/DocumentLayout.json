@@ -1,54 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\",
+  "WorkspaceRootPath": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\gruja\\source\\repos\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\gruja\\source\\repos\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\gruja\\source\\repos\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\gruja\\source\\repos\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\gruja\\source\\repos\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\gruja\\source\\repos\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\aleks\\source\\repos\\lekk1z\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\naizmenicna struja\\inaizmenicnastruja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\naizmenicna struja\\inaizmenicnastruja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\serijskaveza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\serijskaveza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\paralelnaveza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\paralelnaveza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\aleks\\source\\repos\\lekk1z\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\veza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\veza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\naizmenicna struja\\termogenaotpornost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\naizmenicna struja\\termogenaotpornost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\komponenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\komponenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\ekvivalentniotpornik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\ekvivalentniotpornik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\otpornik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\otpornik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\imaterijali.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\imaterijali.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\srebro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\srebro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,22 +33,91 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 428,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Form1.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
               "RelativeToolTip": "SimulacijaElektricnihKola\\Form1.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAgwIQAAAAhAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwKUAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T17:37:51.714Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Simulacija.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
+              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Simulacija.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:42:29.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Simulacija.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
+              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Simulacija.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs [Design]",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:42:29.04Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
             },
             {
               "$type": "Bookmark",
@@ -83,146 +128,53 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Veza.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Veza.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Veza.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Veza.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Veza.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBYAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:29:29.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "INaizmenicnaStruja.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Naizmenicna Struja\\INaizmenicnaStruja.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Naizmenicna Struja\\INaizmenicnaStruja.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Naizmenicna Struja\\INaizmenicnaStruja.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Naizmenicna Struja\\INaizmenicnaStruja.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T15:21:09.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TermogenaOtpornost.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Naizmenicna Struja\\TermogenaOtpornost.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Naizmenicna Struja\\TermogenaOtpornost.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Naizmenicna Struja\\TermogenaOtpornost.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Naizmenicna Struja\\TermogenaOtpornost.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T15:19:17.609Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ParalelnaVeza.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\ParalelnaVeza.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\ParalelnaVeza.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\ParalelnaVeza.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\ParalelnaVeza.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwBMAAABAAAAA",
+              "Title": "Teorija.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs",
+              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Teorija.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Teorija.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAC4AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T17:54:01.257Z",
+              "WhenOpened": "2024-06-01T14:45:39.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SerijskaVeza.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SerijskaVeza.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\SerijskaVeza.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SerijskaVeza.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\SerijskaVeza.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCgAAAA/AAAA",
+              "DocumentIndex": 0,
+              "Title": "Testovi.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs",
+              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Testovi.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs*",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Testovi.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T17:51:24.966Z",
+              "WhenOpened": "2024-06-01T14:35:54.304Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Srebro.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Srebro.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Srebro.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Srebro.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Srebro.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T17:42:43.108Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Otpornik.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Otpornik.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Otpornik.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Otpornik.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Otpornik.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAvwAgAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T15:37:23.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Komponenta.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Komponenta.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Komponenta.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Komponenta.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Komponenta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T15:33:17.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EkvivalentniOtpornik.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\EkvivalentniOtpornik.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\EkvivalentniOtpornik.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\EkvivalentniOtpornik.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\EkvivalentniOtpornik.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T16:24:12.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IMaterijali.cs",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\IMaterijali.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\IMaterijali.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\IMaterijali.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\IMaterijali.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T15:47:33.681Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
-              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Form1.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs [Design]",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Form1.cs [Design]",
+              "Title": "LoadingScreen.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs",
+              "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\LoadingScreen.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs*",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\LoadingScreen.cs*",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAACEAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T15:27:40.272Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-01T14:35:48.507Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 125,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }
