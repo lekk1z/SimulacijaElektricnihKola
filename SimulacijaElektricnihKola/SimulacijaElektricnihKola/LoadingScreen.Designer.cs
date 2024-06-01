@@ -36,7 +36,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.ClientSize = new System.Drawing.Size(800, 461);
-			this.MinimumSize = new System.Drawing.Size(500, 500);
+			this.MinimumSize = new System.Drawing.Size(800, 500);
 			this.Name = "LoadingScreen";
 			this.Text = "LoadingScreen";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoadingScreen_FormClosed);

@@ -85,7 +85,9 @@ namespace SimulacijaElektricnihKola
 
 		private void Testovi_Load( object sender, EventArgs e )
 		{
-            SetSize();
+			this.Width = 1200;
+			this.Height = 800;
+			SetSize();
 		}
 
         public void SetSize()

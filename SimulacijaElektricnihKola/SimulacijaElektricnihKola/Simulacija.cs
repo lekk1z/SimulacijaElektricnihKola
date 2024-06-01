@@ -24,6 +24,8 @@ namespace SimulacijaElektricnihKola
 
         private void Simulacija_Load(object sender, EventArgs e)
         {
+			this.Width = 1200;
+			this.Height = 800;
 			SetSize();
 		}
 

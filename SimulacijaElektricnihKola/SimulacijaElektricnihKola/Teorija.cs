@@ -40,7 +40,9 @@ namespace SimulacijaElektricnihKola
 
 		private void Teorija_Load( object sender, EventArgs e )
 		{
-            SetSize();
+			this.Width = 1200;
+			this.Height = 800;
+			SetSize();
 		}
 
 		private void Teorija_ResizeEnd( object sender, EventArgs e )

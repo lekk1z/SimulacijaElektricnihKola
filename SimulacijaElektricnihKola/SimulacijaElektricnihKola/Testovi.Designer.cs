@@ -96,13 +96,14 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(800, 461);
 			this.Controls.Add(this.btnNazad);
 			this.Controls.Add(this.tbxOpisZadataka);
 			this.Controls.Add(this.btnTest4);
 			this.Controls.Add(this.btnTest3);
 			this.Controls.Add(this.btnTest2);
 			this.Controls.Add(this.btnTest1);
+			this.MinimumSize = new System.Drawing.Size(800, 500);
 			this.Name = "Testovi";
 			this.Text = "Testovi";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Testovi_FormClosed);
