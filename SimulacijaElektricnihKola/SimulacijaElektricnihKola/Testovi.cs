@@ -38,6 +38,10 @@ namespace SimulacijaElektricnihKola
                 btnTest2.Show();
                 btnTest3.Show();
                 btnTest4.Show();
+				lblprvi.Show();
+				lbldrugi.Show();
+				lbltreci.Show();
+				lblcetvrti.Show();
                 tbxOpisZadataka.Hide();
             }
         }
@@ -47,6 +51,10 @@ namespace SimulacijaElektricnihKola
 			btnTest2.Hide();
 			btnTest3.Hide();
 			btnTest4.Hide();
+			lblprvi.Hide();
+			lbldrugi.Hide();
+			lbltreci.Hide();
+			lblcetvrti.Hide();
 			tbxOpisZadataka.Clear();
 			tbxOpisZadataka.Show();
 		}
@@ -104,15 +112,34 @@ namespace SimulacijaElektricnihKola
 			btnTest2.SetBounds( x2, y1, bttnWidth, bttnHeight );
 			btnTest3.SetBounds( x1, y2, bttnWidth, bttnHeight );
 			btnTest4.SetBounds( x2, y2, bttnWidth, bttnHeight );
-
 			btnNazad.SetBounds( Width - Width/12, Height/50, Width/17, Width/17 );
+			btnNazad.Font = new Font( "", Width/50, FontStyle.Bold );
 
-            tbxOpisZadataka.SetBounds(x1,y1, Width - 2*Width/6, Height - 2*Height/6 );
+			//namestanje labela
+			int lblWidth = bttnWidth/2;
+			int lblHeight = lblWidth/8;
+			int x1lbl, x2lbl, y1lbl, y2lbl; //koordinate za pozicije dugmica
+			x1lbl = x1 ;
+			x2lbl = x2 ;
+			y1lbl = y1 - Height/20;
+			y2lbl = y2 - Height/20;
+			int velicinaFonta = 10*lblHeight/15;
+			lblprvi.SetBounds( x1lbl, y1lbl, lblWidth, lblHeight );
+			lbldrugi.SetBounds( x2lbl, y1lbl, lblWidth, lblHeight );
+			lbltreci.SetBounds( x1lbl, y2lbl, lblWidth, lblHeight );
+			lblcetvrti.SetBounds( x2lbl, y2lbl, lblWidth, lblHeight );
+			lblprvi.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			lbldrugi.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			lbltreci.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			lblcetvrti.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+
+			tbxOpisZadataka.SetBounds(x1,y1, Width - 2*Width/6, Height - 2*Height/6 );
 			tbxOpisZadataka.Font = new Font( "Times New Roman", Width/50, FontStyle.Bold );
 		}
 		private void Testovi_ResizeEnd( object sender, EventArgs e )
 		{
             SetSize();
 		}
+
 	}
 }

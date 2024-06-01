@@ -33,7 +33,7 @@
 			// 
 			// btnNazad
 			// 
-			this.btnNazad.Location = new System.Drawing.Point(540, 11);
+			this.btnNazad.Location = new System.Drawing.Point(696, 12);
 			this.btnNazad.Name = "btnNazad";
 			this.btnNazad.Size = new System.Drawing.Size(50, 52);
 			this.btnNazad.TabIndex = 2;
