@@ -67,20 +67,42 @@ namespace SimulacijaElektricnihKola
 		{
 			KliknutoDugme();
 		}
-        private void btnTest3_Click( object sender, EventArgs e )
-        {
-            KliknutoDugme();
-            tbxOpisZadataka.Text += "Zadatak 3\r\nU datom kolu:\r\nR = Xl = 10 Ω\r\nXc = 20 Ω\r\nU = 5sin314t(5I)\r\n\r\nNaci jednacinu struje kroz nerazgranati deo kola (u zavisnosti od vremena).";
-            tbxOpisZadataka.Text += $"\r\nPitanja:\r\n1. Sta u datom kolu predstavlja R?\r\nR u datom kolu predstavlja {unosResenja}.";
-            upisanaResenja.Add(unosResenja.Text); 
-            tbxOpisZadataka.Text += $"\r\n2. Sta u datom kolu predstavlja L?\r\nL u datom kolu predstavlja {unosResenja}";
-			upisanaResenja.Add( unosResenja.Text );
-			tbxOpisZadataka.Text += $"\r\n3. Sta u datom kolu predstavlja C?\r\nC u datom kolu predstavlja {unosResenja}";
-			upisanaResenja.Add( unosResenja.Text );
-			tbxOpisZadataka.Text += $"\r\n4. Koja je frekvencija napona?\r\nFrekvencija napona je: {unosResenja}";
-			upisanaResenja.Add( unosResenja.Text );
-			tbxOpisZadataka.Text += $"\r\n5. Koja je amplituda napona?\r\namplituda napona je: {unosResenja}";
-			upisanaResenja.Add( unosResenja.Text );
+		public void LabelFont( Label imeLabela )
+		{
+			imeLabela.BackColor = Color.White;
+			imeLabela.ForeColor = Color.Black;
+			imeLabela.BorderStyle = BorderStyle.FixedSingle;
+			imeLabela.TextAlign = ContentAlignment.MiddleCenter;
+		}
+		private void btnTest3_Click( object sender, EventArgs e )
+		{
+			KliknutoDugme();
+
+			Label lblZadatak1 = new Label();
+			LabelFont( lblZadatak1 );
+			lblZadatak1.Text = "1. Sta u datom kolu predstavlja R";
+			Controls.Add( lblZadatak1 );
+
+			Label lblZadatak2 = new Label();
+			LabelFont( lblZadatak2 );
+			lblZadatak2.Text = "2. Sta u datom kolu predstavlja L?";
+			Controls.Add( lblZadatak2 );
+
+			Label lblZadatak3 = new Label();
+			LabelFont( lblZadatak3 );
+			lblZadatak3.Text = "3. Sta u datom kolu predstavlja C?";
+			Controls.Add( lblZadatak3 );
+
+			Label lblZadatak4 = new Label();
+			LabelFont( lblZadatak4 );
+			lblZadatak4.Text = "4. Koja je frekvencija napona?";
+			Controls.Add( lblZadatak4 );
+
+			Label lblZadatak5 = new Label();
+			LabelFont( lblZadatak5 );
+			lblZadatak5.Text = "5. Koja je amplituda napona?";
+			Controls.Add( lblZadatak5 );
+
 		}
 		private void btnTest4_Click( object sender, EventArgs e )
 		{
