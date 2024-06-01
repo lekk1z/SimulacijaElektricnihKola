@@ -42,6 +42,7 @@ namespace SimulacijaElektricnihKola
         public void SetSize()
         {
 			btnNazad.SetBounds( Width - Width/12, Height/50, Width/17, Width/17 );
+			btnNazad.Font = new Font( "", Width/50, FontStyle.Bold );
 		}
 	}
 }

@@ -53,6 +53,7 @@ namespace SimulacijaElektricnihKola
         {
 			tbxTeorija.SetBounds( 0, 0, 9*Width/10, 9*Height/10 );
 			btnNazad.SetBounds( Width - Width/12, Height/50, Width/17, Width/17 );
+			btnNazad.Font = new Font( "", Width/50, FontStyle.Bold );
 		}
 	}
 }
