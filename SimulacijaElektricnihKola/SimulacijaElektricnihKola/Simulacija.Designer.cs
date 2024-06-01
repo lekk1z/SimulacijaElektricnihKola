@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 			this.btnNazad = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
@@ -56,7 +56,7 @@
 			this.Load += new System.EventHandler(this.Simulacija_Load);
 			this.ResizeEnd += new System.EventHandler(this.Simulacija_ResizeEnd);
 			this.ResumeLayout(false);
-=======
+//=======
             this.components = new System.ComponentModel.Container();
             this.btnNazad = new System.Windows.Forms.Button();
             this.pb1 = new System.Windows.Forms.PictureBox();
@@ -95,7 +95,7 @@
             this.pb2.TabIndex = 5;
             this.pb2.TabStop = false;
             this.pb2.Click += new System.EventHandler(this.pb2_Click);
-            this.pb2.Paint += new System.Windows.Forms.PaintEventHandler(this.pb2_Paint);
+        //    this.pb2.Paint += new System.Windows.Forms.PaintEventHandler(this.pb2_Paint);
             // 
             // pb3
             // 
@@ -105,7 +105,7 @@
             this.pb3.TabIndex = 6;
             this.pb3.TabStop = false;
             this.pb3.Click += new System.EventHandler(this.pb3_Click);
-            this.pb3.Paint += new System.Windows.Forms.PaintEventHandler(this.pb3_Paint);
+          //  this.pb3.Paint += new System.Windows.Forms.PaintEventHandler(this.pb3_Paint);
             // 
             // timer1
             // 
@@ -130,7 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
             this.ResumeLayout(false);
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
 
         }
 
