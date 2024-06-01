@@ -17,10 +17,7 @@ namespace SimulacijaElektricnihKola
         {
             InitializeComponent();
         }
-        private void tbxTeorija_TextChanged( object sender, EventArgs e )
-        {
-            tbxTeorija.Text = "ovde treba nesto da pise";
-        }
+        
 
         private void btnNazad_Click( object sender, EventArgs e )
         {
@@ -40,20 +37,42 @@ namespace SimulacijaElektricnihKola
 
 		private void Teorija_Load( object sender, EventArgs e )
 		{
-			this.Width = 1200;
-			this.Height = 800;
-			SetSize();
-		}
+            this.Width = 1200;
+            this.Height = 800;
+            SetSize();
+            rtbTeorija.SelectionAlignment = HorizontalAlignment.Center;
+            rtbTeorija.SelectionStart = rtbTeorija.Text.IndexOf("JEDNOSMERNA STRUJA");
+            rtbTeorija.SelectionLength = "JEDNOSMERNA STRUJA".Length;
+            rtbTeorija.SelectionFont = new Font(rtbTeorija.Font, FontStyle.Bold);
+            rtbTeorija.SelectionStart = rtbTeorija.Text.IndexOf("Primer:");
+            rtbTeorija.SelectionLength = "Primer:".Length;
+            rtbTeorija.SelectionFont = new Font(rtbTeorija.Font, FontStyle.Italic);
+            rtbTeorija.SelectionStart = rtbTeorija.Text.IndexOf("PRVI KIRHOFOV ZAKON");
+            rtbTeorija.SelectionLength = "PRVI KIRHOFOV ZAKON".Length;
+            rtbTeorija.SelectionFont = new Font(rtbTeorija.Font, FontStyle.Bold);
+            rtbTeorija.SelectionStart = rtbTeorija.Text.IndexOf("DRUGI KIRHOFOV ZAKON");
+            rtbTeorija.SelectionLength = "DRUGI KIRHOFOV ZAKON".Length;
+            rtbTeorija.SelectionFont = new Font(rtbTeorija.Font, FontStyle.Bold);
+            rtbTeorija.SelectionStart = rtbTeorija.Text.IndexOf("DRUGI KIRHOFOV ZAKON");
+            rtbTeorija.SelectionLength = "DRUGI KIRHOFOV ZAKON".Length;
+            rtbTeorija.SelectionFont = new Font(rtbTeorija.Font, FontStyle.Bold);
 
-		private void Teorija_ResizeEnd( object sender, EventArgs e )
+        }
+
+        private void Teorija_ResizeEnd( object sender, EventArgs e )
 		{
             SetSize();
 		}
         public void SetSize()
         {
-			tbxTeorija.SetBounds( 0, 0, 9*Width/10, 9*Height/10 );
+			rtbTeorija.SetBounds( 0, 0, 9*Width/10, 9*Height/10 );
 			btnNazad.SetBounds( Width - Width/12, Height/50, Width/17, Width/17 );
 			btnNazad.Font = new Font( "", Width/50, FontStyle.Bold );
 		}
-	}
+
+        private void rtbTeorija_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

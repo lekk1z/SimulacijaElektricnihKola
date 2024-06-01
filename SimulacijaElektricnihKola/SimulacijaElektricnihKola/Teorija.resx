@@ -117,4 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="rtbTeorija.Text" xml:space="preserve">
+    <value>JEDNOSMERNA STRUJA
+
+Jednosmerna struja je fizička pojava protoka električnog naelektrisanja od višeg ka nižem potencijalu i nepromenljivog je smera.
+Jačina struje koja protiče kroz otpornik jednaka je kolinčniku napona i otpornosti otpornika.
+
+                    I = U / R                                              
+
+Ova jednačina predstavlja osnovni oblik Omovog zakona i važi za linearne otpornike. Iz jednačine (1) dobija se sledeći odnos jedinica:
+
+                    1 A = 1 V / 1 Ω     
+
+Primer:
+Kroz otpornik otpornosti od 10 Ω teče struja od 0,5A. Koliki je napon na otporniku? Prema jednačini 3 se dobija: 
+
+U = R * I = 10Ω· 0,5A =5V
+
+PRVI KIRHOFOV ZAKON
+
+Kod  složenih električnih kola se često dešava da se više provodnika spajaju u istoj tački. Takva tačka u kojoj se spajaju tri ili više provodnika naziva se čvor.
+Zbir struja koje imaju smer ka čvoru jednak je zbiru struja koje imaju smer od čvora. To jest, algebarski zbir jačina struja koje se sustižu u jednom čvoru (utiču i ističu iz njega), jednak je nuli.
+Pri izradi zadataka uzima se da je smer struje od čvora pozitivan, a ka čvoru negativan.
+
+DRUGI KIRHOFOV ZAKON
+
+ Ovaj zakon odnosi se na konture složenog kola. Ovaj zakon povezuje sve elektromotorne sile i napone na otpornicima jedne konture. 
+Za kolo na slici (1) se mogu napisati jednačine za konture po drugom Kirhofovom zakonu. U složenim kolima prilikom obilaženja jednog zatvorenog puta obično postoji više struja. 
+Jedan deo ovog zatvorenog puta je zajednički sa ostalim zatvorenim putevima, a jedan deo može da bude izdvojen od ostalih zatvorenih puteva.
+Ovakav zatvoren put se naziva kontura. U prvom delu kola je naznačen smer obilaženja i označen sa I. 
+Za ovu zatvorenu konturu treba napisati drugi Kirhofov zakon menjajući sledeća pravila: polazi se iz jedne tačke, ide se u smeru označenom kao smer obilaženja, pišu se sve električne sile i dođe se u istu tačku; pri tome se uz elektromotornu silu piše znak + ako ona deluje u smeru struje (prolazi se kroz nju od njenog negativnog ka pozitivnom kraju).
+Elektromotorna sila se uzima sa znakom – ako deluje nasuprot struje odnosno ako se kroz nju prolazi od + ka - .
+
+1. Za prvu konturu na slici (1) drugi Kirhofov zakon ima sledeći oblik  (polazeći iz tačke a i vraćajući se obilazeći ponovo u nju):
+
+               E1 - R1 * I1 – R2 * I2 = 0   
+
+2. Za drugu konturu ( označenu sa II) drugi Kirhofov zakon ima sledeći oblik ( polazeći iz tačke b i vraćajući se obilaženjem konture ponovo u nju):
+
+               R3 * I3 + E2 – R2 * I2 = 0
+
+3. Za treći put ( označen sa III) može se takođe napisati drugi Kirhofov zakon polazeći iz tačka:
+
+               E1 - R1 * I1 - E2 - R3 * I3 = 0 
+
+Iz navedenih relacija može se izvesti obrazac za drugi Kirhofov zakon za složeno kolo koji glasi: Algebarski zbir svih elektromotornih sila u jednoj konturi složenog kola jednak je algebarskom zbiru napona na svim otpornicima te konture.</value>
+  </data>
 </root>
