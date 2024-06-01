@@ -114,5 +114,7 @@ namespace SimulacijaElektricnihKola
 		{
 			SetSize();
 		}
+
+		//Marta je pisala
 	}
 }
