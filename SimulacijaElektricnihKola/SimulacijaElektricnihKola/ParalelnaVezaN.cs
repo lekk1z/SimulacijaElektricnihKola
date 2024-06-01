@@ -9,7 +9,7 @@ namespace SimulacijaElektricnihKola
 {
     public class ParalelnaVezaN : KomponentaNaizmenicna
     {
-        public KomponentaNaizmenicna[] Komponente { get; set; }
+        public List<KomponentaNaizmenicna> Komponente { get; set; }
 
         public override Complex Impedansa(double frk)
         {

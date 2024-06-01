@@ -9,12 +9,12 @@ namespace SimulacijaElektricnihKola
 {
     public class KoloNaizmenica
     {
-        public KomponentaNaizmenicna[] Komponete { get; set; }
+        public List<KomponentaNaizmenicna> Komponente { get; set; }
 
         public Complex IzracunajImpedansu(double frk)
         {
             Complex ukupnaImpedansa = Complex.Zero;
-            foreach (var komponenta in Komponete)
+            foreach (var komponenta in Komponente)
             {
                 ukupnaImpedansa += komponenta.Impedansa(frk);
             }

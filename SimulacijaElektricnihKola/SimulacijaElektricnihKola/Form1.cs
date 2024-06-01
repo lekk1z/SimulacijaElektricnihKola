@@ -69,27 +69,27 @@ namespace SimulacijaElektricnihKola
             SerijskaVezaN srVz1 = new SerijskaVezaN
             {
                 Ime = "srVz1",
-                Komponente = new KomponentaNaizmenicna[] { rezistor1 }
+                Komponente = new List<KomponentaNaizmenicna> { rezistor1 }
             };
 
             // Kreiranje paralelne veze komponenata
             ParalelnaVezaN prlVz1 = new ParalelnaVezaN
             {
                 Ime = "prlVz1",
-                Komponente = new KomponentaNaizmenicna[] { kondenzator, kalem }
+                Komponente = new List<KomponentaNaizmenicna> { kondenzator, kalem }
             };
 
             // Kreiranje kombinovane veze (redna veza koja sadrži paralelnu vezu)
             SerijskaVezaN srVz2 = new SerijskaVezaN
             {
                 Ime = "srVz2",
-                Komponente = new KomponentaNaizmenicna[] { srVz1, prlVz1 }
+                Komponente = new List<KomponentaNaizmenicna> { srVz1, prlVz1 }
             };
 
             // Kreiranje kola sa kombinovanom vezom
             KoloNaizmenica kolo = new KoloNaizmenica
             {
-                Komponete = new KomponentaNaizmenicna[] { srVz2 }
+                Komponente = new List<KomponentaNaizmenicna> { srVz2 }
             };
 
             // Računanje struje u kolu
