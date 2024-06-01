@@ -161,6 +161,55 @@ Elektromotorna sila se uzima sa znakom – ako deluje nasuprot struje odnosno ak
 
                E1 - R1 * I1 - E2 - R3 * I3 = 0 
 
-Iz navedenih relacija može se izvesti obrazac za drugi Kirhofov zakon za složeno kolo koji glasi: Algebarski zbir svih elektromotornih sila u jednoj konturi složenog kola jednak je algebarskom zbiru napona na svim otpornicima te konture.</value>
+Iz navedenih relacija može se izvesti obrazac za drugi Kirhofov zakon za složeno kolo koji glasi: Algebarski zbir svih elektromotornih sila u jednoj konturi složenog kola jednak je algebarskom zbiru napona na svim otpornicima te konture.
+
+
+
+
+NAIZMENIČNA STRUJA 
+
+U kolu naizmenične struje postoje tri vrste otpora:
+1. Termogeni otpor (R), meren u omima (Ω).
+2. Induktivni otpor (XL), meren u omima (Ω).
+3. Kapacitivni otpor (XC), takođe meren u omima (Ω).
+
+Termogeni otpor (R) u kolu naizmenične struje definisan je kao 𝑅=𝜌⋅𝑙/S gde:
+• 𝜌 je specifični otpor materijala od kojeg je provodnik napravljen,
+• 𝑙je dužina provodnika, i
+• 𝑆 je površina poprečnog preseka provodnika, tj. mera njegove debljine.
+
+Termogeni otpor ne utiče na fazu struje ili napona u kolu, što znači da su promene u jačini struje i napona u istoj fazi.
+
+Induktivna otpornost
+
+Na izvor (generator) naizmenične struje priključen je kalem (solenoid) koeficijenta samoindukcije (induktivnosti) L i zanemarljive termogene otpornosti .
+Naizmenična struja stvara u kalemu promenljivi magnetni fluks. Zbog toga se u kalemu javlja elektromotorna sila samoindukcije koja smanjuje svaki porast naizmenične struje i deluje kao izvesna otpornost. Ta otpornost koja se javlja u svakom kalemu pri promeni jačine naizmenične struje zbog samoindukcije naziva se induktivna otpornost.
+Induktivna otpornost kalema srazmerna je koeficijentu samoindukcije (L) i kružnoj frekvenciji naizmenične struje:
+
+                  Xl=w*L
+
+Merna jedinica za induktivnu otpornost je om.
+Merenjima je utvrđeno da posle uključivanja induktivnog kalema, induktivna otpornost u kolu naizmenične struje izaziva kašnjenje promene jačine struje u odnosu na promenu napona za četvrtinu perioda.
+ 
+fazno kašnjenje struje je
+
+Kapacitivna otpornost
+
+Kada se kondenzator priključi na izvor jednosmerne električne struje, on se za kratko vreme napuni (naelektriše), nakon čega kroz njega prestaje da teče struja. Znači, kondenzator u kolu jednosmerne struje predstavlja prekid kola, tj. kroz kolo sa kondenzatorom jednosmerna struja ne može da teče.
+Kada se nađe u kolu naizmenične struje, kondenzator bi se u jednom smeru punio do nekog maksimalnog naelektrisanja, odnosno napona. Kada struja promeni smer, kondenzator se najpre prazni, a zatim ponovo puni do maksimalnog naelektrisanja, odnosno napona, ali suprotnog smera. Ovo naizmenično punjenje i pražnjenje kondenzatora se periodično ponavlja u ritmu frekvencije struje i omogućava da naizmenična struja na određeni način protiče kroz kondenzator (naelektrisanje ne prolazi kroz kondenzator, već se naelektrišu njegove ploče). 
+Za naizmeničnu struju kondenzator predstavlja neku vrstu otpornosti koja se naziva kapacitivna otpornost.
+
+Kapacitivna otpornost kalema obrnuto je srazmerna proizvodu kapacitivnosti kondenzatora (C) i kružne frekvencije naizmenične struje: Xc=1/C*w
+ 
+Merna jedinica za induktivnu otpornost je om.
+Kod kondenzatora je suprotan slučaj u odnosu na induktivni kalem, kroz kondenzator struja prednjači naponu. Vremenska razlika iznosi četvrtinu perioda ( ), a ugao od   radijana. Kada jačina struje opadne na nulu, napon dostigne maksimalnu vrednost, i obrnuto, kada je jačina struje u kolu maksimalna, napon među pločama je jednak nuli.
+ 
+ 
+fazno kašnjenje napona je  
+
+
+
+
+</value>
   </data>
 </root>
