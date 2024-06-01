@@ -27,5 +27,11 @@ namespace SimulacijaElektricnihKola
             Complex trenutno = napon / ukupnaImpedansa;
             return trenutno.Magnitude;
         }
+        public double Faza(double amplitudaNapona,double frk)
+        {
+            double realniOdnos = amplitudaNapona / IzracunajTrenutnuStruju(amplitudaNapona,frk);
+            double faza = Math.Acos(IzracunajImpedansu(frk).Real / realniOdnos);
+            return faza;
+        }
     }
 }
