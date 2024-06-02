@@ -1,8 +1,0 @@
-N
-13.79
-50
-o r1 20
-kalem k1 0.5
-kondenzator c1 0.000000005
-s s1 r1-k1-c1
-kolo k11 s-
