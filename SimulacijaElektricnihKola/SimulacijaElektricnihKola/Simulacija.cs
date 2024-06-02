@@ -39,7 +39,7 @@ namespace SimulacijaElektricnihKola
         static double napon;
         static double frekvencija;
 
-        public static IzborKola izbor= new IzborKola();
+        public static IzborKola izbor = new IzborKola();
         //*aleksa
         public Simulacija()
         {
@@ -49,9 +49,8 @@ namespace SimulacijaElektricnihKola
         {
             int brojaclinija = 0;
             StreamReader sr = new StreamReader(izbor.izabranoKolo);
-            string vrstaStruje=sr.ReadLine();
-            napon=double.Parse(sr.ReadLine());
-            frekvencija=double.Parse(sr.ReadLine());
+            string vrstaStruje = sr.ReadLine();
+
             if (vrstaStruje == "J")
             {
                 while (!sr.EndOfStream)
@@ -144,6 +143,8 @@ namespace SimulacijaElektricnihKola
             }
             else if (vrstaStruje == "N")
             {
+                napon = double.Parse(sr.ReadLine());
+                frekvencija = double.Parse(sr.ReadLine());
                 while (!sr.EndOfStream)
                 {
                     string t = sr.ReadLine();
@@ -151,7 +152,7 @@ namespace SimulacijaElektricnihKola
                     if (split1[0] == "s")
                     {
                         string[] split2 = split1[2].Split('-');
-                        SerijskaVezaN privremena = new SerijskaVezaN { Ime = split1[1],Komponente = new List<KomponentaNaizmenicna>() };
+                        SerijskaVezaN privremena = new SerijskaVezaN { Ime = split1[1], Komponente = new List<KomponentaNaizmenicna>() };
                         foreach (string s in split2)
                         {
                             foreach (OtpornikN otpornik in otporniciN)
@@ -195,7 +196,7 @@ namespace SimulacijaElektricnihKola
                     else if (split1[0] == "p")
                     {
                         string[] split2 = split1[2].Split('-');
-                        ParalelnaVezaN privremena = new ParalelnaVezaN { Ime = split1[1] , Komponente = new List<KomponentaNaizmenicna>() };
+                        ParalelnaVezaN privremena = new ParalelnaVezaN { Ime = split1[1], Komponente = new List<KomponentaNaizmenicna>() };
                         foreach (string s in split2)
                         {
                             foreach (OtpornikN otpornik in otporniciN)
@@ -282,7 +283,7 @@ namespace SimulacijaElektricnihKola
                     brojaclinija++;
                 }
             }
-            }
+        }
         private void Simulacija_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -293,7 +294,7 @@ namespace SimulacijaElektricnihKola
             this.Width = 1200;
             this.Height = 800;
             timer1.Interval = Period;
-            
+
             SetSize();
         }
 
@@ -307,52 +308,52 @@ namespace SimulacijaElektricnihKola
         {
             SetSize();
         }
-		public void SetSize()
-		{
-			btnNazad.SetBounds( Width - Width / 12, Height / 50, Width / 17, Width / 17 );
-			btnNazad.Font = new Font( "", Width / 50, FontStyle.Bold );
+        public void SetSize()
+        {
+            btnNazad.SetBounds(Width - Width / 12, Height / 50, Width / 17, Width / 17);
+            btnNazad.Font = new Font("", Width / 50, FontStyle.Bold);
 
-			//namestanje picture boxova
-			int pbxWidth = 10*Width/17;
-			int yDrugogpbx = ClientSize.Height - ClientSize.Height/20 - pbxWidth/5;
-			int visinaPrvogPbx = yDrugogpbx - ClientSize.Height/10;
-			pbxPrvi.SetBounds( Width/20, ClientSize.Height/20, pbxWidth, visinaPrvogPbx );
-			pbxDrugi.SetBounds( Width/20, yDrugogpbx, pbxWidth, pbxWidth/5 );
+            //namestanje picture boxova
+            int pbxWidth = 10 * Width / 17;
+            int yDrugogpbx = ClientSize.Height - ClientSize.Height / 20 - pbxWidth / 5;
+            int visinaPrvogPbx = yDrugogpbx - ClientSize.Height / 10;
+            pbxPrvi.SetBounds(Width / 20, ClientSize.Height / 20, pbxWidth, visinaPrvogPbx);
+            pbxDrugi.SetBounds(Width / 20, yDrugogpbx, pbxWidth, pbxWidth / 5);
 
-			//namestanje buttona
-			int btnWidth = Width/10;
-			int btnHeight = Height/10;
-			int velicinaFonta = Height/50;
-			bttnStartStop.SetBounds( pbxWidth + Width/10, Height/20, btnWidth, btnHeight );
-			bttnStartStop.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
-			bttnReset.SetBounds( pbxWidth + Width/5, Height/20, btnWidth, btnHeight );
-			bttnReset.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
-			btnIzaberiKolo.SetBounds( pbxWidth + Width/10, Height/17 + btnHeight, btnWidth*2, btnHeight/2 );
-			btnIzaberiKolo.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+            //namestanje buttona
+            int btnWidth = Width / 10;
+            int btnHeight = Height / 10;
+            int velicinaFonta = Height / 50;
+            bttnStartStop.SetBounds(pbxWidth + Width / 10, Height / 20, btnWidth, btnHeight);
+            bttnStartStop.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
+            bttnReset.SetBounds(pbxWidth + Width / 5, Height / 20, btnWidth, btnHeight);
+            bttnReset.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
+            btnIzaberiKolo.SetBounds(pbxWidth + Width / 10, Height / 17 + btnHeight, btnWidth * 2, btnHeight / 2);
+            btnIzaberiKolo.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
 
-			//namestanje track barova
-			int tbWidth = Width/5;
-			int tbHeight = Height/5;
-			int xtb = pbxWidth + Width/10;
-			int ytb = Height/5 + btnHeight;
-			int razmakIzmedjuTb = Height/6;
-			tbNapon.SetBounds( xtb, ytb, tbWidth, tbHeight );
-			tbKondenzator.SetBounds( xtb, ytb + razmakIzmedjuTb, tbWidth, tbHeight );
-			tbKalem.SetBounds( xtb, ytb + razmakIzmedjuTb * 2, tbWidth, tbHeight );
-			tbOtpornik.SetBounds( xtb, ytb + razmakIzmedjuTb * 3, tbWidth, tbHeight );
+            //namestanje track barova
+            int tbWidth = Width / 5;
+            int tbHeight = Height / 5;
+            int xtb = pbxWidth + Width / 10;
+            int ytb = Height / 5 + btnHeight;
+            int razmakIzmedjuTb = Height / 6;
+            tbNapon.SetBounds(xtb, ytb, tbWidth, tbHeight);
+            tbKondenzator.SetBounds(xtb, ytb + razmakIzmedjuTb, tbWidth, tbHeight);
+            tbKalem.SetBounds(xtb, ytb + razmakIzmedjuTb * 2, tbWidth, tbHeight);
+            tbOtpornik.SetBounds(xtb, ytb + razmakIzmedjuTb * 3, tbWidth, tbHeight);
 
-			//namestanje labela za track barove
-			int yProvgLabela = 10*Height/65 + btnHeight;
-			lblNapon.SetBounds( xtb, yProvgLabela, tbWidth, tbHeight );
-			lblNapon.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
-			lblKondenzator.SetBounds( xtb, yProvgLabela + razmakIzmedjuTb, tbWidth, tbHeight );
-			lblKondenzator.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
-			lblKalem.SetBounds( xtb, yProvgLabela + razmakIzmedjuTb * 2, tbWidth, tbHeight );
-			lblKalem.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
-			lblOtpornik.SetBounds( xtb, yProvgLabela + razmakIzmedjuTb * 3, tbWidth, tbHeight );
-			lblOtpornik.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
-		}
-		public void PravljenjeFunkcije(int i0, int u0, int w)
+            //namestanje labela za track barove
+            int yProvgLabela = 10 * Height / 65 + btnHeight;
+            lblNapon.SetBounds(xtb, yProvgLabela, tbWidth, tbHeight);
+            lblNapon.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
+            lblKondenzator.SetBounds(xtb, yProvgLabela + razmakIzmedjuTb, tbWidth, tbHeight);
+            lblKondenzator.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
+            lblKalem.SetBounds(xtb, yProvgLabela + razmakIzmedjuTb * 2, tbWidth, tbHeight);
+            lblKalem.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
+            lblOtpornik.SetBounds(xtb, yProvgLabela + razmakIzmedjuTb * 3, tbWidth, tbHeight);
+            lblOtpornik.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
+        }
+        public void PravljenjeFunkcije(int i0, int u0, int w)
         {
             double u = u0 * Math.Sin(w * brojac);
             double i = i0 * Math.Sin(w * brojac - brojac);
@@ -376,13 +377,19 @@ namespace SimulacijaElektricnihKola
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            brojac++;
             phase += 15;
             if (phase >= int.MaxValue)
             {
                 phase = 0;
             }
-            CrtanjeGrafika();
+            if (izbor.izabranoKolo == "kolo4.txt")
+            {
+                GrafikJednosmerneStruje(kolo.IzracunajTrenutnuStruju(napon, frekvencija).ToString());
+            }
+            else
+            {
+                CrtanjeGrafika();
+            }
         }
 
         private void pb1_Paint(object sender, PaintEventArgs e, double u, double i, double uProslo, double iProslo)
@@ -406,14 +413,12 @@ namespace SimulacijaElektricnihKola
         private void button3_Click(object sender, EventArgs e)
         {
 
-            if (izbor.ShowDialog()==DialogResult.OK)
-            {  
+            if (izbor.ShowDialog() == DialogResult.OK)
+            {
                 int brojaclinija = 0;
                 StreamReader sr = new StreamReader(izbor.izabranoKolo);
-              
+
                 string vrstaStruje = sr.ReadLine();
-                 napon = double.Parse(sr.ReadLine());
-                frekvencija = double.Parse(sr.ReadLine());
                 if (vrstaStruje == "J")
                 {
                     while (!sr.EndOfStream)
@@ -517,6 +522,8 @@ namespace SimulacijaElektricnihKola
                 }
                 else if (vrstaStruje == "N")
                 {
+                    napon = double.Parse(sr.ReadLine());
+                    frekvencija = double.Parse(sr.ReadLine());
                     while (!sr.EndOfStream)
                     {
                         string t = sr.ReadLine();
@@ -537,7 +544,7 @@ namespace SimulacijaElektricnihKola
                         else if (split1[0] == "s")
                         {
                             string[] split2 = split1[2].Split('-');
-                            SerijskaVezaN privremena = new SerijskaVezaN { Ime = split1[1],Komponente = new List<KomponentaNaizmenicna>() };
+                            SerijskaVezaN privremena = new SerijskaVezaN { Ime = split1[1], Komponente = new List<KomponentaNaizmenicna>() };
                             foreach (string s in split2)
                             {
                                 foreach (OtpornikN otpornik in otporniciN)
@@ -581,7 +588,7 @@ namespace SimulacijaElektricnihKola
                         else if (split1[0] == "p")
                         {
                             string[] split2 = split1[2].Split('-');
-                            ParalelnaVezaN privremena = new ParalelnaVezaN { Ime = split1[1],Komponente=new List<KomponentaNaizmenicna>()};
+                            ParalelnaVezaN privremena = new ParalelnaVezaN { Ime = split1[1], Komponente = new List<KomponentaNaizmenicna>() };
                             foreach (string s in split2)
                             {
                                 foreach (OtpornikN otpornik in otporniciN)
@@ -625,7 +632,7 @@ namespace SimulacijaElektricnihKola
                         else if (split1[0] == "kolo")
                         {
                             string[] split2 = split1[2].Split('-');
-                            kolo = new KoloNaizmenica { Komponente=new List<KomponentaNaizmenicna>() };
+                            kolo = new KoloNaizmenica { Komponente = new List<KomponentaNaizmenicna>() };
                             foreach (string s in split2)
                             {
                                 foreach (OtpornikN otpornik in otporniciN)
@@ -671,9 +678,9 @@ namespace SimulacijaElektricnihKola
                 }
                 if (izbor.izabranoKolo == "kolo1.txt")
                 {
-                   pbxPrvi.Image=Properties.Resources.RednoKolo;
+                    pbxPrvi.Image = Properties.Resources.RednoKolo;
                 }
-                else if(izbor.izabranoKolo == "kolo2.txt")
+                else if (izbor.izabranoKolo == "kolo2.txt")
                 {
                     pbxPrvi.Image = Properties.Resources.ParalelnoKolo;
                 }
@@ -687,7 +694,24 @@ namespace SimulacijaElektricnihKola
                 }
             }
         }
+        public void GrafikJednosmerneStruje(string tekstZaPrikaz) //treba poslati struju.ToString
+        {
+            Bitmap bmp = new Bitmap(500, 100);
+            using (Graphics g = Graphics.FromImage(bmp))
+            {
+                g.Clear(Color.White);
 
+                // Kreiranje fonta i četkice za crtanje teksta
+                Font font = new Font("Arial", 20, FontStyle.Bold);
+                Brush cetka = Brushes.Black;
+                PointF position = new PointF(10, 10);
+
+                g.DrawString(tekstZaPrikaz, font, cetka, position);
+            }
+
+            pbxDrugi.Image = bmp;
+            pbxDrugi.Invalidate();
+        }
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             kondenzatori[0].Kapacitet = tbNapon.Value;
@@ -712,7 +736,7 @@ namespace SimulacijaElektricnihKola
         }
         private void CrtanjeGrafika()
         {
-            if (otporniciN.Count != 0)
+            if (serijskeVezeJ.Count != 0 || paralelneVezeJ.Count != 0 || serijskeVezeN.Count != 0 || paralelneVezeN.Count != 0)
             {
                 Bitmap bmp = new Bitmap(500, 100);
                 Graphics g = Graphics.FromImage(bmp);
@@ -733,10 +757,10 @@ namespace SimulacijaElektricnihKola
 
                 // Draw Current Wave
                 int xPrevCurrent = 0;
-                int yPrevCurrent = halfHeight - (int)(2* napon * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
+                int yPrevCurrent = halfHeight - (int)(2 * napon * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
                 for (int x = 1; x < PictureBoxWidth; x++)
                 {
-                    int yCurrent = halfHeight - (int)( 2*napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
+                    int yCurrent = halfHeight - (int)(2 * napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
                     g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
                     xPrevCurrent = x;
                     yPrevCurrent = yCurrent;
@@ -747,8 +771,8 @@ namespace SimulacijaElektricnihKola
         }
         private void pb3_Paint(object sender, PaintEventArgs e)
         {
-           
-            
+
+
         }
     }
 }
