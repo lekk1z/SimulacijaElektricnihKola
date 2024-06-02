@@ -33,32 +33,32 @@ namespace SimulacijaElektricnihKola
                 this.Close();
             }
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
             izabranoKolo = "kolo1.txt";
-            this.DialogResult = DialogResult.OK;
+            this.DialogResult= DialogResult.OK;
             this.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-            izabranoKolo = "kolo2.txt";
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            izabranoKolo = "kolo3.txt";
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             izabranoKolo = "kolo4.txt";
-            this.DialogResult = DialogResult.OK;
+            this.DialogResult= DialogResult.OK;
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            izabranoKolo = "kolo3.txt";
+            this.DialogResult= DialogResult.OK;
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            izabranoKolo = "kolo2.txt";
+            this.DialogResult= DialogResult.OK;
             this.Close();
         }
     }
