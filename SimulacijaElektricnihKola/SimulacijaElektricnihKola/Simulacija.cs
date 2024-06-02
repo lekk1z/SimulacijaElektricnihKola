@@ -22,7 +22,6 @@ namespace SimulacijaElektricnihKola
 
         private const int VoltageAmplitude = 30; // Amplitude for voltage
         private const int CurrentAmplitude = 20; // Amplitude for current
-        private const int VoltagePhaseShift = 90; // Phase shift for voltage
 
         static List<Otpornik<Srebro>> otporniciJ = new List<Otpornik<Srebro>>();
         static List<SerijskaVeza<Srebro>> serijskeVezeJ = new List<SerijskaVeza<Srebro>>();
@@ -659,10 +658,10 @@ namespace SimulacijaElektricnihKola
 
                 // Draw Voltage Wave
                 int xPrevVoltage = 0;
-                int yPrevVoltage = halfHeight - (int)(VoltageAmplitude * Math.Sin(VoltagePhaseShift * Math.PI / 180) + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor));
+                int yPrevVoltage = halfHeight - (int)(5*napon * Math.Sin(2*frekvencija * Math.PI / 180) );
                 for (int x = 1; x < PictureBoxWidth; x++)
                 {
-                    int yVoltage = halfHeight - (int)(VoltageAmplitude * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor)));
+                    int yVoltage = halfHeight - (int)(5*napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 ));
                     g.DrawLine(naponPen, xPrevVoltage, yPrevVoltage, x, yVoltage);
                     xPrevVoltage = x;
                     yPrevVoltage = yVoltage;
@@ -670,10 +669,10 @@ namespace SimulacijaElektricnihKola
 
                 // Draw Current Wave
                 int xPrevCurrent = 0;
-                int yPrevCurrent = halfHeight - (int)(CurrentAmplitude * Math.Sin(VoltagePhaseShift * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor)));
+                int yPrevCurrent = halfHeight - (int)(5*napon * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
                 for (int x = 1; x < PictureBoxWidth; x++)
                 {
-                    int yCurrent = halfHeight - (int)(CurrentAmplitude * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor)));
+                    int yCurrent = halfHeight - (int)(5 * napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5*napon, frekvencija, otporniciN[0].Otpor)));
                     g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
                     xPrevCurrent = x;
                     yPrevCurrent = yCurrent;
