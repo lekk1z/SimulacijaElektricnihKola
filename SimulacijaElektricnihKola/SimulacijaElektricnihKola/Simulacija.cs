@@ -149,7 +149,7 @@ namespace SimulacijaElektricnihKola
                     if (split1[0] == "s")
                     {
                         string[] split2 = split1[2].Split('-');
-                        SerijskaVezaN privremena = new SerijskaVezaN { Ime = split1[1] };
+                        SerijskaVezaN privremena = new SerijskaVezaN { Ime = split1[1],Komponente = new List<KomponentaNaizmenicna>() };
                         foreach (string s in split2)
                         {
                             foreach (OtpornikN otpornik in otporniciN)
@@ -193,7 +193,7 @@ namespace SimulacijaElektricnihKola
                     else if (split1[0] == "p")
                     {
                         string[] split2 = split1[2].Split('-');
-                        ParalelnaVezaN privremena = new ParalelnaVezaN { Ime = split1[1] };
+                        ParalelnaVezaN privremena = new ParalelnaVezaN { Ime = split1[1] , Komponente = new List<KomponentaNaizmenicna>() };
                         foreach (string s in split2)
                         {
                             foreach (OtpornikN otpornik in otporniciN)
@@ -534,7 +534,7 @@ namespace SimulacijaElektricnihKola
                         else if (split1[0] == "p")
                         {
                             string[] split2 = split1[2].Split('-');
-                            ParalelnaVezaN privremena = new ParalelnaVezaN { Ime = split1[1] };
+                            ParalelnaVezaN privremena = new ParalelnaVezaN { Ime = split1[1],Komponente=new List<KomponentaNaizmenicna>()};
                             foreach (string s in split2)
                             {
                                 foreach (OtpornikN otpornik in otporniciN)
