@@ -111,7 +111,7 @@ namespace SimulacijaElektricnihKola
 			lblPitanje3.Show();
 			lblPitanje4.Show();
 			lblPitanje5.Show();
-			rbn1.Show();
+			/*rbn1.Show();
 			rbn2.Show();
 			rbn3.Show();
 			rbn4.Show();
@@ -125,8 +125,14 @@ namespace SimulacijaElektricnihKola
 			rbn12.Show();
 			rbn13.Show();
 			rbn14.Show();
-			rbn15.Show();
+			rbn15.Show();*/
+			prvoPitanjeOdgovori.Show();
+			drugoPitanjeOdgovori.Show();
+			trecePitanjeOdgovori.Show();
+			cetvrtoPitanjeOdgovori.Show();
+			petoPitanjeOdgovori.Show();
 			prikaziResenje.Show();
+			proveri.Show();
 			tbxOpisZadataka.Clear();
 		}
 		public void DodavanjeLabela(Label imeLabela)
@@ -143,7 +149,7 @@ namespace SimulacijaElektricnihKola
 			imeRadioButtona.ForeColor = Color.Black;
 			Controls.Add(imeRadioButtona);
 		}
-		public void DodavanjeLabelaIButtona()
+		public void Dodavanje()
 		{
 			DodavanjeLabela(lblPitanje1);
 			DodavanjeLabela(lblPitanje2);
@@ -165,6 +171,13 @@ namespace SimulacijaElektricnihKola
 			DodavanjeRadioButtona(rbn13);
 			DodavanjeRadioButtona(rbn14);
 			DodavanjeRadioButtona(rbn15);
+			DodajRadioButtoneUGroupBox( prvoPitanjeOdgovori, rbn1, rbn2, rbn3 );
+			DodajRadioButtoneUGroupBox( drugoPitanjeOdgovori, rbn4, rbn5, rbn6 );
+			DodajRadioButtoneUGroupBox( trecePitanjeOdgovori, rbn7, rbn8, rbn9 );
+			DodajRadioButtoneUGroupBox( cetvrtoPitanjeOdgovori, rbn10, rbn11, rbn12 );
+			DodajRadioButtoneUGroupBox( petoPitanjeOdgovori, rbn13, rbn14, rbn15 );
+			Controls.Add( prikaziResenje );
+			Controls.Add( proveri );
 		}
 		static void ProveraTacnostiSelektovanihOdgovora(RadioButton levi, RadioButton srednji, RadioButton desni)
 		{
@@ -210,40 +223,25 @@ namespace SimulacijaElektricnihKola
 			lblPitanje2.Text = "2. U kom smeru teče ta struja?";
 			pbxKolo4.Show();
 		}
-
+		public void DodajRadioButtoneUGroupBox(GroupBox x, RadioButton a, RadioButton b, RadioButton c)
+		{
+			x.Controls.Add( a );
+			x.Controls.Add( b );
+			x.Controls.Add( c );
+			Controls.Add( x );
+		}
 		private void Testovi_Load(object sender, EventArgs e)
 		{
 			this.Width = 1200;
 			this.Height = 800;
-			DodavanjeLabelaIButtona();
-			Controls.Add(prikaziResenje);
-			Controls.Add(prvoPitanjeOdgovori);
-			prvoPitanjeOdgovori.Controls.Add(rbn1);
-			prvoPitanjeOdgovori.Controls.Add(rbn2);
-			prvoPitanjeOdgovori.Controls.Add(rbn3);
-			Controls.Add(drugoPitanjeOdgovori);
-			drugoPitanjeOdgovori.Controls.Add(rbn4);
-			drugoPitanjeOdgovori.Controls.Add(rbn5);
-			drugoPitanjeOdgovori.Controls.Add(rbn6);
-			Controls.Add(trecePitanjeOdgovori);
-			trecePitanjeOdgovori.Controls.Add(rbn7);
-			trecePitanjeOdgovori.Controls.Add(rbn8);
-			trecePitanjeOdgovori.Controls.Add(rbn9);
-			Controls.Add(cetvrtoPitanjeOdgovori);
-			cetvrtoPitanjeOdgovori.Controls.Add(rbn10);
-			cetvrtoPitanjeOdgovori.Controls.Add(rbn11);
-			cetvrtoPitanjeOdgovori.Controls.Add(rbn12);
-			Controls.Add(petoPitanjeOdgovori);
-			petoPitanjeOdgovori.Controls.Add(rbn13);
-			petoPitanjeOdgovori.Controls.Add(rbn14);
-			petoPitanjeOdgovori.Controls.Add(rbn15);
+			Dodavanje();
 			SakriSve();
 			SetSize();
 		}
 
 		public void SetSize()
 		{
-			//namestanje dugmica
+			//namestanje dugmica za testove/kola
 			int bttnWidth = 10 * Width / 36;
 			int bttnHeight = 10 * Height / 35;
 			int x1, x2, y1, y2; //koordinate za pozicije dugmica
@@ -258,10 +256,10 @@ namespace SimulacijaElektricnihKola
 			btnNazad.SetBounds(Width - Width / 12, Height / 50, Width / 17, Width / 17);
 			btnNazad.Font = new Font("", Width / 50, FontStyle.Bold);
 
-			//namestanje labela ispod kola
+			//namestanje labela iznad kola
 			int lblKoloWidth = bttnWidth / 2;
 			int lblKoloHeight = lblKoloWidth / 8;
-			int x1lbl, x2lbl, y1lbl, y2lbl; //koordinate za pozicije dugmica
+			int x1lbl, x2lbl, y1lbl, y2lbl; //koordinate za pozicije labela
 			x1lbl = x1;
 			x2lbl = x2;
 			y1lbl = y1 - Height / 20;
@@ -293,35 +291,46 @@ namespace SimulacijaElektricnihKola
 			lblPitanje4.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
 			lblPitanje5.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
 
-			//namestanje radio buttona za pitanja
-			int rbnWidth = Width / 6;
+			//namestanje gruop boxa
+			int xGbx = Width / 20;
+			int yGbxPrvi = yLabeliPitanja + razmakIzmedjuLabela / 2;
+			int razmakIzmedjugbx = razmakIzmedjuLabela;
+			int gbxWidth = Width / 2;
+			int gbxHeight = Height / 20;
+			prvoPitanjeOdgovori.SetBounds( xGbx, yGbxPrvi, gbxWidth, gbxHeight );
+			drugoPitanjeOdgovori.SetBounds( xGbx, yGbxPrvi + razmakIzmedjugbx, gbxWidth, gbxHeight );
+			trecePitanjeOdgovori.SetBounds( xGbx, yGbxPrvi + razmakIzmedjugbx * 2, gbxWidth, gbxHeight );
+			cetvrtoPitanjeOdgovori.SetBounds( xGbx, yGbxPrvi + razmakIzmedjugbx * 3, gbxWidth, gbxHeight );
+			petoPitanjeOdgovori.SetBounds( xGbx, yGbxPrvi + razmakIzmedjugbx * 4, gbxWidth, gbxHeight );
+
+			//namestanje radio buttona u group boxu za pitanja
+			int rbnWidth = gbxWidth/3;
 			int rbnHeight = Height / 20;
-			int velicinaRbn = rbnWidth;
-			int x1rbn = Width / 20;
-			int x2rbn = x1rbn + Width / 5;
-			int x3rbn = x2rbn + Width / 5;
-			int yrbn = yLabeliPitanja + razmakIzmedjuLabela / 2;
-			int razmakIzmedjurbn = razmakIzmedjuLabela;
+			int x1rbn = 0;
+			int x2rbn = x1rbn + rbnWidth;
+			int x3rbn = x2rbn + rbnWidth;
+			int yrbn = 0;
 			//za pitanje 1
-			rbn1.SetBounds(x1rbn, yrbn, rbnWidth, rbnHeight);
+			rbn1.SetBounds( x1rbn, yrbn, rbnWidth, rbnHeight);
 			rbn2.SetBounds(x2rbn, yrbn, rbnWidth, rbnHeight);
 			rbn3.SetBounds(x3rbn, yrbn, rbnWidth, rbnHeight);
 			//za pitanje 2
-			rbn4.SetBounds(x1rbn, yrbn + razmakIzmedjurbn, rbnWidth, rbnHeight);
-			rbn5.SetBounds(x2rbn, yrbn + razmakIzmedjurbn, rbnWidth, rbnHeight);
-			rbn6.SetBounds(x3rbn, yrbn + razmakIzmedjurbn, rbnWidth, rbnHeight);
-			//za pitanj 3
-			rbn7.SetBounds(x1rbn, yrbn + razmakIzmedjurbn * 2, rbnWidth, rbnHeight);
-			rbn8.SetBounds(x2rbn, yrbn + razmakIzmedjurbn * 2, rbnWidth, rbnHeight);
-			rbn9.SetBounds(x3rbn, yrbn + razmakIzmedjurbn * 2, rbnWidth, rbnHeight);
+			rbn4.SetBounds(x1rbn, yrbn, rbnWidth, rbnHeight);
+			rbn5.SetBounds(x2rbn, yrbn, rbnWidth, rbnHeight);
+			rbn6.SetBounds(x3rbn, yrbn, rbnWidth, rbnHeight);
+			//za pitanje 3
+			rbn7.SetBounds( x1rbn, yrbn, rbnWidth, rbnHeight );
+			rbn8.SetBounds( x2rbn, yrbn, rbnWidth, rbnHeight );
+			rbn9.SetBounds( x3rbn, yrbn, rbnWidth, rbnHeight );
 			//za pitanje 4
-			rbn10.SetBounds(x1rbn, yrbn + razmakIzmedjurbn * 3, rbnWidth, rbnHeight);
-			rbn11.SetBounds(x2rbn, yrbn + razmakIzmedjurbn * 3, rbnWidth, rbnHeight);
-			rbn12.SetBounds(x3rbn, yrbn + razmakIzmedjurbn * 3, rbnWidth, rbnHeight);
+			rbn10.SetBounds( x1rbn, yrbn, rbnWidth, rbnHeight );
+			rbn11.SetBounds( x2rbn, yrbn, rbnWidth, rbnHeight );
+			rbn12.SetBounds( x3rbn, yrbn, rbnWidth, rbnHeight );
 			//za pitanje 5
-			rbn13.SetBounds(x1rbn, yrbn + razmakIzmedjurbn * 4, rbnWidth, rbnHeight);
-			rbn14.SetBounds(x2rbn, yrbn + razmakIzmedjurbn * 4, rbnWidth, rbnHeight);
-			rbn15.SetBounds(x3rbn, yrbn + razmakIzmedjurbn * 4, rbnWidth, rbnHeight);
+			rbn13.SetBounds( x1rbn, yrbn, rbnWidth, rbnHeight );
+			rbn14.SetBounds( x2rbn, yrbn, rbnWidth, rbnHeight );
+			rbn15.SetBounds( x3rbn, yrbn, rbnWidth, rbnHeight );
+
 
 			//namestanje button proveri
 			proveri.Text = "PROVERI";
@@ -331,25 +340,24 @@ namespace SimulacijaElektricnihKola
 			proveri.BackColor = Color.White;
 
 			// namestanje button prikazi resenje
-			proveri.Text = "PRIKAZI RESENJE";
-			proveri.Font = new Font("Times New Roman", Width / 70, FontStyle.Bold);
-			proveri.SetBounds(Width - Width / 6, ClientSize.Height - ClientSize.Height / 6, Width / 7, Height / 7);
-			proveri.ForeColor = Color.Black;
-			proveri.BackColor = Color.White;
+			prikaziResenje.Text = "PRIKAZI RESENJE";
+			prikaziResenje.Font = new Font("Times New Roman", Width / 70, FontStyle.Bold);
+			prikaziResenje.SetBounds(Width - Width / 6 - Width/6, ClientSize.Height - ClientSize.Height / 6, Width / 7, Height / 7);
+			prikaziResenje.ForeColor = Color.Black;
+			prikaziResenje.BackColor = Color.White;
 
 			//namestanje picture boxova
 			int pbxWidth = 10 * Width / 35;
 			int pbxHeight = 10 * Height / 35;
-			int xpbx = x3rbn + Width / 5;
-			int ypbx = yrbn;
+			int xpbx = gbxWidth + Width / 6;
+			int ypbx = yGbxPrvi + Height/30;
 			pbxKolo1.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
 			pbxKolo2.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
 			pbxKolo3.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
 			pbxKolo4.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
 
-			//namestanje group boxova
-
-			tbxOpisZadataka.SetBounds(x3rbn + Width / 5, yrbn + razmakIzmedjurbn * 2, 10 * Width / 35, 10 * Height / 35);
+			//namestanje text boxa sa opsiom zadatka
+			tbxOpisZadataka.SetBounds(xpbx, ypbx + pbxHeight + Height/35, pbxWidth, pbxHeight);
 			tbxOpisZadataka.Font = new Font("Times New Roman", 12, FontStyle.Regular);
 		}
 		private void Testovi_ResizeEnd(object sender, EventArgs e)
