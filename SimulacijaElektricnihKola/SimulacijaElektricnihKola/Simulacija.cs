@@ -307,7 +307,7 @@ namespace SimulacijaElektricnihKola
         private void btnNazad_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form1.loading.Show();
+            LoadingScreen.loading.Show();
         }
 
         private void Simulacija_ResizeEnd(object sender, EventArgs e)

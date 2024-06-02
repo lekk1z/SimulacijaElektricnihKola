@@ -20,7 +20,7 @@ namespace SimulacijaElektricnihKola
 			tbxOpisZadataka.Hide();
 
 		}
-		private void Testovi_FormClosed(object sender, FormClosedEventArgs e)
+		private void Testovi_FormClosed( object sender, FormClosedEventArgs e )
 		{
 			Application.Exit();
 		}
@@ -55,8 +55,9 @@ namespace SimulacijaElektricnihKola
 
 		Button prikaziResenje = new Button();
 		Button proveri = new Button();
-		public int[] tacniOdg = new int[5];
-		public int[] stikliraniOdg = new int[5];
+		public int[] tacniOdg = new int[ 5 ];
+		public int[] stikliraniOdg = new int[ 5 ];
+
 		public void SakriSve()
 		{
 			lblPitanje1.Hide();
@@ -106,20 +107,20 @@ namespace SimulacijaElektricnihKola
 			lblPitanje4.BackColor = Color.White;
 			lblPitanje5.BackColor = Color.White;
 		}
-		private void btnNazad_Click(object sender, EventArgs e)
+		private void btnNazad_Click( object sender, EventArgs e )
 		{
 			Refreshuj();
-			if (btnTest1.Visible || btnTest2.Visible || btnTest3.Visible || btnTest4.Visible)
+			if( btnRednoRLC.Visible || btnParalelnoRLC.Visible || btnNaizmenicnaStruja.Visible || btnJednosmernaStruja.Visible )
 			{
 				this.Visible = false;
-				Form1.loading.Show();
+				LoadingScreen.loading.Show();
 			}
 			else
 			{
-				btnTest1.Show();
-				btnTest2.Show();
-				btnTest3.Show();
-				btnTest4.Show();
+				btnRednoRLC.Show();
+				btnParalelnoRLC.Show();
+				btnNaizmenicnaStruja.Show();
+				btnJednosmernaStruja.Show();
 				lblprvi.Show();
 				lbldrugi.Show();
 				lbltreci.Show();
@@ -130,10 +131,10 @@ namespace SimulacijaElektricnihKola
 		}
 		public void KliknutoDugme()
 		{
-			btnTest1.Hide();
-			btnTest2.Hide();
-			btnTest3.Hide();
-			btnTest4.Hide();
+			btnRednoRLC.Hide();
+			btnParalelnoRLC.Hide();
+			btnNaizmenicnaStruja.Hide();
+			btnJednosmernaStruja.Hide();
 			lblprvi.Hide();
 			lbldrugi.Hide();
 			lbltreci.Hide();
@@ -143,21 +144,6 @@ namespace SimulacijaElektricnihKola
 			lblPitanje3.Show();
 			lblPitanje4.Show();
 			lblPitanje5.Show();
-			/*rbn1.Show();
-			rbn2.Show();
-			rbn3.Show();
-			rbn4.Show();
-			rbn5.Show();
-			rbn6.Show();
-			rbn7.Show();
-			rbn8.Show();
-			rbn9.Show();
-			rbn10.Show();
-			rbn11.Show();
-			rbn12.Show();
-			rbn13.Show();
-			rbn14.Show();
-			rbn15.Show();*/
 			prvoPitanjeOdgovori.Show();
 			drugoPitanjeOdgovori.Show();
 			trecePitanjeOdgovori.Show();
@@ -167,64 +153,64 @@ namespace SimulacijaElektricnihKola
 			proveri.Show();
 			tbxOpisZadataka.Clear();
 		}
-		public void DodavanjeLabela(Label imeLabela)
+		public void DodavanjeLabela( Label imeLabela )
 		{
 			imeLabela.BackColor = Color.White;
 			imeLabela.ForeColor = Color.Black;
 			imeLabela.BorderStyle = BorderStyle.FixedSingle;
 			imeLabela.TextAlign = ContentAlignment.MiddleCenter;
-			Controls.Add(imeLabela);
+			Controls.Add( imeLabela );
 		}
-		public void DodavanjeRadioButtona(RadioButton imeRadioButtona)
+		public void DodavanjeRadioButtona( RadioButton imeRadioButtona )
 		{
 			imeRadioButtona.BackColor = Color.White;
 			imeRadioButtona.ForeColor = Color.Black;
-			Controls.Add(imeRadioButtona);
+			Controls.Add( imeRadioButtona );
 		}
 		public void Dodavanje()
 		{
-			DodavanjeLabela(lblPitanje1);
-			DodavanjeLabela(lblPitanje2);
-			DodavanjeLabela(lblPitanje3);
-			DodavanjeLabela(lblPitanje4);
-			DodavanjeLabela(lblPitanje5);
-			DodavanjeRadioButtona(rbn1);
-			DodavanjeRadioButtona(rbn2);
-			DodavanjeRadioButtona(rbn3);
-			DodavanjeRadioButtona(rbn4);
-			DodavanjeRadioButtona(rbn5);
-			DodavanjeRadioButtona(rbn6);
-			DodavanjeRadioButtona(rbn7);
-			DodavanjeRadioButtona(rbn8);
-			DodavanjeRadioButtona(rbn9);
-			DodavanjeRadioButtona(rbn10);
-			DodavanjeRadioButtona(rbn11);
-			DodavanjeRadioButtona(rbn12);
-			DodavanjeRadioButtona(rbn13);
-			DodavanjeRadioButtona(rbn14);
-			DodavanjeRadioButtona(rbn15);
-			DodajRadioButtoneUGroupBox(prvoPitanjeOdgovori, rbn1, rbn2, rbn3);
-			DodajRadioButtoneUGroupBox(drugoPitanjeOdgovori, rbn4, rbn5, rbn6);
-			DodajRadioButtoneUGroupBox(trecePitanjeOdgovori, rbn7, rbn8, rbn9);
-			DodajRadioButtoneUGroupBox(cetvrtoPitanjeOdgovori, rbn10, rbn11, rbn12);
-			DodajRadioButtoneUGroupBox(petoPitanjeOdgovori, rbn13, rbn14, rbn15);
-			Controls.Add(prikaziResenje);
-			Controls.Add(proveri);
+			DodavanjeLabela( lblPitanje1 );
+			DodavanjeLabela( lblPitanje2 );
+			DodavanjeLabela( lblPitanje3 );
+			DodavanjeLabela( lblPitanje4 );
+			DodavanjeLabela( lblPitanje5 );
+			DodavanjeRadioButtona( rbn1 );
+			DodavanjeRadioButtona( rbn2 );
+			DodavanjeRadioButtona( rbn3 );
+			DodavanjeRadioButtona( rbn4 );
+			DodavanjeRadioButtona( rbn5 );
+			DodavanjeRadioButtona( rbn6 );
+			DodavanjeRadioButtona( rbn7 );
+			DodavanjeRadioButtona( rbn8 );
+			DodavanjeRadioButtona( rbn9 );
+			DodavanjeRadioButtona( rbn10 );
+			DodavanjeRadioButtona( rbn11 );
+			DodavanjeRadioButtona( rbn12 );
+			DodavanjeRadioButtona( rbn13 );
+			DodavanjeRadioButtona( rbn14 );
+			DodavanjeRadioButtona( rbn15 );
+			DodajRadioButtoneUGroupBox( prvoPitanjeOdgovori, rbn1, rbn2, rbn3 );
+			DodajRadioButtoneUGroupBox( drugoPitanjeOdgovori, rbn4, rbn5, rbn6 );
+			DodajRadioButtoneUGroupBox( trecePitanjeOdgovori, rbn7, rbn8, rbn9 );
+			DodajRadioButtoneUGroupBox( cetvrtoPitanjeOdgovori, rbn10, rbn11, rbn12 );
+			DodajRadioButtoneUGroupBox( petoPitanjeOdgovori, rbn13, rbn14, rbn15 );
+			Controls.Add( prikaziResenje );
+			Controls.Add( proveri );
 
 		}
 
-		private void btnTest1_Click(object sender, EventArgs e)
+		private void btnTest1_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
-			tbxOpisZadataka.Text = "Redno RLC-kolo (R = 20Ω, L = 0,5H, C = 5μF) priključeno je na naizmenični napon efektivne vrednosti 24 V čija frekvencija može da se menja.\r\n" +
-				"\r\nOdrediti: \r\n - Jačinu efektivne struje pri frekvenciji od 50Hz\r\n - Jačinu efektivne struje pri rezonantnoj frekvenciji" +
-				"\r\n - Faznu razliku struje i napona pri frekvenciji\r\n - Napon na kalemu pri rezonanciji\r\n - Napon na kondezatoru pri rezonanciji";
+			tbxOpisZadataka.Text = "Redno RLC-kolo (R = 20Ω, L = 0,5H, C = 5μF) priključeno je na naizmenični napon efektivne vrednosti 24 V čija frekvencija može da se menja.\r\n";
+			tbxOpisZadataka.Show();
+			//pitanja
 			lblPitanje1.Text = "1. Jačina efektivne vrednosti pri frekvenciji od 50Hz je:";
 			lblPitanje2.Text = "2. Jačina efektivne vrednosti pri rezonantnoj frekvenciji je:";
 			lblPitanje3.Text = "3. Fazna razlika struje i napona pri frekvenciji od 50 Hz je:";
 			lblPitanje4.Text = "4. Napon na kalemu pri rezonanciji je:";
 			lblPitanje5.Text = "5. Napon na kondezatoru pri rezonanciji je:";
-			tbxOpisZadataka.Show();
+			//odgovori
 			rbn1.Text = "0.05 A";
 			rbn2.Text = "0,25 A";
 			rbn3.Text = "0,025 A";
@@ -240,47 +226,125 @@ namespace SimulacijaElektricnihKola
 			rbn13.Text = "316 V";
 			rbn14.Text = "256 V";
 			rbn15.Text = "632 V";
-			tacniOdg[0] = 1;
-			tacniOdg[1] = 6;
-			tacniOdg[2] = 8;
-			tacniOdg[3] = 10;
-			tacniOdg[4] = 13;
+			//tacni odgovori
+			tacniOdg[ 0 ] = 1;
+			tacniOdg[ 1 ] = 6;
+			tacniOdg[ 2 ] = 8;
+			tacniOdg[ 3 ] = 10;
+			tacniOdg[ 4 ] = 13;
+
 			pbxKolo1.Show();
 		}
-		private void btnTest2_Click(object sender, EventArgs e)
+		private void btnTest2_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
+			//pitanja
+			lblPitanje1.Text = "1. Da li je trenutna vrednost\r\n napona jednaka na svim elementima?";
+			lblPitanje2.Text = "2. Koja je trenutna vrednost\r\n struje u glavnoj strani kola?";
+			lblPitanje3.Text = "3. Da li su struje u fazi?";
+			lblPitanje4.Text = "4. Koja je fazna razlika?";
+			//odgovori
+			rbn1.Text = "DA";
+			rbn2.Text = "NE";
+			rbn3.Text = "NE ZNAM";
+			rbn4.Text = "I = Ir + Il - Ic";
+			rbn5.Text = "I = Ir + Ic - Ir";
+			rbn6.Text = "I = Ur*R + Ul*Xl + Uc*Xc";
+			rbn7.Text = "DA";
+			rbn8.Text = "NE";
+			rbn9.Text = "NE ZNAM";
+			char phi = '\u03C6';
+			rbn10.Text = "tg" + phi + " = R*(w*C - 1/w*L)";
+			rbn11.Text = "tg" + phi + " = R*(w*C + 1/w*L)";
+			rbn12.Text = "tg" + phi + " = w*(C - 1/L)";
+			//tacni odgovori
+			tacniOdg[ 0 ] = 1;
+			tacniOdg[ 1 ] = 3;
+			tacniOdg[ 2 ] = 8;
+			tacniOdg[ 3 ] = 10;
+			//sklanjanje labela i group boxa koji nam ne trebaju
+			lblPitanje5.Hide();
+			petoPitanjeOdgovori.Hide();
+			rbn15.Checked = true;
 			pbxKolo2.Show();
 		}
-		private void btnTest3_Click(object sender, EventArgs e)
+		private void btnTest3_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
+			tbxOpisZadataka.Text = "U datom kolu:\r\nR = Xl = 10 Ω\r\nXc = 20 Ω\r\nu = 5sin314t(SI)";
+			tbxOpisZadataka.Show();
+			//pitanja
 			lblPitanje1.Text = "1. Sta u datom kolu predstavlja R?";
 			lblPitanje2.Text = "2. Sta u datom kolu predstavlja L?";
 			lblPitanje3.Text = "3. Sta u datom kolu predstavlja C?";
 			lblPitanje4.Text = "4. Koja je frekvencija napona?";
 			lblPitanje5.Text = "5. Koja je amplituda napona?";
-			tbxOpisZadataka.Text = "U datom kolu:\r\nR = Xl = 10 Ω\r\nXc = 20 Ω\r\nu = 5sin314t(SI)\r\n\r\nNaći jednačinu struje kroz nerazgranati deo kola(u zavisnosti od vremena).";
-			tbxOpisZadataka.Show();
+			//odgovori
+			rbn1.Text = "kapacitativni otpor";
+			rbn2.Text = "termogeni otpor";
+			rbn3.Text = "induktivni otpor";
+			rbn4.Text = "kapacitativni otpor";
+			rbn5.Text = "termogeni otpor";
+			rbn6.Text = "induktivni otpor";
+			rbn7.Text = "kapacitativni otpor";
+			rbn8.Text = "termogeni otpor";
+			rbn9.Text = "induktivni otpor";
+			rbn10.Text = "100 Hz";
+			rbn11.Text = "50 Hz";
+			rbn12.Text = "157 Hz";
+			rbn13.Text = "50 V";
+			rbn14.Text = "10 V";
+			rbn15.Text = "5 V";
+			//tacni odgovori
+			tacniOdg[ 0 ] = 2;
+			tacniOdg[ 1 ] = 6;
+			tacniOdg[ 2 ] = 7;
+			tacniOdg[ 3 ] = 11;
+			tacniOdg[ 4 ] = 15;
+
 			pbxKolo3.Show();
 		}
-		private void btnTest4_Click(object sender, EventArgs e)
+		private void btnTest4_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
 			tbxOpisZadataka.Text = "U kolu prikazanom na slici je: &1 = 10 V, &2 = 8 V, & = 6 V, R1 = 2kΩ, R2 = R = 4kΩ.\r\n Unutrašnje otpornosti izvora su zanemarljive.";
 			tbxOpisZadataka.Show();
+			//pitanja
 			lblPitanje1.Text = "1. Koliku jačinu struje pokazuje idealni ampermetar?";
 			lblPitanje2.Text = "2. U kom smeru teče ta struja?";
+			lblPitanje3.Text = "3. Po kom pravilu je I = I1 + I2 + ...(*)";
+			//odgovori
+			rbn1.Text = "-3/8 mA";
+			rbn2.Text = "3/8 mA";
+			rbn3.Text = "6/8 mA";
+			rbn4.Text = "smer kazaljke na satu";
+			rbn5.Text = "suprotno smeru\r\n kazaljke na satu";
+			rbn6.Text = "ne znam";
+			rbn7.Text = "Prvo Kirhofovo pravilo";
+			rbn8.Text = "Drugo Kirhofovo pravilo";
+			rbn9.Text = "ne znam";
+			//tacni odgovori
+			tacniOdg[ 0 ] = 2;
+			tacniOdg[ 1 ] = 4;
+			tacniOdg[ 2 ] = 7;
+			//sklanjanje labela i group boxa koji nam ne trebaju
+			lblPitanje4.Hide();
+			cetvrtoPitanjeOdgovori.Hide();
+			lblPitanje5.Hide();
+			petoPitanjeOdgovori.Hide();
+			rbn10.Checked = true;
+			rbn15.Checked = true;
+
 			pbxKolo4.Show();
 		}
-		public void DodajRadioButtoneUGroupBox(GroupBox x, RadioButton a, RadioButton b, RadioButton c)
+		public void DodajRadioButtoneUGroupBox( GroupBox x, RadioButton a, RadioButton b, RadioButton c )
 		{
-			x.Controls.Add(a);
-			x.Controls.Add(b);
-			x.Controls.Add(c);
-			Controls.Add(x);
+			x.Controls.Add( a );
+			x.Controls.Add( b );
+			x.Controls.Add( c );
+			Controls.Add( x );
 		}
-		private void Testovi_Load(object sender, EventArgs e)
+		private void Testovi_Load( object sender, EventArgs e )
 		{
 			this.Width = 1200;
 			this.Height = 800;
@@ -292,57 +356,57 @@ namespace SimulacijaElektricnihKola
 
 		}
 
-		private void PrikaziResenje_Click(object sender, EventArgs e)
+		private void PrikaziResenje_Click( object sender, EventArgs e )
 		{
 			SakriSve();
-			rtbObjasnjenjeResenja.LoadFile("resenjaPrvogtesta.rtf");
+			rtbObjasnjenjeResenja.LoadFile( "resenjaPrvogtesta.rtf" );
 			rtbObjasnjenjeResenja.Show();
 		}
 
-		static int ProveraSelektovanog(RadioButton levi, RadioButton srednji, RadioButton desni, int n)
+		static int ProveraSelektovanog( RadioButton levi, RadioButton srednji, RadioButton desni, int n )
 		{
-			if (levi.Checked) return 1 + 3 * n;
-			else if (srednji.Checked) return 2 + 3 * n;
-			else if (desni.Checked) return 3 + 3 * n;
+			if( levi.Checked ) return 1 + 3 * n;
+			else if( srednji.Checked ) return 2 + 3 * n;
+			else if( desni.Checked ) return 3 + 3 * n;
 			else return 0;
 		}
-		private void Proveri_Click(object sender, EventArgs e)
+		private void Proveri_Click( object sender, EventArgs e )
 		{
-			stikliraniOdg[0] = ProveraSelektovanog(rbn1, rbn2, rbn3, 0);
-			stikliraniOdg[1] = ProveraSelektovanog(rbn4, rbn5, rbn6, 1);
-			stikliraniOdg[2] = ProveraSelektovanog(rbn7, rbn8, rbn9, 2);
-			stikliraniOdg[3] = ProveraSelektovanog(rbn10, rbn11, rbn12, 3);
-			stikliraniOdg[4] = ProveraSelektovanog(rbn13, rbn14, rbn15, 4);
+			stikliraniOdg[ 0 ] = ProveraSelektovanog( rbn1, rbn2, rbn3, 0 );
+			stikliraniOdg[ 1 ] = ProveraSelektovanog( rbn4, rbn5, rbn6, 1 );
+			stikliraniOdg[ 2 ] = ProveraSelektovanog( rbn7, rbn8, rbn9, 2 );
+			stikliraniOdg[ 3 ] = ProveraSelektovanog( rbn10, rbn11, rbn12, 3 );
+			stikliraniOdg[ 4 ] = ProveraSelektovanog( rbn13, rbn14, rbn15, 4 );
 			int brojac = 0;
-			for (int i = 0; i < 5; i++)
+			for( int i = 0; i < 5; i++ )
 			{
-				if (stikliraniOdg[i] == 0) brojac++;
+				if( stikliraniOdg[ i ] == 0 ) brojac++;
 			}
-			if (brojac == 0)
+			if( brojac == 0 )
 			{
 				prvoPitanjeOdgovori.Enabled = false;
 				drugoPitanjeOdgovori.Enabled = false;
 				trecePitanjeOdgovori.Enabled = false;
 				cetvrtoPitanjeOdgovori.Enabled = false;
 				petoPitanjeOdgovori.Enabled = false;
-				if (stikliraniOdg[0] == tacniOdg[0]) lblPitanje1.BackColor = Color.Green;
+				if( stikliraniOdg[ 0 ] == tacniOdg[ 0 ] ) lblPitanje1.BackColor = Color.Green;
 				else lblPitanje1.BackColor = Color.Red;
 
-				if (stikliraniOdg[1] == tacniOdg[1]) lblPitanje2.BackColor = Color.Green;
+				if( stikliraniOdg[ 1 ] == tacniOdg[ 1 ] ) lblPitanje2.BackColor = Color.Green;
 				else lblPitanje2.BackColor = Color.Red;
 
-				if (stikliraniOdg[2] == tacniOdg[2]) lblPitanje3.BackColor = Color.Green;
+				if( stikliraniOdg[ 2 ] == tacniOdg[ 2 ] ) lblPitanje3.BackColor = Color.Green;
 				else lblPitanje3.BackColor = Color.Red;
 
-				if (stikliraniOdg[3] == tacniOdg[3]) lblPitanje4.BackColor = Color.Green;
+				if( stikliraniOdg[ 3 ] == tacniOdg[ 3 ] ) lblPitanje4.BackColor = Color.Green;
 				else lblPitanje4.BackColor = Color.Red;
 
-				if (stikliraniOdg[4] == tacniOdg[4]) lblPitanje5.BackColor = Color.Green;
+				if( stikliraniOdg[ 4 ] == tacniOdg[ 4 ] ) lblPitanje5.BackColor = Color.Green;
 				else lblPitanje5.BackColor = Color.Red;
 			}
 			else
 			{
-				MessageBox.Show("Niste odgovorili na sva pitanja. Mozete proveriti svoje odgovore tek nakon sto odgovorite na svako pitanje.", "Upozorenje");
+				MessageBox.Show( "Niste odgovorili na sva pitanja. Mozete proveriti svoje odgovore tek nakon sto odgovorite na svako pitanje.", "Upozorenje" );
 				brojac = 0;
 				proveri.Refresh();
 			}
@@ -358,12 +422,12 @@ namespace SimulacijaElektricnihKola
 			x2 = 5 * Width / 6 - bttnWidth;
 			y1 = Height / 6;
 			y2 = 5 * Height / 6 - bttnHeight;
-			btnTest1.SetBounds(x1, y1, bttnWidth, bttnHeight);
-			btnTest2.SetBounds(x2, y1, bttnWidth, bttnHeight);
-			btnTest3.SetBounds(x1, y2, bttnWidth, bttnHeight);
-			btnTest4.SetBounds(x2, y2, bttnWidth, bttnHeight);
-			btnNazad.SetBounds(Width - Width / 12, Height / 50, Width / 17, Width / 17);
-			btnNazad.Font = new Font("", Width / 50, FontStyle.Bold);
+			btnRednoRLC.SetBounds( x1, y1, bttnWidth, bttnHeight );
+			btnParalelnoRLC.SetBounds( x2, y1, bttnWidth, bttnHeight );
+			btnNaizmenicnaStruja.SetBounds( x1, y2, bttnWidth, bttnHeight );
+			btnJednosmernaStruja.SetBounds( x2, y2, bttnWidth, bttnHeight );
+			btnNazad.SetBounds( Width - Width / 12, Height / 50, Width / 17, Width / 17 );
+			btnNazad.Font = new Font( "", Width / 50, FontStyle.Bold );
 
 			//namestanje labela iznad kola
 			int lblKoloWidth = bttnWidth / 2;
@@ -374,14 +438,14 @@ namespace SimulacijaElektricnihKola
 			y1lbl = y1 - Height / 20;
 			y2lbl = y2 - Height / 20;
 			int velicinaFonta = 10 * lblKoloHeight / 15;
-			lblprvi.SetBounds(x1lbl, y1lbl, lblKoloWidth, lblKoloHeight);
-			lbldrugi.SetBounds(x2lbl, y1lbl, lblKoloWidth, lblKoloHeight);
-			lbltreci.SetBounds(x1lbl, y2lbl, lblKoloWidth, lblKoloHeight);
-			lblcetvrti.SetBounds(x2lbl, y2lbl, lblKoloWidth, lblKoloHeight);
-			lblprvi.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
-			lbldrugi.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
-			lbltreci.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
-			lblcetvrti.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
+			lblprvi.SetBounds( x1lbl, y1lbl, lblKoloWidth, lblKoloHeight );
+			lbldrugi.SetBounds( x2lbl, y1lbl, lblKoloWidth, lblKoloHeight );
+			lbltreci.SetBounds( x1lbl, y2lbl, lblKoloWidth, lblKoloHeight );
+			lblcetvrti.SetBounds( x2lbl, y2lbl, lblKoloWidth, lblKoloHeight );
+			lblprvi.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			lbldrugi.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			lbltreci.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			lblcetvrti.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
 
 			//namestanje labela za pitanja
 			int razmakIzmedjuLabela = Height / 6;
@@ -389,16 +453,17 @@ namespace SimulacijaElektricnihKola
 			int pitanjelblHeight = Height / 20;
 			int xLabeliPitanja = Width / 20;
 			int yLabeliPitanja = Height / 20;
-			lblPitanje1.SetBounds(xLabeliPitanja, yLabeliPitanja, pitanjelblWidth, pitanjelblHeight);
-			lblPitanje2.SetBounds(xLabeliPitanja, yLabeliPitanja + razmakIzmedjuLabela, pitanjelblWidth, pitanjelblHeight);
-			lblPitanje3.SetBounds(xLabeliPitanja, yLabeliPitanja + razmakIzmedjuLabela * 2, pitanjelblWidth, pitanjelblHeight);
-			lblPitanje4.SetBounds(xLabeliPitanja, yLabeliPitanja + razmakIzmedjuLabela * 3, pitanjelblWidth, pitanjelblHeight);
-			lblPitanje5.SetBounds(xLabeliPitanja, yLabeliPitanja + razmakIzmedjuLabela * 4, pitanjelblWidth, pitanjelblHeight);
-			lblPitanje1.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
-			lblPitanje2.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
-			lblPitanje3.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
-			lblPitanje4.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
-			lblPitanje5.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
+			int lblPitanjaFont = pitanjelblHeight/4;
+			lblPitanje1.SetBounds( xLabeliPitanja, yLabeliPitanja, pitanjelblWidth, pitanjelblHeight );
+			lblPitanje2.SetBounds( xLabeliPitanja, yLabeliPitanja + razmakIzmedjuLabela, pitanjelblWidth, pitanjelblHeight );
+			lblPitanje3.SetBounds( xLabeliPitanja, yLabeliPitanja + razmakIzmedjuLabela * 2, pitanjelblWidth, pitanjelblHeight );
+			lblPitanje4.SetBounds( xLabeliPitanja, yLabeliPitanja + razmakIzmedjuLabela * 3, pitanjelblWidth, pitanjelblHeight );
+			lblPitanje5.SetBounds( xLabeliPitanja, yLabeliPitanja + razmakIzmedjuLabela * 4, pitanjelblWidth, pitanjelblHeight );
+			lblPitanje1.Font = new Font( "Times New Roman", lblPitanjaFont, FontStyle.Bold );
+			lblPitanje2.Font = new Font( "Times New Roman", lblPitanjaFont, FontStyle.Bold );
+			lblPitanje3.Font = new Font( "Times New Roman", lblPitanjaFont, FontStyle.Bold );
+			lblPitanje4.Font = new Font( "Times New Roman", lblPitanjaFont, FontStyle.Bold );
+			lblPitanje5.Font = new Font( "Times New Roman", lblPitanjaFont, FontStyle.Bold );
 
 			//namestanje gruop boxa
 			int xGbx = Width / 20;
@@ -406,11 +471,17 @@ namespace SimulacijaElektricnihKola
 			int razmakIzmedjugbx = razmakIzmedjuLabela;
 			int gbxWidth = Width / 2;
 			int gbxHeight = Height / 20;
-			prvoPitanjeOdgovori.SetBounds(xGbx, yGbxPrvi, gbxWidth, gbxHeight);
-			drugoPitanjeOdgovori.SetBounds(xGbx, yGbxPrvi + razmakIzmedjugbx, gbxWidth, gbxHeight);
-			trecePitanjeOdgovori.SetBounds(xGbx, yGbxPrvi + razmakIzmedjugbx * 2, gbxWidth, gbxHeight);
-			cetvrtoPitanjeOdgovori.SetBounds(xGbx, yGbxPrvi + razmakIzmedjugbx * 3, gbxWidth, gbxHeight);
-			petoPitanjeOdgovori.SetBounds(xGbx, yGbxPrvi + razmakIzmedjugbx * 4, gbxWidth, gbxHeight);
+			int gbxVelicinaFonta = gbxHeight/4;
+			prvoPitanjeOdgovori.SetBounds( xGbx, yGbxPrvi, gbxWidth, gbxHeight );
+			drugoPitanjeOdgovori.SetBounds( xGbx, yGbxPrvi + razmakIzmedjugbx, gbxWidth, gbxHeight );
+			trecePitanjeOdgovori.SetBounds( xGbx, yGbxPrvi + razmakIzmedjugbx * 2, gbxWidth, gbxHeight );
+			cetvrtoPitanjeOdgovori.SetBounds( xGbx, yGbxPrvi + razmakIzmedjugbx * 3, gbxWidth, gbxHeight );
+			petoPitanjeOdgovori.SetBounds( xGbx, yGbxPrvi + razmakIzmedjugbx * 4, gbxWidth, gbxHeight );
+			prvoPitanjeOdgovori.Font = new Font( "Times New Roman", gbxVelicinaFonta );
+			drugoPitanjeOdgovori.Font = new Font( "Times New Roman", gbxVelicinaFonta );
+			trecePitanjeOdgovori.Font = new Font( "Times New Roman", gbxVelicinaFonta );
+			cetvrtoPitanjeOdgovori.Font = new Font( "Times New Roman", gbxVelicinaFonta );
+			petoPitanjeOdgovori.Font = new Font( "Times New Roman", gbxVelicinaFonta );
 
 			//namestanje radio buttona u group boxu za pitanja
 			int rbnWidth = gbxWidth / 3;
@@ -420,38 +491,38 @@ namespace SimulacijaElektricnihKola
 			int x3rbn = x2rbn + rbnWidth;
 			int yrbn = 0;
 			//za pitanje 1
-			rbn1.SetBounds(x1rbn, yrbn, rbnWidth, rbnHeight);
-			rbn2.SetBounds(x2rbn, yrbn, rbnWidth, rbnHeight);
-			rbn3.SetBounds(x3rbn, yrbn, rbnWidth, rbnHeight);
+			rbn1.SetBounds( x1rbn, yrbn, rbnWidth, rbnHeight );
+			rbn2.SetBounds( x2rbn, yrbn, rbnWidth, rbnHeight );
+			rbn3.SetBounds( x3rbn, yrbn, rbnWidth, rbnHeight );
 			//za pitanje 2
-			rbn4.SetBounds(x1rbn, yrbn, rbnWidth, rbnHeight);
-			rbn5.SetBounds(x2rbn, yrbn, rbnWidth, rbnHeight);
-			rbn6.SetBounds(x3rbn, yrbn, rbnWidth, rbnHeight);
+			rbn4.SetBounds( x1rbn, yrbn, rbnWidth, rbnHeight );
+			rbn5.SetBounds( x2rbn, yrbn, rbnWidth, rbnHeight );
+			rbn6.SetBounds( x3rbn, yrbn, rbnWidth, rbnHeight );
 			//za pitanje 3
-			rbn7.SetBounds(x1rbn, yrbn, rbnWidth, rbnHeight);
-			rbn8.SetBounds(x2rbn, yrbn, rbnWidth, rbnHeight);
-			rbn9.SetBounds(x3rbn, yrbn, rbnWidth, rbnHeight);
+			rbn7.SetBounds( x1rbn, yrbn, rbnWidth, rbnHeight );
+			rbn8.SetBounds( x2rbn, yrbn, rbnWidth, rbnHeight );
+			rbn9.SetBounds( x3rbn, yrbn, rbnWidth, rbnHeight );
 			//za pitanje 4
-			rbn10.SetBounds(x1rbn, yrbn, rbnWidth, rbnHeight);
-			rbn11.SetBounds(x2rbn, yrbn, rbnWidth, rbnHeight);
-			rbn12.SetBounds(x3rbn, yrbn, rbnWidth, rbnHeight);
+			rbn10.SetBounds( x1rbn, yrbn, rbnWidth, rbnHeight );
+			rbn11.SetBounds( x2rbn, yrbn, rbnWidth, rbnHeight );
+			rbn12.SetBounds( x3rbn, yrbn, rbnWidth, rbnHeight );
 			//za pitanje 5
-			rbn13.SetBounds(x1rbn, yrbn, rbnWidth, rbnHeight);
-			rbn14.SetBounds(x2rbn, yrbn, rbnWidth, rbnHeight);
-			rbn15.SetBounds(x3rbn, yrbn, rbnWidth, rbnHeight);
+			rbn13.SetBounds( x1rbn, yrbn, rbnWidth, rbnHeight );
+			rbn14.SetBounds( x2rbn, yrbn, rbnWidth, rbnHeight );
+			rbn15.SetBounds( x3rbn, yrbn, rbnWidth, rbnHeight );
 
 
 			//namestanje button proveri
 			proveri.Text = "PROVERI";
-			proveri.Font = new Font("Times New Roman", Width / 70, FontStyle.Bold);
-			proveri.SetBounds(Width - Width / 6, ClientSize.Height - ClientSize.Height / 6, Width / 7, Height / 7);
+			proveri.Font = new Font( "Times New Roman", Width / 70, FontStyle.Bold );
+			proveri.SetBounds( Width - Width / 6, ClientSize.Height - ClientSize.Height / 6, Width / 7, Height / 7 );
 			proveri.ForeColor = Color.Black;
 			proveri.BackColor = Color.White;
 
 			// namestanje button prikazi resenje
 			prikaziResenje.Text = "PRIKAZI RESENJE";
-			prikaziResenje.Font = new Font("Times New Roman", Width / 70, FontStyle.Bold);
-			prikaziResenje.SetBounds(Width - Width / 6 - Width / 6, ClientSize.Height - ClientSize.Height / 6, Width / 7, Height / 7);
+			prikaziResenje.Font = new Font( "Times New Roman", Width / 70, FontStyle.Bold );
+			prikaziResenje.SetBounds( Width - Width / 6 - Width / 6, ClientSize.Height - ClientSize.Height / 6, Width / 7, Height / 7 );
 			prikaziResenje.ForeColor = Color.Black;
 			prikaziResenje.BackColor = Color.White;
 
@@ -460,16 +531,20 @@ namespace SimulacijaElektricnihKola
 			int pbxHeight = 10 * Height / 35;
 			int xpbx = gbxWidth + Width / 6;
 			int ypbx = yGbxPrvi + Height / 30;
-			pbxKolo1.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
-			pbxKolo2.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
-			pbxKolo3.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
-			pbxKolo4.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
+			pbxKolo1.SetBounds( xpbx, ypbx, pbxWidth, pbxHeight );
+			pbxKolo2.SetBounds( xpbx, ypbx, pbxWidth, pbxHeight );
+			pbxKolo3.SetBounds( xpbx, ypbx, pbxWidth, pbxHeight );
+			pbxKolo4.SetBounds( xpbx, ypbx, pbxWidth, pbxHeight );
 
 			//namestanje text boxa sa opsiom zadatka
-			tbxOpisZadataka.SetBounds(xpbx, ypbx + pbxHeight + Height / 35, pbxWidth, pbxHeight);
-			tbxOpisZadataka.Font = new Font("Times New Roman", 12, FontStyle.Regular);
+			tbxOpisZadataka.SetBounds( xpbx, ypbx + pbxHeight + Height / 35, pbxWidth, pbxHeight );
+			tbxOpisZadataka.Font = new Font( "Times New Roman", Width/70, FontStyle.Regular );
+
+			//namestanje text boxa sa resenjima zadataka
+			rtbObjasnjenjeResenja.SetBounds( Width/10, Height/10, Width - Width/5, Height - Height/5 );
+			rtbObjasnjenjeResenja.Font = new Font( "Times New Roman", Width/50, FontStyle.Regular );
 		}
-		private void Testovi_ResizeEnd(object sender, EventArgs e)
+		private void Testovi_ResizeEnd( object sender, EventArgs e )
 		{
 			SetSize();
 		}

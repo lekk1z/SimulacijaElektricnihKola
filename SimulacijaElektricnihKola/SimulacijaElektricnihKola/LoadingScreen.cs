@@ -16,6 +16,7 @@ namespace SimulacijaElektricnihKola
 		{
 			InitializeComponent();
 		}
+		public static LoadingScreen loading = new LoadingScreen();
 		public Label naslov = new Label();
 		public Button objasnjenjebtn = new Button();
 		public Button testbtn = new Button();

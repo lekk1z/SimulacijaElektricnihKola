@@ -32,7 +32,7 @@ namespace SimulacijaElektricnihKola
         private void btnNazad_Click_1(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form1.loading.Show();
+            LoadingScreen.loading.Show();
         }
 
 		private void Teorija_Load( object sender, EventArgs e )
