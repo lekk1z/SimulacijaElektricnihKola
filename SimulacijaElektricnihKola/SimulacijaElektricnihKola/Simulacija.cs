@@ -37,6 +37,7 @@ namespace SimulacijaElektricnihKola
         static List<ParalelnaVezaN> paralelneVezeN = new List<ParalelnaVezaN>();
         static string trenutniTxt;
         static double napon;
+        static double frekvencija;
         //*aleksa
         public Simulacija()
         {
@@ -48,6 +49,7 @@ namespace SimulacijaElektricnihKola
             StreamReader sr = new StreamReader(openFileDialog1.FileName);
             string vrstaStruje=sr.ReadLine();
             napon=double.Parse(sr.ReadLine());
+            frekvencija=double.Parse(sr.ReadLine());
             if (vrstaStruje == "J")
             {
                 while (!sr.EndOfStream)
@@ -364,6 +366,7 @@ namespace SimulacijaElektricnihKola
                 trenutniTxt = openFileDialog1.FileName;
                 string vrstaStruje = sr.ReadLine();
                  napon = double.Parse(sr.ReadLine());
+                frekvencija = double.Parse(sr.ReadLine());
                 if (vrstaStruje == "J")
                 {
                     while (!sr.EndOfStream)
