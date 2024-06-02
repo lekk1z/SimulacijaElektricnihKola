@@ -43,7 +43,12 @@ namespace SimulacijaElektricnihKola
             SetSize();
 
 		}
-
+        private void InsertImage(RichTextBox richTextBox, Image image)
+        {
+            Clipboard.SetImage(image);
+            richTextBox.Paste();
+            Clipboard.Clear();
+        }
         private void Teorija_ResizeEnd( object sender, EventArgs e )
 		{
             SetSize();
@@ -89,6 +94,8 @@ namespace SimulacijaElektricnihKola
             rtbTeorija.SelectionStart = rtbTeorija.Text.IndexOf("Kapacitivna otpornost");
             rtbTeorija.SelectionLength = "Kapacitivna otpornost".Length;
             rtbTeorija.SelectionFont = new Font("", Width / 50, FontStyle.Bold);
+          //  Bitmap b = new Bitmap("C:\\Users\\PC\\Source\\Repos\\SimulacijaElektricnihKolaasdf\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\slikaFaznoKasnjenjeNapona.jpg");
+          // InsertImage(rtbTeorija,b);
         }
     }
 }

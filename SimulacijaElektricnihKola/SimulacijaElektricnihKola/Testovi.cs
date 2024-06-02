@@ -178,6 +178,13 @@ namespace SimulacijaElektricnihKola
 		private void btnTest1_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
+			tbxOpisZadataka.Text = "Redno RLC-kolo (R = 20Ω, L = 0,5H, C = 5μF) priključeno je na naizmenični napon efektivne vrednosti 24 V čija frekvencija može da se menja.";
+			lblPitanje1.Text = "1. Kolika je jačina efektivne vrednosti pri frekvenciji od 50Hz?";
+			lblPitanje2.Text = "2. Kolika je jačina efektivne vrednosti pri rezonantnoj frekvenciji?";
+			lblPitanje3.Text = "3. Kolika je fazna razlika struje i napona pri frekvenciji od 50 Hz?";
+			lblPitanje4.Text = "4. Koliki je napon na kalemu pri rezonanciji?";
+			lblPitanje5.Text = "5. Koliki je napon na kondezatoru pri rezonanciji?";
+			tbxOpisZadataka.Show();
 			pbxKolo1.Show();
 		}
 		private void btnTest2_Click( object sender, EventArgs e )
@@ -188,16 +195,23 @@ namespace SimulacijaElektricnihKola
 		private void btnTest3_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
-			lblPitanje1.Text = "1. Sta u datom kolu predstavlja R";
+			lblPitanje1.Text = "1. Sta u datom kolu predstavlja R?";
 			lblPitanje2.Text = "2. Sta u datom kolu predstavlja L?";
 			lblPitanje3.Text = "3. Sta u datom kolu predstavlja C?";
 			lblPitanje4.Text = "4. Koja je frekvencija napona?";
 			lblPitanje5.Text = "5. Koja je amplituda napona?";
+			tbxOpisZadataka.Text = "U datom kolu:\r\nR = Xl = 10 Ω\r\nXc = 20 Ω\r\nu = 5sin314t(SI)\r\n\r\nNaći jednačinu struje kroz nerazgranati deo kola(u zavisnosti od vremena).";
+			
+			tbxOpisZadataka.Show();
 			pbxKolo3.Show();
 		}
 		private void btnTest4_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
+			tbxOpisZadataka.Text = "U kolu prikazanom na slici je: &1 = 10 V, &2 = 8 V, & = 6 V, R1 = 2kΩ, R2 = R = 4kΩ.\r\n Unutrašnje otpornosti izvora su zanemarljive.";
+			tbxOpisZadataka.Show();
+			lblPitanje1.Text = "1. Koliku jačinu struje pokazuje idealni ampermetar?";
+			lblPitanje2.Text = "2. U kom smeru teče ta struja?";
 			pbxKolo4.Show();
 		}
 
@@ -302,17 +316,17 @@ namespace SimulacijaElektricnihKola
 			prikaziResenje.BackColor = Color.White;
 
 			//namestanje picture boxova
-			int pbxWidth = 10*Width/35;
-			int pbxHeight = 10*Height/35;
-			int xpbx = x3rbn + Width/5;
-			int ypbx = Height/4;
-			pbxKolo1.SetBounds( xpbx, ypbx, pbxWidth, pbxHeight );
-			pbxKolo2.SetBounds( xpbx, ypbx, pbxWidth, pbxHeight );
-			pbxKolo3.SetBounds( xpbx, ypbx, pbxWidth, pbxHeight );
-			pbxKolo4.SetBounds( xpbx, ypbx, pbxWidth, pbxHeight );
+			int pbxWidth = 10 * Width / 35;
+			int pbxHeight = 10 * Height / 35;
+			int xpbx = x3rbn + Width / 5;
+			int ypbx = yrbn;
+			pbxKolo1.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
+			pbxKolo2.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
+			pbxKolo3.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
+			pbxKolo4.SetBounds(xpbx, ypbx, pbxWidth, pbxHeight);
 
-			tbxOpisZadataka.SetBounds( x1, y1, Width - 2*Width/6, Height - 2*Height/6 );
-			tbxOpisZadataka.Font = new Font( "Times New Roman", Width/50, FontStyle.Bold );
+			tbxOpisZadataka.SetBounds(x3rbn + Width / 5, yrbn + razmakIzmedjurbn * 2, 10 * Width / 35, 10 * Height / 35);
+			tbxOpisZadataka.Font = new Font("Times New Roman", 12, FontStyle.Regular);
 		}
 		private void Testovi_ResizeEnd( object sender, EventArgs e )
 		{

@@ -146,5 +146,10 @@
   <ItemGroup>
     <None Include="Resources\Kolo4.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="slikaFaznoKasnjenjeNapona.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
