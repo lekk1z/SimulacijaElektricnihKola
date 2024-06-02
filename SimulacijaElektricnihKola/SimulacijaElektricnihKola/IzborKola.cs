@@ -12,16 +12,16 @@ namespace SimulacijaElektricnihKola
 {
     public partial class IzborKola : Form
     {
-        public  string izabranoKolo;
+        public string izabranoKolo;
         public IzborKola()
         {
             InitializeComponent();
-            
+
         }
 
         private void IzborKola_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -33,32 +33,32 @@ namespace SimulacijaElektricnihKola
                 this.Close();
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             izabranoKolo = "kolo1.txt";
-            this.DialogResult= DialogResult.OK;
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            izabranoKolo = "kolo4.txt";
-            this.DialogResult= DialogResult.OK;
+
+            izabranoKolo = "kolo2.txt";
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
             izabranoKolo = "kolo3.txt";
-            this.DialogResult= DialogResult.OK;
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
-            izabranoKolo = "kolo2.txt";
-            this.DialogResult= DialogResult.OK;
+            izabranoKolo = "kolo4.txt";
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
     }

@@ -741,8 +741,8 @@ namespace SimulacijaElektricnihKola
                     xPrevCurrent = x;
                     yPrevCurrent = yCurrent;
                 }
-                pb3.Image = bmp;
-                pb3.Invalidate();
+                pbxDrugi.Image = bmp;
+                pbxDrugi.Invalidate();
             }
         }
         private void pb3_Paint(object sender, PaintEventArgs e)
