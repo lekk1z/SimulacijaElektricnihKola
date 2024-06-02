@@ -35,6 +35,8 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.BackgroundImage = global::SimulacijaElektricnihKola.Properties.Resources.wallpaperflare_com_wallpaper__1_;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(800, 461);
 			this.MinimumSize = new System.Drawing.Size(800, 500);
 			this.Name = "LoadingScreen";

@@ -147,6 +147,7 @@
     <None Include="Resources\Kolo4.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\wallpaperflare.com_wallpaper %281%29.jpg" />
     <Content Include="slikaFaznoKasnjenjeNapona.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

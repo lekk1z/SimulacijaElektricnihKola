@@ -28,32 +28,34 @@ namespace SimulacijaElektricnihKola
 			this.Height = 800;
 
 			//naslov
-			naslov.BackColor = Color.White;
-			naslov.ForeColor = Color.Black;
-			naslov.BorderStyle = BorderStyle.FixedSingle;
+			naslov.BackColor = Color.Transparent;
+			naslov.ForeColor = ColorTranslator.FromHtml( "#C0FDF6" );
+			naslov.BorderStyle = BorderStyle.None;
 			naslov.Text = "SIMULACIJA KOLA";
 			naslov.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( naslov );
 
+			Color bojaButtona = ColorTranslator.FromHtml( "#3A0078" );
+
 			//button objasnjenje
-			objasnjenjebtn.BackColor = Color.White;
-			objasnjenjebtn.ForeColor = Color.Black;
+			objasnjenjebtn.BackColor = bojaButtona;
+			objasnjenjebtn.ForeColor = ColorTranslator.FromHtml( "#1AB1E6" );
 			objasnjenjebtn.Text = "OBJASNJENJE";
 			objasnjenjebtn.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( objasnjenjebtn );
 			objasnjenjebtn.Click += Objasnjenjebtn_Click;
 
 			//button test
-			testbtn.BackColor = Color.White;
-			testbtn.ForeColor = Color.Black;
+			testbtn.BackColor = bojaButtona;
+			testbtn.ForeColor = ColorTranslator.FromHtml( "#028388" );
 			testbtn.Text = "TEST";
 			testbtn.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( testbtn );
 			testbtn.Click += Testbtn_Click;
 
 			//button simulacija
-			simulacijabttn.BackColor = Color.White;
-			simulacijabttn.ForeColor = Color.Black;
+			simulacijabttn.BackColor = bojaButtona;
+			simulacijabttn.ForeColor = ColorTranslator.FromHtml( "#FB02F4" );
 			simulacijabttn.Text = "SIMULACIJA";
 			simulacijabttn.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( simulacijabttn );
@@ -64,8 +66,8 @@ namespace SimulacijaElektricnihKola
 		public void SetSize()
 		{
 			
-			naslov.Font = new Font( "Times New Roman", Width/60, FontStyle.Bold );
-			naslov.SetBounds( Width/2 - Width/6, Height/10, Width/3, Width/10 );
+			naslov.Font = new Font( "Times New Roman", Width/20, FontStyle.Bold );
+			naslov.SetBounds( Width/2 - Width/3, Height/14, 10*Width/15, Height/4 );
 
 			int sirinaBttn = Width/5;
 			int visinaBttn = sirinaBttn/2;
