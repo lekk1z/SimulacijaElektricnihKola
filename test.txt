@@ -1,3 +1,6 @@
+J
+5
+0
 o otpornik1 250
 o otpornik2 500
 b baterija1 9

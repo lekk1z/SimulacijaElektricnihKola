@@ -650,32 +650,36 @@ namespace SimulacijaElektricnihKola
 
         private void pb3_Paint(object sender, PaintEventArgs e)
         {
-            Graphics g = e.Graphics;
-            Pen voltagePen = new Pen(Color.Blue);
-            Pen currentPen = new Pen(Color.Red);
-            int halfHeight = PictureBoxHeight / 2;
-
-            // Draw Voltage Wave
-            int xPrevVoltage = 0;
-            int yPrevVoltage = halfHeight - (int)(VoltageAmplitude * Math.Sin(VoltagePhaseShift * Math.PI / 180));
-            for (int x = 1; x < PictureBoxWidth; x++)
+            if (otporniciN.Count!=0)
             {
-                int yVoltage = halfHeight - (int)(VoltageAmplitude * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180));
-                g.DrawLine(voltagePen, xPrevVoltage, yPrevVoltage, x, yVoltage);
-                xPrevVoltage = x;
-                yPrevVoltage = yVoltage;
-            }
+                Graphics g = e.Graphics;
+                Pen naponPen = new Pen(Color.Blue);
+                Pen strujaPen = new Pen(Color.Red);
+                int halfHeight = PictureBoxHeight / 2;
 
-            // Draw Current Wave
-            int xPrevCurrent = 0;
-            int yPrevCurrent = halfHeight - (int)(CurrentAmplitude * Math.Sin(VoltagePhaseShift * Math.PI / 180));
-            for (int x = 1; x < PictureBoxWidth; x++)
-            {
-                int yCurrent = halfHeight - (int)(CurrentAmplitude * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180));
-                g.DrawLine(currentPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
-                xPrevCurrent = x;
-                yPrevCurrent = yCurrent;
+                // Draw Voltage Wave
+                int xPrevVoltage = 0;
+                int yPrevVoltage = halfHeight - (int)(VoltageAmplitude * Math.Sin(VoltagePhaseShift * Math.PI / 180) + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor));
+                for (int x = 1; x < PictureBoxWidth; x++)
+                {
+                    int yVoltage = halfHeight - (int)(VoltageAmplitude * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor)));
+                    g.DrawLine(naponPen, xPrevVoltage, yPrevVoltage, x, yVoltage);
+                    xPrevVoltage = x;
+                    yPrevVoltage = yVoltage;
+                }
+
+                // Draw Current Wave
+                int xPrevCurrent = 0;
+                int yPrevCurrent = halfHeight - (int)(CurrentAmplitude * Math.Sin(VoltagePhaseShift * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor)));
+                for (int x = 1; x < PictureBoxWidth; x++)
+                {
+                    int yCurrent = halfHeight - (int)(CurrentAmplitude * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor)));
+                    g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
+                    xPrevCurrent = x;
+                    yPrevCurrent = yCurrent;
+                }
             }
+            
         }
     }
 }
