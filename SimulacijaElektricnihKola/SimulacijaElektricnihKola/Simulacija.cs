@@ -384,7 +384,7 @@ namespace SimulacijaElektricnihKola
             }
             if (izbor.izabranoKolo == "kolo4.txt")
             {
-                GrafikJednosmerneStruje(kolo.IzracunajTrenutnuStruju(napon, frekvencija).ToString());
+                GrafikJednosmerneStruje(glavna.IzracunajStruju().ToString());
             }
             else
             {
@@ -436,6 +436,7 @@ namespace SimulacijaElektricnihKola
                         else if (split1[0] == "s")
                         {
                             string[] split2 = split1[2].Split('-');
+
                             SerijskaVeza<Srebro> privremena = new SerijskaVeza<Srebro>(split1[1]);
                             foreach (string s in split2)
                             {
@@ -772,6 +773,11 @@ namespace SimulacijaElektricnihKola
         private void pb3_Paint(object sender, PaintEventArgs e)
         {
 
+
+        }
+
+        private void pbxPrvi_Click(object sender, EventArgs e)
+        {
 
         }
     }

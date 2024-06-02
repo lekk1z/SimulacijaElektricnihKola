@@ -172,7 +172,7 @@
             // pbxDrugi
             // 
             this.pbxDrugi.Location = new System.Drawing.Point(9, 324);
-            this.pbxDrugi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxDrugi.Margin = new System.Windows.Forms.Padding(4);
             this.pbxDrugi.Name = "pbxDrugi";
             this.pbxDrugi.Size = new System.Drawing.Size(500, 100);
             this.pbxDrugi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,6 +190,7 @@
             this.pbxPrvi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxPrvi.TabIndex = 29;
             this.pbxPrvi.TabStop = false;
+            this.pbxPrvi.Click += new System.EventHandler(this.pbxPrvi_Click);
             // 
             // Simulacija
             // 
