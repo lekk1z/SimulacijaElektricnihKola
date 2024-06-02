@@ -301,3 +301,8 @@ C:\Users\PC\Source\Repos\SimulacijaElektricnihKoladfghj\SimulacijaElektricnihKol
 C:\Users\38161\OneDrive\Desktop\GitHub\ObejktnoProgramiranjeProjekat\ObejktnoProgramiranjeProjekat\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo1.txt
 C:\Users\38161\OneDrive\Desktop\GitHub\ObejktnoProgramiranjeProjekat\ObejktnoProgramiranjeProjekat\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\resenjaPrvogtesta.rtf
 C:\Users\38161\OneDrive\Desktop\GitHub\ObejktnoProgramiranjeProjekat\ObejktnoProgramiranjeProjekat\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo2.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo1.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo2.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo3.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo4.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\resenjaPrvogtesta.rtf
