@@ -69,26 +69,32 @@
             // 
             this.tbOtpornik.Location = new System.Drawing.Point(519, 382);
             this.tbOtpornik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbOtpornik.Maximum = 50;
             this.tbOtpornik.Name = "tbOtpornik";
             this.tbOtpornik.Size = new System.Drawing.Size(280, 56);
             this.tbOtpornik.TabIndex = 24;
+            this.tbOtpornik.ValueChanged += new System.EventHandler(this.tbOtpornik_ValueChanged);
             // 
             // lblKalem
             // 
             this.lblKalem.AutoSize = true;
             this.lblKalem.Location = new System.Drawing.Point(516, 304);
             this.lblKalem.Name = "lblKalem";
-            this.lblKalem.Size = new System.Drawing.Size(107, 16);
+            this.lblKalem.Size = new System.Drawing.Size(102, 16);
             this.lblKalem.TabIndex = 23;
-            this.lblKalem.Text = "Induktivni kalem*";
+            this.lblKalem.Text = "Induktivni kalem";
             // 
             // tbKalem
             // 
             this.tbKalem.Location = new System.Drawing.Point(519, 322);
             this.tbKalem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbKalem.Maximum = 100;
+            this.tbKalem.Minimum = 1;
             this.tbKalem.Name = "tbKalem";
             this.tbKalem.Size = new System.Drawing.Size(280, 56);
             this.tbKalem.TabIndex = 22;
+            this.tbKalem.Value = 1;
+            this.tbKalem.ValueChanged += new System.EventHandler(this.tbKalem_ValueChanged);
             // 
             // lblKondenzator
             // 
@@ -103,9 +109,11 @@
             // 
             this.tbKondenzator.Location = new System.Drawing.Point(519, 261);
             this.tbKondenzator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbKondenzator.Maximum = 50;
             this.tbKondenzator.Name = "tbKondenzator";
             this.tbKondenzator.Size = new System.Drawing.Size(280, 56);
             this.tbKondenzator.TabIndex = 20;
+            this.tbKondenzator.ValueChanged += new System.EventHandler(this.tbKondenzator_ValueChanged);
             // 
             // lblNapon
             // 
@@ -120,10 +128,13 @@
             // 
             this.tbNapon.Location = new System.Drawing.Point(519, 167);
             this.tbNapon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbNapon.Maximum = 20;
+            this.tbNapon.Maximum = 25;
+            this.tbNapon.Minimum = 1;
             this.tbNapon.Name = "tbNapon";
             this.tbNapon.Size = new System.Drawing.Size(280, 56);
             this.tbNapon.TabIndex = 18;
+            this.tbNapon.Value = 1;
+            this.tbNapon.ValueChanged += new System.EventHandler(this.tbNapon_ValueChanged);
             // 
             // btnIzaberiKolo
             // 

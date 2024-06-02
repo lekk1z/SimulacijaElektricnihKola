@@ -190,6 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wallpaperflare.com_wallpaper %281%29.jpg" />
+    <Content Include="kolo1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="kolo3.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
