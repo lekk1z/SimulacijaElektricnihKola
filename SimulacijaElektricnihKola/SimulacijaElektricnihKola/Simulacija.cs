@@ -49,8 +49,7 @@ namespace SimulacijaElektricnihKola
             int brojaclinija = 0;
             StreamReader sr = new StreamReader(izbor.izabranoKolo);
             string vrstaStruje=sr.ReadLine();
-            napon=double.Parse(sr.ReadLine());
-            frekvencija=double.Parse(sr.ReadLine());
+            
             if (vrstaStruje == "J")
             {
                 while (!sr.EndOfStream)
@@ -143,6 +142,8 @@ namespace SimulacijaElektricnihKola
             }
             else if (vrstaStruje == "N")
             {
+                napon = double.Parse(sr.ReadLine());
+                frekvencija = double.Parse(sr.ReadLine());
                 while (!sr.EndOfStream)
                 {
                     string t = sr.ReadLine();
@@ -408,8 +409,6 @@ namespace SimulacijaElektricnihKola
                 StreamReader sr = new StreamReader(izbor.izabranoKolo);
               
                 string vrstaStruje = sr.ReadLine();
-                 napon = double.Parse(sr.ReadLine());
-                frekvencija = double.Parse(sr.ReadLine());
                 if (vrstaStruje == "J")
                 {
                     while (!sr.EndOfStream)
@@ -513,6 +512,8 @@ namespace SimulacijaElektricnihKola
                 }
                 else if (vrstaStruje == "N")
                 {
+                    napon = double.Parse(sr.ReadLine());
+                    frekvencija = double.Parse(sr.ReadLine());
                     while (!sr.EndOfStream)
                     {
                         string t = sr.ReadLine();
@@ -692,7 +693,7 @@ namespace SimulacijaElektricnihKola
         }
         private void CrtanjeGrafika()
         {
-            if (otporniciN.Count != 0)
+            if (serijskeVezeJ.Count != 0||paralelneVezeJ.Count!=0||serijskeVezeN.Count!=0||paralelneVezeN.Count!=0)
             {
                 Bitmap bmp = new Bitmap(500, 100);
                 Graphics g = Graphics.FromImage(bmp);
@@ -721,8 +722,8 @@ namespace SimulacijaElektricnihKola
                     xPrevCurrent = x;
                     yPrevCurrent = yCurrent;
                 }
-                pb3.Image = bmp;
-                pb3.Invalidate();
+                pbxDrugi.Image = bmp;
+                pbxDrugi.Invalidate();
             }
         }
         private void pb3_Paint(object sender, PaintEventArgs e)

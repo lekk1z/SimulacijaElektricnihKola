@@ -257,3 +257,7 @@ C:\Users\gruja\Source\Repos\SimulacijaElektricnihKolaery\SimulacijaElektricnihKo
 C:\Users\gruja\Source\Repos\SimulacijaElektricnihKolaery\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.csproj.CoreCompileInputs.cache
 C:\Users\gruja\Source\Repos\SimulacijaElektricnihKolaery\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.exe
 C:\Users\gruja\Source\Repos\SimulacijaElektricnihKolaery\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.pdb
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.IzborKola.resources
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\slikaFaznoKasnjenjeNapona.jpg
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\teorija.rtf
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo1.txt
