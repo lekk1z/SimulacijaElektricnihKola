@@ -37,6 +37,8 @@ namespace SimulacijaElektricnihKola
         static string trenutniTxt;
         static double napon;
         static double frekvencija;
+
+        public static IzborKola izbor= new IzborKola();
         //*aleksa
         public Simulacija()
         {
@@ -45,7 +47,7 @@ namespace SimulacijaElektricnihKola
         private void NapraviNovoKolo()
         {
             int brojaclinija = 0;
-            StreamReader sr = new StreamReader(openFileDialog1.FileName);
+            StreamReader sr = new StreamReader(izbor.izabranoKolo);
             string vrstaStruje=sr.ReadLine();
             napon=double.Parse(sr.ReadLine());
             frekvencija=double.Parse(sr.ReadLine());
@@ -335,7 +337,7 @@ namespace SimulacijaElektricnihKola
         {
             brojac++;
             phase += 15;
-            pb3.Invalidate();
+            CrtanjeGrafika();
         }
 
         private void pb1_Paint(object sender, PaintEventArgs e, double u, double i, double uProslo, double iProslo)
@@ -358,11 +360,13 @@ namespace SimulacijaElektricnihKola
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+
+            if (izbor.ShowDialog()==DialogResult.OK)
             {
+                MessageBox.Show(izbor.izabranoKolo);  
                 int brojaclinija = 0;
-                StreamReader sr = new StreamReader(openFileDialog1.FileName);
-                trenutniTxt = openFileDialog1.FileName;
+                StreamReader sr = new StreamReader(izbor.izabranoKolo);
+              
                 string vrstaStruje = sr.ReadLine();
                  napon = double.Parse(sr.ReadLine());
                 frekvencija = double.Parse(sr.ReadLine());
@@ -646,22 +650,22 @@ namespace SimulacijaElektricnihKola
         {
             //forma za biranje kola
         }
-
-        private void pb3_Paint(object sender, PaintEventArgs e)
+        private void CrtanjeGrafika()
         {
-            if (otporniciN.Count!=0)
+            if (otporniciN.Count != 0)
             {
-                Graphics g = e.Graphics;
+                Bitmap bmp = new Bitmap(500, 100);
+                Graphics g = Graphics.FromImage(bmp);
                 Pen naponPen = new Pen(Color.Blue);
                 Pen strujaPen = new Pen(Color.Red);
                 int halfHeight = PictureBoxHeight / 2;
 
                 // Draw Voltage Wave
                 int xPrevVoltage = 0;
-                int yPrevVoltage = halfHeight - (int)(5*napon * Math.Sin(2*frekvencija * Math.PI / 180) );
+                int yPrevVoltage = halfHeight - (int)(5 * napon * Math.Sin(2 * frekvencija * Math.PI / 180));
                 for (int x = 1; x < PictureBoxWidth; x++)
                 {
-                    int yVoltage = halfHeight - (int)(5*napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 ));
+                    int yVoltage = halfHeight - (int)(5 * napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180));
                     g.DrawLine(naponPen, xPrevVoltage, yPrevVoltage, x, yVoltage);
                     xPrevVoltage = x;
                     yPrevVoltage = yVoltage;
@@ -669,15 +673,21 @@ namespace SimulacijaElektricnihKola
 
                 // Draw Current Wave
                 int xPrevCurrent = 0;
-                int yPrevCurrent = halfHeight - (int)(5*napon * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
+                int yPrevCurrent = halfHeight - (int)(5 * napon * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
                 for (int x = 1; x < PictureBoxWidth; x++)
                 {
-                    int yCurrent = halfHeight - (int)(5 * napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5*napon, frekvencija, otporniciN[0].Otpor)));
+                    int yCurrent = halfHeight - (int)(5 * napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
                     g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
                     xPrevCurrent = x;
                     yPrevCurrent = yCurrent;
                 }
+                pb3.Image = bmp;
+                pb3.Invalidate();
             }
+        }
+        private void pb3_Paint(object sender, PaintEventArgs e)
+        {
+           
             
         }
     }
