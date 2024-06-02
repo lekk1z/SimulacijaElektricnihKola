@@ -196,6 +196,9 @@
     <Content Include="kolo1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="kolo2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="kolo3.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

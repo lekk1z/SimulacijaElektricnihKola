@@ -50,7 +50,12 @@ namespace SimulacijaElektricnihKola
             int brojaclinija = 0;
             StreamReader sr = new StreamReader(izbor.izabranoKolo);
             string vrstaStruje = sr.ReadLine();
+            serijskeVezeJ = new List<SerijskaVeza<Srebro>>();
+            paralelneVezeJ = new List<ParalelnaVeza<Srebro>>();
+            glavna = new SerijskaVeza<Srebro>("glavna");
 
+            serijskeVezeN = new List<SerijskaVezaN>();
+            paralelneVezeN = new List<ParalelnaVezaN>();
             if (vrstaStruje == "J")
             {
                 while (!sr.EndOfStream)
@@ -282,6 +287,21 @@ namespace SimulacijaElektricnihKola
                     brojaclinija++;
                 }
             }
+            if (vrstaStruje=="N")
+            {
+                tbKalem.Minimum = (int)kalemi[0].Induktivnost;
+                tbKondenzator.Minimum = (int)kondenzatori[0].Kapacitet;
+                tbOtpornik.Minimum = (int)otporniciN[0].Otpor;
+                tbKalem.Maximum = (int)kalemi[0].Induktivnost*5;
+                tbKondenzator.Maximum = (int)kondenzatori[0].Kapacitet*5;
+                tbOtpornik.Maximum = (int)otporniciN[0].Otpor*5;
+            }
+            else
+            {
+                tbOtpornik.Minimum = (int)otporniciJ[0].OtporVrednost;
+                tbOtpornik.Maximum = (int)otporniciJ[0].OtporVrednost * 5;
+            }
+
         }
         private void Simulacija_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -293,7 +313,6 @@ namespace SimulacijaElektricnihKola
             this.Width = 1200;
             this.Height = 800;
             timer1.Interval = Period;
-
             SetSize();
         }
 
@@ -414,6 +433,7 @@ namespace SimulacijaElektricnihKola
 
             if (izbor.ShowDialog() == DialogResult.OK)
             {
+
                 int brojaclinija = 0;
                 StreamReader sr = new StreamReader(izbor.izabranoKolo);
                   otporniciJ = new List<Otpornik<Srebro>>();
@@ -810,12 +830,12 @@ namespace SimulacijaElektricnihKola
             timer1.Stop();
             if (vrstastruje == "N")
             {
-                kondenzatori[0].Kapacitet = (int)tbKondenzator.Value*0.0001;
+                kondenzatori[0].Kapacitet = tbKondenzator.Value*0.00000000001;
                 
             }
             else if (vrstastruje == "J")
             {
-                otporniciJ[0].OtporVrednost = (int)tbKondenzator.Value*10;
+                otporniciJ[0].OtporVrednost = tbKondenzator.Value*10;
             }
             NapraviNovoKolo();
             timer1.Start();
@@ -826,12 +846,12 @@ namespace SimulacijaElektricnihKola
             timer1.Stop();
             if (vrstastruje == "N")
             {
-                kalemi[0].Induktivnost = (int)tbKalem.Value/100 * 0.5;
+                kalemi[0].Induktivnost = (int)tbKalem.Value;
 
             }
             else if (vrstastruje == "J")
             {
-                otporniciJ[0].OtporVrednost = (int)tbKalem.Value*10 ;
+                otporniciJ[0].OtporVrednost = (int)tbKalem.Value;
             }
             NapraviNovoKolo();
             timer1.Start();
@@ -842,7 +862,7 @@ namespace SimulacijaElektricnihKola
             timer1.Stop();
             if (vrstastruje == "N")
             {
-                otporniciN[0].Otpor = (int)tbOtpornik.Value*100;
+                otporniciN[0].Otpor = (int)tbOtpornik.Value;
 
             }
             else if (vrstastruje == "J")
@@ -851,6 +871,11 @@ namespace SimulacijaElektricnihKola
             }
             NapraviNovoKolo();
             timer1.Start();
+        }
+
+        private void tbOtpornik_Scroll(object sender, EventArgs e)
+        {
+
         }
     }
 }

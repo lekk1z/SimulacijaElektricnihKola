@@ -70,9 +70,12 @@
             this.tbOtpornik.Location = new System.Drawing.Point(519, 382);
             this.tbOtpornik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbOtpornik.Maximum = 50;
+            this.tbOtpornik.Minimum = 1;
             this.tbOtpornik.Name = "tbOtpornik";
             this.tbOtpornik.Size = new System.Drawing.Size(280, 56);
             this.tbOtpornik.TabIndex = 24;
+            this.tbOtpornik.Value = 1;
+            this.tbOtpornik.Scroll += new System.EventHandler(this.tbOtpornik_Scroll);
             this.tbOtpornik.ValueChanged += new System.EventHandler(this.tbOtpornik_ValueChanged);
             // 
             // lblKalem
@@ -110,9 +113,11 @@
             this.tbKondenzator.Location = new System.Drawing.Point(519, 261);
             this.tbKondenzator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbKondenzator.Maximum = 50;
+            this.tbKondenzator.Minimum = 1;
             this.tbKondenzator.Name = "tbKondenzator";
             this.tbKondenzator.Size = new System.Drawing.Size(280, 56);
             this.tbKondenzator.TabIndex = 20;
+            this.tbKondenzator.Value = 1;
             this.tbKondenzator.ValueChanged += new System.EventHandler(this.tbKondenzator_ValueChanged);
             // 
             // lblNapon
