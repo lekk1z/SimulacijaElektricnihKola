@@ -55,17 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnNazad
-            // 
-            this.btnNazad.Location = new System.Drawing.Point(696, 12);
-            this.btnNazad.Name = "btnNazad";
-            this.btnNazad.Size = new System.Drawing.Size(50, 52);
-            this.btnNazad.TabIndex = 2;
-            this.btnNazad.Text = "<";
-            this.btnNazad.UseVisualStyleBackColor = true;
-            this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
-
-            // 
             // pb1
             // 
             this.pb1.Location = new System.Drawing.Point(13, 281);
@@ -88,13 +77,14 @@
             // 
             // pb3
             // 
-            this.pb3.Location = new System.Drawing.Point(13, 118);
+            this.pb3.Location = new System.Drawing.Point(1, 148);
             this.pb3.Margin = new System.Windows.Forms.Padding(4);
             this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(176, 156);
+            this.pb3.Size = new System.Drawing.Size(500, 100);
             this.pb3.TabIndex = 6;
             this.pb3.TabStop = false;
             this.pb3.Click += new System.EventHandler(this.pb3_Click);
+            this.pb3.Paint += new System.Windows.Forms.PaintEventHandler(this.pb3_Paint);
             // 
             // timer1
             // 
@@ -198,6 +188,16 @@
             this.button1.Text = "Reset";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnNazad
+            // 
+            this.btnNazad.Location = new System.Drawing.Point(696, 12);
+            this.btnNazad.Name = "btnNazad";
+            this.btnNazad.Size = new System.Drawing.Size(50, 52);
+            this.btnNazad.TabIndex = 2;
+            this.btnNazad.Text = "<";
+            this.btnNazad.UseVisualStyleBackColor = true;
+            this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
             // 
             // Simulacija
             // 

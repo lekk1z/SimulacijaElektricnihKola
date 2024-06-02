@@ -18,6 +18,18 @@ namespace SimulacijaElektricnihKola
        
         static int brojac = 0;
         //aleksa
+        private const int PictureBoxWidth = 490;
+        private const int PictureBoxHeight = 100;
+        private const int WaveLength = 50;
+        private const int Amplitude = 30;
+        private const int Period = 100;
+
+        private int phase = 0;
+
+        private const int VoltageAmplitude = 30; // Amplitude for voltage
+        private const int CurrentAmplitude = 20; // Amplitude for current
+        private const int VoltagePhaseShift = 90; // Phase shift for voltage
+
         static List<Otpornik<Srebro>> otporniciJ = new List<Otpornik<Srebro>>();
         static List<SerijskaVeza<Srebro>> serijskeVezeJ = new List<SerijskaVeza<Srebro>>();
         static List<ParalelnaVeza<Srebro>> paralelneVezeJ = new List<ParalelnaVeza<Srebro>>();
@@ -278,7 +290,9 @@ namespace SimulacijaElektricnihKola
         {
 			this.Width = 1200;
 			this.Height = 800;
-			SetSize();
+            timer1.Interval = Period;
+            timer1.Start();
+            SetSize();
 		}
 
 		private void btnNazad_Click(object sender, EventArgs e)
@@ -321,6 +335,8 @@ namespace SimulacijaElektricnihKola
         private void timer1_Tick(object sender, EventArgs e)
         {
             brojac++;
+            phase += 15;
+            pb3.Invalidate();
         }
 
         private void pb1_Paint(object sender, PaintEventArgs e, double u, double i, double uProslo, double iProslo)
@@ -624,6 +640,36 @@ namespace SimulacijaElektricnihKola
         private void button3_Click_1(object sender, EventArgs e)
         {
             //forma za biranje kola
+        }
+
+        private void pb3_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            Pen voltagePen = new Pen(Color.Blue);
+            Pen currentPen = new Pen(Color.Red);
+            int halfHeight = PictureBoxHeight / 2;
+
+            // Draw Voltage Wave
+            int xPrevVoltage = 0;
+            int yPrevVoltage = halfHeight - (int)(VoltageAmplitude * Math.Sin(VoltagePhaseShift * Math.PI / 180));
+            for (int x = 1; x < PictureBoxWidth; x++)
+            {
+                int yVoltage = halfHeight - (int)(VoltageAmplitude * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180));
+                g.DrawLine(voltagePen, xPrevVoltage, yPrevVoltage, x, yVoltage);
+                xPrevVoltage = x;
+                yPrevVoltage = yVoltage;
+            }
+
+            // Draw Current Wave
+            int xPrevCurrent = 0;
+            int yPrevCurrent = halfHeight - (int)(CurrentAmplitude * Math.Sin(VoltagePhaseShift * Math.PI / 180));
+            for (int x = 1; x < PictureBoxWidth; x++)
+            {
+                int yCurrent = halfHeight - (int)(CurrentAmplitude * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180));
+                g.DrawLine(currentPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
+                xPrevCurrent = x;
+                yPrevCurrent = yCurrent;
+            }
         }
     }
 }
