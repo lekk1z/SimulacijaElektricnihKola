@@ -178,12 +178,14 @@ namespace SimulacijaElektricnihKola
 		private void btnTest1_Click( object sender, EventArgs e )
 		{
 			KliknutoDugme();
-			tbxOpisZadataka.Text = "Redno RLC-kolo (R = 20Ω, L = 0,5H, C = 5μF) priključeno je na naizmenični napon efektivne vrednosti 24 V čija frekvencija može da se menja.";
-			lblPitanje1.Text = "1. Kolika je jačina efektivne vrednosti pri frekvenciji od 50Hz?";
-			lblPitanje2.Text = "2. Kolika je jačina efektivne vrednosti pri rezonantnoj frekvenciji?";
-			lblPitanje3.Text = "3. Kolika je fazna razlika struje i napona pri frekvenciji od 50 Hz?";
-			lblPitanje4.Text = "4. Koliki je napon na kalemu pri rezonanciji?";
-			lblPitanje5.Text = "5. Koliki je napon na kondezatoru pri rezonanciji?";
+			tbxOpisZadataka.Text = "Redno RLC-kolo (R = 20Ω, L = 0,5H, C = 5μF) priključeno je na naizmenični napon efektivne vrednosti 24 V čija frekvencija može da se menja.\r\n" +
+				"\r\nOdrediti: \r\n - Jačinu efektivne struje pri frekvenciji od 50Hz\r\n - Jačinu efektivne struje pri rezonantnoj frekvenciji" +
+				"\r\n - Faznu razliku struje i napona pri frekvenciji\r\n - Napon na kalemu pri rezonanciji\r\n - Napon na kondezatoru pri rezonanciji";
+			lblPitanje1.Text = "1. Jačina efektivne vrednosti pri frekvenciji od 50Hz je:";
+			lblPitanje2.Text = "2. Jačina efektivne vrednosti pri rezonantnoj frekvenciji je:";
+			lblPitanje3.Text = "3. Fazna razlika struje i napona pri frekvenciji od 50 Hz je:";
+			lblPitanje4.Text = "4. Napon na kalemu pri rezonanciji je:";
+			lblPitanje5.Text = "5. Napon na kondezatoru pri rezonanciji je:";
 			tbxOpisZadataka.Show();
 			pbxKolo1.Show();
 		}
@@ -201,6 +203,7 @@ namespace SimulacijaElektricnihKola
 			lblPitanje4.Text = "4. Koja je frekvencija napona?";
 			lblPitanje5.Text = "5. Koja je amplituda napona?";
 			tbxOpisZadataka.Text = "U datom kolu:\r\nR = Xl = 10 Ω\r\nXc = 20 Ω\r\nu = 5sin314t(SI)\r\n\r\nNaći jednačinu struje kroz nerazgranati deo kola(u zavisnosti od vremena).";
+				
 			
 			tbxOpisZadataka.Show();
 			pbxKolo3.Show();
