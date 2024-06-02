@@ -168,6 +168,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="resenjaPrvogtesta.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="SimulacijaElektricnihKola_TemporaryKey.pfx" />
     <None Include="teorija.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
