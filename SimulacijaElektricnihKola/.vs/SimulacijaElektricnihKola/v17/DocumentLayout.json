@@ -57,10 +57,6 @@
           "SelectedChildIndex": 10,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.cs",
@@ -103,6 +99,10 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
@@ -134,8 +134,8 @@
               "Title": "Simulacija.cs [Design]",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Simulacija.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs [Design]",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs [Design]",
+              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs [Design]*",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T22:35:35.659Z",
               "EditorCaption": " [Design]"
@@ -181,9 +181,9 @@
               "Title": "Simulacija.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Simulacija.cs",
-              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs",
-              "ViewState": "AQIAABsCAAAAAAAAAAAwwDkCAAAkAAAA",
+              "ToolTip": "C:\\Users\\aleks\\source\\repos\\lekk1z\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs*",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs*",
+              "ViewState": "AQIAAC8CAAAAAAAAAAAAAEQCAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T15:42:29.848Z",
               "EditorCaption": ""

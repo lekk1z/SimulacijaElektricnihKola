@@ -291,7 +291,7 @@ namespace SimulacijaElektricnihKola
             this.Width = 1200;
             this.Height = 800;
             timer1.Interval = Period;
-            timer1.Start();
+            
             SetSize();
         }
 
@@ -490,7 +490,7 @@ namespace SimulacijaElektricnihKola
                         else if (split1[0] == "s")
                         {
                             string[] split2 = split1[2].Split('-');
-                            SerijskaVezaN privremena = new SerijskaVezaN { Ime = split1[1] };
+                            SerijskaVezaN privremena = new SerijskaVezaN { Ime = split1[1],Komponente = new List<KomponentaNaizmenicna>() };
                             foreach (string s in split2)
                             {
                                 foreach (OtpornikN otpornik in otporniciN)
@@ -578,7 +578,7 @@ namespace SimulacijaElektricnihKola
                         else if (split1[0] == "kolo")
                         {
                             string[] split2 = split1[2].Split('-');
-                            kolo = new KoloNaizmenica();
+                            kolo = new KoloNaizmenica { Komponente=new List<KomponentaNaizmenicna>() };
                             foreach (string s in split2)
                             {
                                 foreach (OtpornikN otpornik in otporniciN)

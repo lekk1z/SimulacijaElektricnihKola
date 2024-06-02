@@ -1,9 +1,10 @@
 N
 5
 50
-r r1 10
+o r1 10
 kondenzator c1 0.000159
 kalem k1 0.03
 s s1 r1-
 p p1 c1-k1
 s s2 s1-p1
+kolo glavno s2-
