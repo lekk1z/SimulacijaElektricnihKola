@@ -778,18 +778,12 @@ namespace SimulacijaElektricnihKola
 
                 // Draw Current Wave
                 int xPrevCurrent = 0;
-                int oduzmi;
-                if (izbor.izabranoKolo == "kolo2.txt")
-                {
-                     oduzmi = (int)(kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * frekvencija * Math.PI / 180 + Math.Atan(otporniciN[0].Otpor * (2 * Math.PI * frekvencija * kondenzatori[0].Kapacitet - 1 / (2 * Math.PI * frekvencija * kalemi[0].Induktivnost))))) * 100_0000;
-                }
-                else
-                    oduzmi = (int)(kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)))*100_0000;
+                int oduzmi = (int)(kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)))*100_0000;
                 int yPrevCurrent = halfHeight - oduzmi;
                 for (int x = 1; x < PictureBoxWidth; x++)
                 {
-                    //double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)))*100_0000;
-                    int yCurrent = halfHeight - (int)oduzmi;
+                    double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)))*100_0000;
+                    int yCurrent = halfHeight - (int)oduzmi2;
                     g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
                     xPrevCurrent = x;
                     yPrevCurrent = yCurrent;
