@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\",
+  "WorkspaceRootPath": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\gruja\\source\\repos\\simulacijaelektricnihkolabghcv\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|c:\\users\\gruja\\source\\repos\\simulacijaelektricnihkolasad\\simulacijaelektricnihkola\\simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\testovi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\teorija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\simulacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\simulacija.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\simulacijaelektricnihkola\\simulacija.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14D21F78-C5A7-4A5B-AFB3-0366736DE011}|SimulacijaElektricnihKola\\SimulacijaElektricnihKola.csproj|solutionrelative:simulacijaelektricnihkola\\simulacija.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,15 +54,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 428,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Form1.cs",
-              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Form1.cs",
               "RelativeToolTip": "SimulacijaElektricnihKola\\Form1.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAYwCAAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -71,25 +71,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Testovi.cs",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Testovi.cs",
-              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs",
               "RelativeToolTip": "SimulacijaElektricnihKola\\Testovi.cs",
               "ViewState": "AQIAAJMAAAAAAAAAAAAlwLYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T14:35:54.304Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Teorija.cs",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Teorija.cs",
-              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs",
               "RelativeToolTip": "SimulacijaElektricnihKola\\Teorija.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAAACgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -153,9 +152,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Simulacija.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.Designer.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Simulacija.Designer.cs",
-              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.Designer.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.Designer.cs",
               "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.Designer.cs",
               "ViewState": "AQIAAEQAAAAAAAAAAAAgwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -166,21 +165,21 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Simulacija.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Simulacija.cs",
-              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs [Design]",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs [Design]",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs [Design]*",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T22:35:35.659Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Teorija.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Teorija.cs",
-              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs [Design]",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Teorija.cs [Design]",
               "RelativeToolTip": "SimulacijaElektricnihKola\\Teorija.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T16:52:18.295Z",
@@ -188,61 +187,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Testovi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Testovi.cs",
               "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs [Design]",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Testovi.cs [Design]",
+              "RelativeToolTip": "..\\..\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Testovi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T16:49:47.117Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-01T16:49:47.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoadingScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\LoadingScreen.cs",
               "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs [Design]",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\LoadingScreen.cs [Design]",
+              "RelativeToolTip": "..\\..\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T16:51:17.012Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-01T16:51:17.012Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Simulacija.cs",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Simulacija.cs",
-              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs",
-              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs",
-              "ViewState": "AQIAAC8CAAAAAAAAAAAAAEQCAAA4AAAA",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Simulacija.cs*",
+              "RelativeToolTip": "SimulacijaElektricnihKola\\Simulacija.cs*",
+              "ViewState": "AQIAACgBAAAAAAAAAAAswF4BAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T15:42:29.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoadingScreen.cs",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\LoadingScreen.cs",
-              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\LoadingScreen.cs",
               "RelativeToolTip": "SimulacijaElektricnihKola\\LoadingScreen.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T14:35:48.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T14:35:48.507Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Program.cs",
               "RelativeDocumentMoniker": "SimulacijaElektricnihKola\\Program.cs",
-              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolabghcv\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Program.cs",
+              "ToolTip": "C:\\Users\\gruja\\source\\repos\\SimulacijaElektricnihKolasad\\SimulacijaElektricnihKola\\SimulacijaElektricnihKola\\Program.cs",
               "RelativeToolTip": "SimulacijaElektricnihKola\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

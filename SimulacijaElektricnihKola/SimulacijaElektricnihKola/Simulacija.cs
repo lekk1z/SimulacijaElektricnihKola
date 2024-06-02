@@ -304,12 +304,52 @@ namespace SimulacijaElektricnihKola
         {
             SetSize();
         }
-        public void SetSize()
-        {
-            btnNazad.SetBounds(Width - Width / 12, Height / 50, Width / 17, Width / 17);
-            btnNazad.Font = new Font("", Width / 50, FontStyle.Bold);
-        }
-        public void PravljenjeFunkcije(int i0, int u0, int w)
+		public void SetSize()
+		{
+			btnNazad.SetBounds( Width - Width / 12, Height / 50, Width / 17, Width / 17 );
+			btnNazad.Font = new Font( "", Width / 50, FontStyle.Bold );
+
+			//namestanje picture boxova
+			int pbxWidth = 10*Width/17;
+			int yDrugogpbx = ClientSize.Height - ClientSize.Height/20 - pbxWidth/5;
+			int visinaPrvogPbx = yDrugogpbx - ClientSize.Height/10;
+			pbxPrvi.SetBounds( Width/20, ClientSize.Height/20, pbxWidth, visinaPrvogPbx );
+			pbxDrugi.SetBounds( Width/20, yDrugogpbx, pbxWidth, pbxWidth/5 );
+
+			//namestanje buttona
+			int btnWidth = Width/10;
+			int btnHeight = Height/10;
+			int velicinaFonta = Height/50;
+			bttnStartStop.SetBounds( pbxWidth + Width/10, Height/20, btnWidth, btnHeight );
+			bttnStartStop.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			bttnReset.SetBounds( pbxWidth + Width/5, Height/20, btnWidth, btnHeight );
+			bttnReset.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			btnIzaberiKolo.SetBounds( pbxWidth + Width/10, Height/17 + btnHeight, btnWidth*2, btnHeight/2 );
+			btnIzaberiKolo.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+
+			//namestanje track barova
+			int tbWidth = Width/5;
+			int tbHeight = Height/5;
+			int xtb = pbxWidth + Width/10;
+			int ytb = Height/5 + btnHeight;
+			int razmakIzmedjuTb = Height/6;
+			tbNapon.SetBounds( xtb, ytb, tbWidth, tbHeight );
+			tbKondenzator.SetBounds( xtb, ytb + razmakIzmedjuTb, tbWidth, tbHeight );
+			tbKalem.SetBounds( xtb, ytb + razmakIzmedjuTb * 2, tbWidth, tbHeight );
+			tbOtpornik.SetBounds( xtb, ytb + razmakIzmedjuTb * 3, tbWidth, tbHeight );
+
+			//namestanje labela za track barove
+			int yProvgLabela = 10*Height/65 + btnHeight;
+			lblNapon.SetBounds( xtb, yProvgLabela, tbWidth, tbHeight );
+			lblNapon.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			lblKondenzator.SetBounds( xtb, yProvgLabela + razmakIzmedjuTb, tbWidth, tbHeight );
+			lblKondenzator.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			lblKalem.SetBounds( xtb, yProvgLabela + razmakIzmedjuTb * 2, tbWidth, tbHeight );
+			lblKalem.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+			lblOtpornik.SetBounds( xtb, yProvgLabela + razmakIzmedjuTb * 3, tbWidth, tbHeight );
+			lblOtpornik.Font = new Font( "Times New Roman", velicinaFonta, FontStyle.Bold );
+		}
+		public void PravljenjeFunkcije(int i0, int u0, int w)
         {
             double u = u0 * Math.Sin(w * brojac);
             double i = i0 * Math.Sin(w * brojac - brojac);
@@ -335,7 +375,7 @@ namespace SimulacijaElektricnihKola
         {
             brojac++;
             phase += 15;
-            pb3.Invalidate();
+            pbxDrugi.Invalidate();
         }
 
         private void pb1_Paint(object sender, PaintEventArgs e, double u, double i, double uProslo, double iProslo)
@@ -626,7 +666,7 @@ namespace SimulacijaElektricnihKola
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            kondenzatori[0].Kapacitet = trackBar1.Value;
+            kondenzatori[0].Kapacitet = tbNapon.Value;
             NapraviNovoKolo();
         }
 
