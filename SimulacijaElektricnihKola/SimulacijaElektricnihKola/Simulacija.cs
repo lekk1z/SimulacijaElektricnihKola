@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -15,7 +16,6 @@ namespace SimulacijaElektricnihKola
         private const int PictureBoxWidth = 490;
         private const int PictureBoxHeight = 100;
         private const int WaveLength = 50;
-        private const int Amplitude = 30;
         private const int Period = 100;
 
         private int phase = 0;
@@ -775,21 +775,41 @@ namespace SimulacijaElektricnihKola
                     xPrevVoltage = x;
                     yPrevVoltage = yVoltage;
                 }
-
-                // Draw Current Wave
-                int xPrevCurrent = 0;
-                int oduzmi = (int)(kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)))*100_0000;
-                int yPrevCurrent = halfHeight - oduzmi;
-                for (int x = 1; x < PictureBoxWidth; x++)
+                if (izbor.izabranoKolo == "kolo2.txt")
                 {
-                    double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)))*100_0000;
-                    int yCurrent = halfHeight - (int)oduzmi2;
-                    g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
-                    xPrevCurrent = x;
-                    yPrevCurrent = yCurrent;
+                    double faza = Math.Atan(otporniciN[0].Otpor * (2 * Math.PI * frekvencija * kondenzatori[0].Kapacitet - 1 / (2 * Math.PI * frekvencija * kalemi[0].Induktivnost)));
+                    int xPrevCurrent = 0;
+                    int oduzmi = (int)(kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * frekvencija * Math.PI / 180 + faza));
+                    int yPrevCurrent = halfHeight - oduzmi;
+                    for (int x = 1; x < PictureBoxWidth; x++)
+                    {
+                        double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + faza));
+                        int yCurrent = halfHeight - (int)oduzmi2;
+                        g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
+                        xPrevCurrent = x;
+                        yPrevCurrent = yCurrent;
+                    }
+                    pbxDrugi.Image = bmp;
+                    pbxDrugi.Invalidate();
                 }
-                pbxDrugi.Image = bmp;
-                pbxDrugi.Invalidate();
+                else
+                {
+                    // Draw Current Wave
+                    int xPrevCurrent = 0;
+                    int oduzmi = (int)(kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor))) * 100_0000;
+                    int yPrevCurrent = halfHeight - oduzmi;
+                    for (int x = 1; x < PictureBoxWidth; x++)
+                    {
+                        double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor))) * 100_0000;
+                        int yCurrent = halfHeight - (int)oduzmi2;
+                        g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
+                        xPrevCurrent = x;
+                        yPrevCurrent = yCurrent;
+                    }
+                    pbxDrugi.Image = bmp;
+                    pbxDrugi.Invalidate();
+                }
+                    
             }
         }
         private void pb3_Paint(object sender, PaintEventArgs e)
@@ -818,7 +838,8 @@ namespace SimulacijaElektricnihKola
             timer1.Stop();
             if (vrstastruje == "N")
             {
-                kondenzatori[0].Kapacitet = tbKondenzator.Value*0.00000000001;
+                double razlika = 1 / kondenzatori[0].Kapacitet;
+                kondenzatori[0].Kapacitet = tbKondenzator.Value/razlika/3.5;
                 
             }
             else if (vrstastruje == "J")
