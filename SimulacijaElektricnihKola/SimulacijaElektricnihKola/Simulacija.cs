@@ -27,6 +27,7 @@ namespace SimulacijaElektricnihKola
         static List<SerijskaVeza<Srebro>> serijskeVezeJ = new List<SerijskaVeza<Srebro>>();
         static List<ParalelnaVeza<Srebro>> paralelneVezeJ = new List<ParalelnaVeza<Srebro>>();
         static List<Baterija> baterijeJ = new List<Baterija>();
+        static SerijskaVeza<Srebro> glavna = new SerijskaVeza<Srebro>("glavna");
 
         static KoloNaizmenica kolo = new KoloNaizmenica();
         static List<Kondenzator> kondenzatori = new List<Kondenzator>();
@@ -131,11 +132,11 @@ namespace SimulacijaElektricnihKola
                         paralelneVezeJ.Add(privremena);
                     }
                     brojaclinija++;
-                    foreach (SerijskaVeza<Srebro> glavna in serijskeVezeJ)
+                    foreach (SerijskaVeza<Srebro> glavna1 in serijskeVezeJ)
                     {
-                        if (glavna.Ime == "glavna")
+                        if (glavna1.Ime == "glavna")
                         {
-                            MessageBox.Show("GLAVNA VEZA: " + glavna.ToString());
+                            glavna = glavna1;
                         }
                     }
                 }
@@ -378,6 +379,10 @@ namespace SimulacijaElektricnihKola
         {
             brojac++;
             phase += 15;
+            if (phase >= int.MaxValue)
+            {
+                phase = 0;
+            }
             CrtanjeGrafika();
         }
 
@@ -403,8 +408,7 @@ namespace SimulacijaElektricnihKola
         {
 
             if (izbor.ShowDialog()==DialogResult.OK)
-            {
-                MessageBox.Show(izbor.izabranoKolo);  
+            {  
                 int brojaclinija = 0;
                 StreamReader sr = new StreamReader(izbor.izabranoKolo);
               
@@ -501,11 +505,11 @@ namespace SimulacijaElektricnihKola
 
 
 
-                        foreach (SerijskaVeza<Srebro> glavna in serijskeVezeJ)
+                        foreach (SerijskaVeza<Srebro> glavna1 in serijskeVezeJ)
                         {
-                            if (glavna.Ime == "glavna")
+                            if (glavna1.Ime == "glavna")
                             {
-                                MessageBox.Show("GLAVNA VEZA: " + glavna.ToString());
+                                glavna = glavna1;
                             }
                         }
                     }
@@ -666,6 +670,22 @@ namespace SimulacijaElektricnihKola
                         brojaclinija++;
                     }
                 }
+                if (izbor.izabranoKolo == "kolo1.txt")
+                {
+                   pbxPrvi.Image=Properties.Resources.RednoKolo;
+                }
+                else if(izbor.izabranoKolo == "kolo2.txt")
+                {
+                    pbxPrvi.Image = Properties.Resources.ParalelnoKolo;
+                }
+                else if (izbor.izabranoKolo == "kolo3.txt")
+                {
+                    pbxPrvi.Image = Properties.Resources.PrikazKola;
+                }
+                else if (izbor.izabranoKolo == "kolo4.txt")
+                {
+                    pbxPrvi.Image = Properties.Resources.Kolo4;
+                }
             }
         }
 
@@ -703,10 +723,10 @@ namespace SimulacijaElektricnihKola
 
                 // Draw Voltage Wave
                 int xPrevVoltage = 0;
-                int yPrevVoltage = halfHeight - (int)(5 * napon * Math.Sin(2 * frekvencija * Math.PI / 180));
+                int yPrevVoltage = halfHeight - (int)(3 * napon * Math.Sin(2 * frekvencija * Math.PI / 180));
                 for (int x = 1; x < PictureBoxWidth; x++)
                 {
-                    int yVoltage = halfHeight - (int)(5 * napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180));
+                    int yVoltage = halfHeight - (int)(3 * napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180));
                     g.DrawLine(naponPen, xPrevVoltage, yPrevVoltage, x, yVoltage);
                     xPrevVoltage = x;
                     yPrevVoltage = yVoltage;
@@ -714,10 +734,10 @@ namespace SimulacijaElektricnihKola
 
                 // Draw Current Wave
                 int xPrevCurrent = 0;
-                int yPrevCurrent = halfHeight - (int)(5 * napon * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
+                int yPrevCurrent = halfHeight - (int)(2* napon * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
                 for (int x = 1; x < PictureBoxWidth; x++)
                 {
-                    int yCurrent = halfHeight - (int)(5 * napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
+                    int yCurrent = halfHeight - (int)( 2*napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(5 * napon, frekvencija, otporniciN[0].Otpor)));
                     g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
                     xPrevCurrent = x;
                     yPrevCurrent = yCurrent;

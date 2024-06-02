@@ -67,7 +67,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::SimulacijaElektricnihKola.Properties.Resources.PrikazKola;
+            this.pictureBox2.Image = global::SimulacijaElektricnihKola.Properties.Resources.ParalelnoKolo;
             this.pictureBox2.Location = new System.Drawing.Point(531, 39);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(300, 199);
@@ -78,7 +78,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::SimulacijaElektricnihKola.Properties.Resources.ParalelnoKolo;
+            this.pictureBox3.Image = global::SimulacijaElektricnihKola.Properties.Resources.PrikazKola;
             this.pictureBox3.Location = new System.Drawing.Point(115, 303);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(300, 199);

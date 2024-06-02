@@ -261,3 +261,7 @@ C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricn
 C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\slikaFaznoKasnjenjeNapona.jpg
 C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\teorija.rtf
 C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo1.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\SimulacijaElektricnihKola.exe.manifest
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\SimulacijaElektricnihKola.application
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.exe.manifest
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.application
