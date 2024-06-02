@@ -46,14 +46,14 @@ namespace SimulacijaElektricnihKola
         {
             int brojaclinija = 0;
             StreamReader sr = new StreamReader(openFileDialog1.FileName);
-            while (!sr.EndOfStream)
+            string vrstaStruje=sr.ReadLine();
+            napon=double.Parse(sr.ReadLine());
+            if (vrstaStruje == "J")
             {
-
-                string t = sr.ReadLine();
-                if (brojaclinija == 0 && t == "J")
+                while (!sr.EndOfStream)
                 {
+                    string t = sr.ReadLine();
                     string[] split1 = t.Split();
-
                     if (split1[0] == "s")
                     {
                         string[] split2 = split1[2].Split('-');
@@ -137,10 +137,13 @@ namespace SimulacijaElektricnihKola
                         }
                     }
                 }
-                else if (t == "N")
+            }
+            else if (vrstaStruje == "N")
+            {
+                while (!sr.EndOfStream)
                 {
+                    string t = sr.ReadLine();
                     string[] split1 = t.Split();
-
                     if (split1[0] == "s")
                     {
                         string[] split2 = split1[2].Split('-');
@@ -275,7 +278,7 @@ namespace SimulacijaElektricnihKola
                     brojaclinija++;
                 }
             }
-        }
+            }
         private void Simulacija_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
