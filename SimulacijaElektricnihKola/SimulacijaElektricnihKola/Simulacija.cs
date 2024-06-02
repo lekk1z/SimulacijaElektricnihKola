@@ -1,21 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SimulacijaElektricnihKola
 {
     public partial class Simulacija : Form
     {
         Pen olovka;
-       
+
         static int brojac = 0;
         //aleksa
         private const int PictureBoxWidth = 490;
@@ -42,6 +36,7 @@ namespace SimulacijaElektricnihKola
         static List<SerijskaVezaN> serijskeVezeN = new List<SerijskaVezaN>();
         static List<ParalelnaVezaN> paralelneVezeN = new List<ParalelnaVezaN>();
         static string trenutniTxt;
+        static double napon;
         //*aleksa
         public Simulacija()
         {
@@ -288,29 +283,29 @@ namespace SimulacijaElektricnihKola
 
         private void Simulacija_Load(object sender, EventArgs e)
         {
-			this.Width = 1200;
-			this.Height = 800;
+            this.Width = 1200;
+            this.Height = 800;
             timer1.Interval = Period;
             timer1.Start();
             SetSize();
-		}
+        }
 
-		private void btnNazad_Click(object sender, EventArgs e)
+        private void btnNazad_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             Form1.loading.Show();
         }
 
-		private void Simulacija_ResizeEnd( object sender, EventArgs e )
-		{
+        private void Simulacija_ResizeEnd(object sender, EventArgs e)
+        {
             SetSize();
-		}
+        }
         public void SetSize()
         {
-			btnNazad.SetBounds( Width - Width/12, Height/50, Width/17, Width/17 );
-			btnNazad.Font = new Font( "", Width/50, FontStyle.Bold );
-		}
-        public void PravljenjeFunkcije(int i0,int u0,int w)
+            btnNazad.SetBounds(Width - Width / 12, Height / 50, Width / 17, Width / 17);
+            btnNazad.Font = new Font("", Width / 50, FontStyle.Bold);
+        }
+        public void PravljenjeFunkcije(int i0, int u0, int w)
         {
             double u = u0 * Math.Sin(w * brojac);
             double i = i0 * Math.Sin(w * brojac - brojac);
@@ -341,7 +336,7 @@ namespace SimulacijaElektricnihKola
 
         private void pb1_Paint(object sender, PaintEventArgs e, double u, double i, double uProslo, double iProslo)
         {
-            e.Graphics.DrawLine(olovka, brojac - 1,(float)uProslo, brojac, (float)u);
+            e.Graphics.DrawLine(olovka, brojac - 1, (float)uProslo, brojac, (float)u);
             e.Graphics.DrawLine(olovka, brojac - 1, (float)iProslo, brojac, (float)i);
         }
 
@@ -364,12 +359,13 @@ namespace SimulacijaElektricnihKola
                 int brojaclinija = 0;
                 StreamReader sr = new StreamReader(openFileDialog1.FileName);
                 trenutniTxt = openFileDialog1.FileName;
-                while (!sr.EndOfStream)
+                string vrstaStruje = sr.ReadLine();
+                 napon = double.Parse(sr.ReadLine());
+                if (vrstaStruje == "J")
                 {
-
-                    string t = sr.ReadLine();
-                    if (brojaclinija == 0 && t == "J")
+                    while (!sr.EndOfStream)
                     {
+                        string t = sr.ReadLine();
                         string[] split1 = t.Split();
                         if (split1[0] == "o")
                         {
@@ -465,8 +461,12 @@ namespace SimulacijaElektricnihKola
                             }
                         }
                     }
-                    else if (t == "N")
+                }
+                else if (vrstaStruje == "N")
+                {
+                    while (!sr.EndOfStream)
                     {
+                        string t = sr.ReadLine();
                         string[] split1 = t.Split();
                         if (split1[0] == "o")
                         {
@@ -627,12 +627,12 @@ namespace SimulacijaElektricnihKola
 
         private void button2_Click(object sender, EventArgs e)
         {
-            timer1.Enabled=!timer1.Enabled;
+            timer1.Enabled = !timer1.Enabled;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Simulacija nova= new Simulacija();
+            Simulacija nova = new Simulacija();
             nova.Show();
             this.Hide();
         }
