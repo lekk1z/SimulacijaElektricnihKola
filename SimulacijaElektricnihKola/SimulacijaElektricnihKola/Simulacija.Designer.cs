@@ -42,15 +42,17 @@
             this.bttnStartStop = new System.Windows.Forms.Button();
             this.bttnReset = new System.Windows.Forms.Button();
             this.btnNazad = new System.Windows.Forms.Button();
-            this.pbxDrugi = new System.Windows.Forms.PictureBox();
-            this.pbxPrvi = new System.Windows.Forms.PictureBox();
             this.tbxJacinaStruje = new System.Windows.Forms.TextBox();
+            this.pbxPrvi = new System.Windows.Forms.PictureBox();
+            this.pbxDrugi = new System.Windows.Forms.PictureBox();
+            this.pbxLegenda = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbOtpornik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbKalem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbKondenzator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbNapon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDrugi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPrvi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrugi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegenda)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -190,15 +192,14 @@
             this.btnNazad.UseVisualStyleBackColor = true;
             this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
             // 
-            // pbxDrugi
+            // tbxJacinaStruje
             // 
-            this.pbxDrugi.Location = new System.Drawing.Point(9, 324);
-            this.pbxDrugi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbxDrugi.Name = "pbxDrugi";
-            this.pbxDrugi.Size = new System.Drawing.Size(500, 100);
-            this.pbxDrugi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxDrugi.TabIndex = 6;
-            this.pbxDrugi.TabStop = false;
+            this.tbxJacinaStruje.Location = new System.Drawing.Point(17, 16);
+            this.tbxJacinaStruje.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxJacinaStruje.Name = "tbxJacinaStruje";
+            this.tbxJacinaStruje.Size = new System.Drawing.Size(188, 22);
+            this.tbxJacinaStruje.TabIndex = 30;
+            this.tbxJacinaStruje.Text = "I: ";
             // 
             // pbxPrvi
             // 
@@ -210,20 +211,31 @@
             this.pbxPrvi.TabIndex = 29;
             this.pbxPrvi.TabStop = false;
             // 
-            // tbxJacinaStruje
+            // pbxDrugi
             // 
-            this.tbxJacinaStruje.Location = new System.Drawing.Point(17, 16);
-            this.tbxJacinaStruje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbxJacinaStruje.Name = "tbxJacinaStruje";
-            this.tbxJacinaStruje.Size = new System.Drawing.Size(132, 22);
-            this.tbxJacinaStruje.TabIndex = 30;
-            this.tbxJacinaStruje.Text = "I: ";
+            this.pbxDrugi.Location = new System.Drawing.Point(9, 324);
+            this.pbxDrugi.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxDrugi.Name = "pbxDrugi";
+            this.pbxDrugi.Size = new System.Drawing.Size(500, 100);
+            this.pbxDrugi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxDrugi.TabIndex = 6;
+            this.pbxDrugi.TabStop = false;
+            // 
+            // pbxLegenda
+            // 
+            this.pbxLegenda.Image = global::SimulacijaElektricnihKola.Properties.Resources.LegendaGrafik;
+            this.pbxLegenda.Location = new System.Drawing.Point(9, 324);
+            this.pbxLegenda.Name = "pbxLegenda";
+            this.pbxLegenda.Size = new System.Drawing.Size(100, 50);
+            this.pbxLegenda.TabIndex = 31;
+            this.pbxLegenda.TabStop = false;
             // 
             // Simulacija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 567);
+            this.Controls.Add(this.pbxLegenda);
             this.Controls.Add(this.tbxJacinaStruje);
             this.Controls.Add(this.pbxPrvi);
             this.Controls.Add(this.btnIzaberiKolo);
@@ -251,8 +263,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbKalem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbKondenzator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbNapon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDrugi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPrvi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDrugi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLegenda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,5 +288,6 @@
         private System.Windows.Forms.PictureBox pbxDrugi;
         private System.Windows.Forms.PictureBox pbxPrvi;
 		private System.Windows.Forms.TextBox tbxJacinaStruje;
-	}
+        private System.Windows.Forms.PictureBox pbxLegenda;
+    }
 }

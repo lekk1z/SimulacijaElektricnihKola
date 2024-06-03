@@ -103,6 +103,11 @@
     <Compile Include="ParalelnaVezaN.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SerijskaVeza.cs" />
     <Compile Include="SerijskaVezaN.cs" />
     <Compile Include="Simulacija.cs">
@@ -133,14 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Simulacija.resx">
       <DependentUpon>Simulacija.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +205,7 @@
     <Content Include="kolo4.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\LegendaGrafik.png" />
     <Content Include="slikaFaznoKasnjenjeNapona.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -29,7 +29,6 @@ C:\Users\38161\OneDrive\Desktop\GitHub\ObejktnoProgramiranjeProjekat\ObejktnoPro
 C:\Users\38161\OneDrive\Desktop\GitHub\ObejktnoProgramiranjeProjekat\ObejktnoProgramiranjeProjekat\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\SimulacijaElektricnihKola.exe
 C:\Users\38161\OneDrive\Desktop\GitHub\ObejktnoProgramiranjeProjekat\ObejktnoProgramiranjeProjekat\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\SimulacijaElektricnihKola.pdb
 C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.csproj.AssemblyReference.cache
-C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.Form1.resources
 C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.Properties.Resources.resources
 C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.csproj.GenerateResource.cache
 C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.csproj.CoreCompileInputs.cache
@@ -390,3 +389,11 @@ C:\Users\PC\Source\Repos\SimulacijaElektricnihKola12345678\SimulacijaElektricnih
 C:\Users\PC\Source\Repos\SimulacijaElektricnihKola12345678\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.application
 C:\Users\PC\Source\Repos\SimulacijaElektricnihKola12345678\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.exe
 C:\Users\PC\Source\Repos\SimulacijaElektricnihKola12345678\SimulacijaElektricnihKola\SimulacijaElektricnihKola\obj\Debug\SimulacijaElektricnihKola.pdb
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo1.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo2.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo3.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\kolo4.txt
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\resenjaCetvrtogtesta.rtf
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\resenjaDrugogTesta.rtf
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\resenjaPrvogtesta.rtf
+C:\Users\aleks\source\repos\lekk1z\SimulacijaElektricnihKola\SimulacijaElektricnihKola\SimulacijaElektricnihKola\bin\Debug\resenjaTrecegTesta.rtf
