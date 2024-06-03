@@ -9,11 +9,8 @@ namespace SimulacijaElektricnihKola
 {
     public partial class Simulacija : Form
     {
-        Pen olovka;
-
-        static int brojac = 0;
         //aleksa
-        private const int PictureBoxWidth = 490;
+        private const int PictureBoxWidth = 500;
         private const int PictureBoxHeight = 100;
         private const int DuzinaTalasa = 50;
         private const int Period = 100;
@@ -710,11 +707,7 @@ namespace SimulacijaElektricnihKola
             pbxDrugi.Image = bmp;
             pbxDrugi.Invalidate();
         }
-        private void trackBar1_Scroll(object sender, EventArgs e)
-        {
-            kondenzatori[0].Kapacitet = tbNapon.Value;
-            NapraviNovoKolo();
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -796,60 +789,6 @@ namespace SimulacijaElektricnihKola
                 NapraviNovoKolo();
             }
 
-        }
-
-        private void tbKondenzator_ValueChanged(object sender, EventArgs e)
-        {
-            /*
-            timer1.Stop();
-            if (vrstastruje == "N")
-            {
-                kondenzatori[0].Kapacitet = kondenzatorA * tbKondenzator.Value/100;
-                
-            }
-            else if (vrstastruje == "J")
-            {
-                otporniciJ[0].OtporVrednost = kondenzatorA * tbKondenzator.Value/100;
-            }
-            NapraviNovoKolo();
-            timer1.Start();
-            */
-        }
-
-        private void tbKalem_ValueChanged(object sender, EventArgs e)
-        {
-            /*
-            timer1.Stop();
-            if (vrstastruje == "N")
-            {
-                kalemi[0].Induktivnost = kalemA* tbKalem.Value/100;
-
-            }
-            else if (vrstastruje == "J")
-            {
-                otporniciJ[0].OtporVrednost =kalemA * tbKalem.Value/100;
-            }
-            NapraviNovoKolo();
-            timer1.Start();
-            */
-        }
-
-        private void tbOtpornik_ValueChanged(object sender, EventArgs e)
-        {
-            /*
-            timer1.Stop();
-            if (vrstastruje == "N")
-            {
-                otporniciN[0].Otpor =otpornikA* tbOtpornik.Value/100;
-
-            }
-            else if (vrstastruje == "J")
-            {
-                otporniciJ[0].OtporVrednost = otpornikA * tbOtpornik.Value /100;
-            }
-            NapraviNovoKolo();
-            timer1.Start();
-            */
         }
 
         private void tbKondenzator_Scroll(object sender, EventArgs e)
