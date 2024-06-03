@@ -18,6 +18,10 @@ namespace SimulacijaElektricnihKola
         private const int DuzinaTalasa = 50;
         private const int Period = 100;
 
+        private double otpornikA;
+        private double kalemA;
+        private double kondenzatorA;
+
         private int phase = 0;
         static List<Otpornik<Srebro>> otporniciJ = new List<Otpornik<Srebro>>();
         static List<SerijskaVeza<Srebro>> serijskeVezeJ = new List<SerijskaVeza<Srebro>>();
@@ -538,6 +542,7 @@ namespace SimulacijaElektricnihKola
                                 glavna = glavna1;
                             }
                         }
+                        
                     }
                 }
                 else if (vrstaStruje == "N")
@@ -701,6 +706,9 @@ namespace SimulacijaElektricnihKola
                         brojaclinija++;
                     }
                 }
+                otpornikA = otporniciN[0].Otpor;
+                kondenzatorA = kondenzatori[0].Kapacitet;
+                kalemA = kalemi[0].Induktivnost;
                 if (izbor.izabranoKolo == "kolo1.txt")
                 {
                     pbxPrvi.Image = Properties.Resources.RednoKolo;
@@ -823,13 +831,12 @@ namespace SimulacijaElektricnihKola
             timer1.Stop();
             if (vrstastruje == "N")
             {
-                double razlika = 1 / kondenzatori[0].Kapacitet;
-                kondenzatori[0].Kapacitet = tbKondenzator.Value/razlika/3.5;
+                kondenzatori[0].Kapacitet = kondenzatorA * tbKondenzator.Value/100;
                 
             }
             else if (vrstastruje == "J")
             {
-                otporniciJ[0].OtporVrednost = tbKondenzator.Value*10;
+                otporniciJ[0].OtporVrednost = kondenzatorA * tbKondenzator.Value/100;
             }
             NapraviNovoKolo();
             timer1.Start();
@@ -840,12 +847,12 @@ namespace SimulacijaElektricnihKola
             timer1.Stop();
             if (vrstastruje == "N")
             {
-                kalemi[0].Induktivnost = (int)tbKalem.Value;
+                kalemi[0].Induktivnost = kalemA* tbKalem.Value/100;
 
             }
             else if (vrstastruje == "J")
             {
-                otporniciJ[0].OtporVrednost = (int)tbKalem.Value;
+                otporniciJ[0].OtporVrednost =kalemA * tbKalem.Value/100;
             }
             NapraviNovoKolo();
             timer1.Start();
@@ -856,12 +863,12 @@ namespace SimulacijaElektricnihKola
             timer1.Stop();
             if (vrstastruje == "N")
             {
-                otporniciN[0].Otpor = (int)tbOtpornik.Value;
+                otporniciN[0].Otpor =otpornikA* tbOtpornik.Value/100;
 
             }
             else if (vrstastruje == "J")
             {
-                otporniciJ[0].OtporVrednost = (int)tbOtpornik.Value *10;
+                otporniciJ[0].OtporVrednost = otpornikA * tbOtpornik.Value /100;
             }
             NapraviNovoKolo();
             timer1.Start();
