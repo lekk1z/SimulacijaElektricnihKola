@@ -57,7 +57,7 @@ namespace SimulacijaElektricnihKola
 		Button proveri = new Button();
 		public int[] tacniOdg = new int[ 5 ];
 		public int[] stikliraniOdg = new int[ 5 ];
-
+		int indexKliknutogKola = 0;
 		public void SakriSve()
 		{
 			lblPitanje1.Hide();
@@ -201,6 +201,7 @@ namespace SimulacijaElektricnihKola
 
 		private void btnTest1_Click( object sender, EventArgs e )
 		{
+			indexKliknutogKola = 1;
 			KliknutoDugme();
 			tbxOpisZadataka.Text = "Redno RLC-kolo (R = 20Ω, L = 0,5H, C = 5μF) priključeno je na naizmenični napon efektivne vrednosti 24 V čija frekvencija može da se menja.\r\n";
 			tbxOpisZadataka.Show();
@@ -237,6 +238,7 @@ namespace SimulacijaElektricnihKola
 		}
 		private void btnTest2_Click( object sender, EventArgs e )
 		{
+			indexKliknutogKola = 2;
 			KliknutoDugme();
 			//pitanja
 			lblPitanje1.Text = "1. Da li je trenutna vrednost\r\n napona jednaka na svim elementima?";
@@ -270,6 +272,7 @@ namespace SimulacijaElektricnihKola
 		}
 		private void btnTest3_Click( object sender, EventArgs e )
 		{
+			indexKliknutogKola = 3;
 			KliknutoDugme();
 			tbxOpisZadataka.Text = "U datom kolu:\r\nR = Xl = 10 Ω\r\nXc = 20 Ω\r\nu = 5sin314t(SI)";
 			tbxOpisZadataka.Show();
@@ -306,6 +309,7 @@ namespace SimulacijaElektricnihKola
 		}
 		private void btnTest4_Click( object sender, EventArgs e )
 		{
+			indexKliknutogKola = 4;
 			KliknutoDugme();
 			tbxOpisZadataka.Text = "U kolu prikazanom na slici je: &1 = 10 V, &2 = 8 V, & = 6 V, R1 = 2kΩ, R2 = R = 4kΩ.\r\n Unutrašnje otpornosti izvora su zanemarljive.";
 			tbxOpisZadataka.Show();
@@ -359,7 +363,10 @@ namespace SimulacijaElektricnihKola
 		private void PrikaziResenje_Click( object sender, EventArgs e )
 		{
 			SakriSve();
-			rtbObjasnjenjeResenja.LoadFile( "resenjaPrvogtesta.rtf" );
+			if (indexKliknutogKola == 1) rtbObjasnjenjeResenja.LoadFile("resenjaPrvogtesta.rtf");
+			else if (indexKliknutogKola == 2) rtbObjasnjenjeResenja.LoadFile("resenjaDrugogTesta.rtf");
+			else if (indexKliknutogKola == 3) rtbObjasnjenjeResenja.LoadFile("resenjaTrecegTesta.rtf");
+			else if (indexKliknutogKola == 4) rtbObjasnjenjeResenja.LoadFile("resenjaCetvrtogtesta.rtf");
 			rtbObjasnjenjeResenja.Show();
 		}
 
