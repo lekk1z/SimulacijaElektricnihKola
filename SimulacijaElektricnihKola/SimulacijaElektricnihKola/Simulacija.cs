@@ -23,21 +23,21 @@ namespace SimulacijaElektricnihKola
         private double kondenzatorA;
 
         private int phase = 0;
-        static List<Otpornik<Srebro>> otporniciJ = new List<Otpornik<Srebro>>();
-        static List<SerijskaVeza<Srebro>> serijskeVezeJ = new List<SerijskaVeza<Srebro>>();
-        static List<ParalelnaVeza<Srebro>> paralelneVezeJ = new List<ParalelnaVeza<Srebro>>();
-        static List<Baterija> baterijeJ = new List<Baterija>();
-        static SerijskaVeza<Srebro> glavna = new SerijskaVeza<Srebro>("glavna");
+         List<Otpornik<Srebro>> otporniciJ = new List<Otpornik<Srebro>>();
+         List<SerijskaVeza<Srebro>> serijskeVezeJ = new List<SerijskaVeza<Srebro>>();
+         List<ParalelnaVeza<Srebro>> paralelneVezeJ = new List<ParalelnaVeza<Srebro>>();
+         List<Baterija> baterijeJ = new List<Baterija>();
+         SerijskaVeza<Srebro> glavna = new SerijskaVeza<Srebro>("glavna");
 
-        static KoloNaizmenica kolo = new KoloNaizmenica();
-        static List<Kondenzator> kondenzatori = new List<Kondenzator>();
-        static List<OtpornikN> otporniciN = new List<OtpornikN>();
-        static List<Kalem> kalemi = new List<Kalem>();
-        static List<SerijskaVezaN> serijskeVezeN = new List<SerijskaVezaN>();
-        static List<ParalelnaVezaN> paralelneVezeN = new List<ParalelnaVezaN>();
-        static string vrstastruje;
-        static double napon;
-        static double frekvencija;
+         KoloNaizmenica kolo = new KoloNaizmenica();
+         List<Kondenzator> kondenzatori = new List<Kondenzator>();
+         List<OtpornikN> otporniciN = new List<OtpornikN>();
+         List<Kalem> kalemi = new List<Kalem>();
+         List<SerijskaVezaN> serijskeVezeN = new List<SerijskaVezaN>();
+         List<ParalelnaVezaN> paralelneVezeN = new List<ParalelnaVezaN>();
+         string vrstastruje;
+         double napon;
+         double frekvencija;
 
         public static IzborKola izbor = new IzborKola();
         //*aleksa
