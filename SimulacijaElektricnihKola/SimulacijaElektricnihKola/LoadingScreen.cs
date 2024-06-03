@@ -30,17 +30,17 @@ namespace SimulacijaElektricnihKola
 
 			//naslov
 			naslov.BackColor = Color.Transparent;
-			naslov.ForeColor = ColorTranslator.FromHtml( "#C0FDF6" );
+			naslov.ForeColor = ColorTranslator.FromHtml( "#000000" );
 			naslov.BorderStyle = BorderStyle.None;
 			naslov.Text = "SIMULACIJA KOLA";
 			naslov.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( naslov );
 
-			Color bojaButtona = ColorTranslator.FromHtml( "#3A0078" );
+			Color bojaButtona = ColorTranslator.FromHtml( "#ffffff" );
 
 			//button objasnjenje
 			objasnjenjebtn.BackColor = bojaButtona;
-			objasnjenjebtn.ForeColor = ColorTranslator.FromHtml( "#1AB1E6" );
+			objasnjenjebtn.ForeColor = ColorTranslator.FromHtml( "#000000" );
 			objasnjenjebtn.Text = "OBJASNJENJE";
 			objasnjenjebtn.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( objasnjenjebtn );
@@ -48,7 +48,7 @@ namespace SimulacijaElektricnihKola
 
 			//button test
 			testbtn.BackColor = bojaButtona;
-			testbtn.ForeColor = ColorTranslator.FromHtml( "#028388" );
+			testbtn.ForeColor = ColorTranslator.FromHtml( "#000000" );
 			testbtn.Text = "TEST";
 			testbtn.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( testbtn );
@@ -56,7 +56,7 @@ namespace SimulacijaElektricnihKola
 
 			//button simulacija
 			simulacijabttn.BackColor = bojaButtona;
-			simulacijabttn.ForeColor = ColorTranslator.FromHtml( "#FB02F4" );
+			simulacijabttn.ForeColor = ColorTranslator.FromHtml( "#000000" );
 			simulacijabttn.Text = "SIMULACIJA";
 			simulacijabttn.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add( simulacijabttn );
