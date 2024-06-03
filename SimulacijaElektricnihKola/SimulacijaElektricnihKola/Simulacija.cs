@@ -675,7 +675,6 @@ namespace SimulacijaElektricnihKola
                     kondenzatorA = kondenzatori[0].Kapacitet;
                     kalemA = kalemi[0].Induktivnost;
                     tbNapon.Minimum = (int)napon;
-                    tbNapon.Maximum = (int)napon*2;
                 }
 
                 if (izbor.izabranoKolo == "kolo1.txt")
@@ -701,7 +700,7 @@ namespace SimulacijaElektricnihKola
 			tbxJacinaStruje.Show();
             tbxJacinaStruje.Text += tekstZaPrikaz;
 			Bitmap bmp = new Bitmap(500, 100);
-            double struja=double.Parse(tekstZaPrikaz);
+            double struja=glavna.IzracunajStruju();
             using (Graphics g = Graphics.FromImage(bmp))
             {
                 g.Clear(Color.White);
@@ -740,6 +739,7 @@ namespace SimulacijaElektricnihKola
                 int halfHeight = PictureBoxHeight / 2;
 
                 // Draw Voltage Wave
+                
                 int xPrevVoltage = 0;
                 int yPrevVoltage = halfHeight - (int)( napon * Math.Sin(2 * frekvencija * Math.PI / 180));
                 for (int x = 1; x < PictureBoxWidth; x++)
@@ -749,6 +749,7 @@ namespace SimulacijaElektricnihKola
                     xPrevVoltage = x;
                     yPrevVoltage = yVoltage;
                 }
+                
                 if (izbor.izabranoKolo == "kolo2.txt")
                 {
                     double faza = Math.Atan(otporniciN[0].Otpor * (2 * Math.PI * frekvencija * kondenzatori[0].Kapacitet - 1 / (2 * Math.PI * frekvencija * kalemi[0].Induktivnost)));
@@ -768,17 +769,16 @@ namespace SimulacijaElektricnihKola
                 }
                 else
                 {
-                    // Draw Current Wave
-                    int xPrevCurrent = 0;
-                    int oduzmi = (int)(kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * frekvencija * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor))) * 100_0000;
-                    int yPrevCurrent = halfHeight - oduzmi;
+                    double faza = kolo.Faza(napon, frekvencija, otporniciN[0].Otpor);
+                    double struja = kolo.IzracunajTrenutnuStruju(napon, frekvencija)*1000;
+                    int xPrevStruja = 0;
+                    int yPrevStruja = halfHeight - (int)(struja* Math.Sin(2 * frekvencija * Math.PI / 180+faza));
                     for (int x = 1; x < PictureBoxWidth; x++)
                     {
-                        double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / DuzinaTalasa + phase * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor))) * 100_0000;
-                        int yCurrent = halfHeight - (int)oduzmi2;
-                        g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
-                        xPrevCurrent = x;
-                        yPrevCurrent = yCurrent;
+                        int yStruja = halfHeight - (int)(struja * Math.Sin(2 * Math.PI * x / DuzinaTalasa + phase * Math.PI / 180+faza));
+                        g.DrawLine(strujaPen, xPrevStruja, yPrevStruja, x, yStruja);
+                        xPrevStruja = x;
+                        yPrevStruja = yStruja;
                     }
                     pbxDrugi.Image = bmp;
                     pbxDrugi.Invalidate();
@@ -798,6 +798,7 @@ namespace SimulacijaElektricnihKola
 
         private void tbKondenzator_ValueChanged(object sender, EventArgs e)
         {
+            /*
             timer1.Stop();
             if (vrstastruje == "N")
             {
@@ -810,10 +811,12 @@ namespace SimulacijaElektricnihKola
             }
             NapraviNovoKolo();
             timer1.Start();
+            */
         }
 
         private void tbKalem_ValueChanged(object sender, EventArgs e)
         {
+            /*
             timer1.Stop();
             if (vrstastruje == "N")
             {
@@ -826,10 +829,12 @@ namespace SimulacijaElektricnihKola
             }
             NapraviNovoKolo();
             timer1.Start();
+            */
         }
 
         private void tbOtpornik_ValueChanged(object sender, EventArgs e)
         {
+            /*
             timer1.Stop();
             if (vrstastruje == "N")
             {
@@ -839,6 +844,55 @@ namespace SimulacijaElektricnihKola
             else if (vrstastruje == "J")
             {
                 otporniciJ[0].OtporVrednost = otpornikA * tbOtpornik.Value /100;
+            }
+            NapraviNovoKolo();
+            timer1.Start();
+            */
+        }
+
+        private void tbKondenzator_Scroll(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            if (vrstastruje == "N")
+            {
+                kondenzatori[0].Kapacitet = kondenzatorA * tbKondenzator.Value;
+
+            }
+            else if (vrstastruje == "J")
+            {
+                otporniciJ[0].OtporVrednost = kondenzatorA * tbKondenzator.Value / 100;
+            }
+            NapraviNovoKolo();
+            timer1.Start();
+        }
+
+        private void tbKalem_Scroll(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            if (vrstastruje == "N")
+            {
+                kalemi[0].Induktivnost = kalemA * tbKalem.Value;
+
+            }
+            else if (vrstastruje == "J")
+            {
+                otporniciJ[0].OtporVrednost = kalemA * tbKalem.Value / 100;
+            }
+            NapraviNovoKolo();
+            timer1.Start();
+        }
+
+        private void tbOtpornik_Scroll(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            if (vrstastruje == "N")
+            {
+                otporniciN[0].Otpor = otpornikA * tbOtpornik.Value;
+
+            }
+            else if (vrstastruje == "J")
+            {
+                otporniciJ[0].OtporVrednost = otpornikA * tbOtpornik.Value / 100;
             }
             NapraviNovoKolo();
             timer1.Start();

@@ -1,9 +1,9 @@
 N
-5
+10
 50
-o r1 10
-kondenzator c1 0.000159
-kalem k1 0.03
+o r1 2
+kondenzator c1 1
+kalem k1 1
 s s1 r1-
 p p1 c1-k1
 s s2 s1-p1
