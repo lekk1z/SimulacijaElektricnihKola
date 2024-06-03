@@ -414,7 +414,6 @@ namespace SimulacijaElektricnihKola
 			else
 			{
 				MessageBox.Show( "Niste odgovorili na sva pitanja. Mozete proveriti svoje odgovore tek nakon sto odgovorite na svako pitanje.", "Upozorenje" );
-				brojac = 0;
 				proveri.Refresh();
 			}
 		}

@@ -300,6 +300,7 @@ namespace SimulacijaElektricnihKola
         {
             this.Width = 1200;
             this.Height = 800;
+            tbxJacinaStruje.Hide();
             timer1.Interval = Period;
             SetSize();
         }
@@ -358,6 +359,10 @@ namespace SimulacijaElektricnihKola
             lblKalem.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
             lblOtpornik.SetBounds(xtb, yProvgLabela + razmakIzmedjuTb * 3, tbWidth, tbHeight);
             lblOtpornik.Font = new Font("Times New Roman", velicinaFonta, FontStyle.Bold);
+
+            //textbox za jacinu struje
+            tbxJacinaStruje.SetBounds(Width/20, ClientSize.Height/40, Width/15, ClientSize.Height/20 );
+            tbxJacinaStruje.Font = new Font( "Times New Roman", ClientSize.Height/40, FontStyle.Regular );
         }
         public void PravljenjeFunkcije(int i0, int u0, int w)
         {
@@ -706,9 +711,9 @@ namespace SimulacijaElektricnihKola
                         brojaclinija++;
                     }
                 }
-                otpornikA = otporniciN[0].Otpor;
-                kondenzatorA = kondenzatori[0].Kapacitet;
-                kalemA = kalemi[0].Induktivnost;
+                //otpornikA = otporniciN[0].Otpor;
+                //kondenzatorA = kondenzatori[0].Kapacitet;
+                //kalemA = kalemi[0].Induktivnost;
                 if (izbor.izabranoKolo == "kolo1.txt")
                 {
                     pbxPrvi.Image = Properties.Resources.RednoKolo;
@@ -729,19 +734,20 @@ namespace SimulacijaElektricnihKola
         }
         public void GrafikJednosmerneStruje(string tekstZaPrikaz) //treba poslati struju.ToString
         {
-            Bitmap bmp = new Bitmap(500, 100);
+			tbxJacinaStruje.Show();
+            tbxJacinaStruje.Text += tekstZaPrikaz;
+			Bitmap bmp = new Bitmap(500, 100);
             double struja=double.Parse(tekstZaPrikaz);
             using (Graphics g = Graphics.FromImage(bmp))
             {
                 g.Clear(Color.White);
                 g.DrawLine(new Pen(Color.Red), new Point(0, (int)(50 * struja * 10)),new Point(500, (int)(50 * struja * 10)));
                 // Kreiranje fonta i četkice za crtanje teksta
-               
-                    }
+            }
 
             pbxDrugi.Image = bmp;
             pbxDrugi.Invalidate();
-        }
+		}
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             kondenzatori[0].Kapacitet = tbNapon.Value;

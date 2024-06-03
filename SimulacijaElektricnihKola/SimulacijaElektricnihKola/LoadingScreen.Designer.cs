@@ -41,9 +41,10 @@
 			this.MinimumSize = new System.Drawing.Size(800, 500);
 			this.Name = "LoadingScreen";
 			this.Text = "LoadingScreen";
+			this.MaximizedBoundsChanged += new System.EventHandler(this.LoadingScreen_ResizeEnd);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoadingScreen_FormClosed);
 			this.Load += new System.EventHandler(this.LoadingScreen_Load);
-			this.ResizeEnd += new System.EventHandler(this.LoadingScreen_ResizeEnd);
+			this.Resize += new System.EventHandler(this.LoadingScreen_ResizeEnd);
 			this.ResumeLayout(false);
 
 		}
