@@ -79,7 +79,6 @@
             this.tbOtpornik.TabIndex = 24;
             this.tbOtpornik.Value = 1;
             this.tbOtpornik.Scroll += new System.EventHandler(this.tbOtpornik_Scroll);
-            this.tbOtpornik.ValueChanged += new System.EventHandler(this.tbOtpornik_ValueChanged);
             // 
             // lblKalem
             // 
@@ -102,7 +101,6 @@
             this.tbKalem.TabIndex = 22;
             this.tbKalem.Value = 1;
             this.tbKalem.Scroll += new System.EventHandler(this.tbKalem_Scroll);
-            this.tbKalem.ValueChanged += new System.EventHandler(this.tbKalem_ValueChanged);
             // 
             // lblKondenzator
             // 
@@ -125,7 +123,6 @@
             this.tbKondenzator.TabIndex = 20;
             this.tbKondenzator.Value = 1;
             this.tbKondenzator.Scroll += new System.EventHandler(this.tbKondenzator_Scroll);
-            this.tbKondenzator.ValueChanged += new System.EventHandler(this.tbKondenzator_ValueChanged);
             // 
             // lblNapon
             // 
