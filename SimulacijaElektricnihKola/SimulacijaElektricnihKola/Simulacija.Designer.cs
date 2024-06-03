@@ -197,7 +197,6 @@
 			this.pbxDrugi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pbxDrugi.TabIndex = 6;
 			this.pbxDrugi.TabStop = false;
-			this.pbxDrugi.Click += new System.EventHandler(this.pb3_Click);
 			// 
 			// pbxPrvi
 			// 

@@ -364,28 +364,6 @@ namespace SimulacijaElektricnihKola
             tbxJacinaStruje.SetBounds(Width/20, ClientSize.Height/40, Width/15, ClientSize.Height/20 );
             tbxJacinaStruje.Font = new Font( "Times New Roman", ClientSize.Height/40, FontStyle.Regular );
         }
-        public void PravljenjeFunkcije(int i0, int u0, int w)
-        {
-            double u = u0 * Math.Sin(w * brojac);
-            double i = i0 * Math.Sin(w * brojac - brojac);
-            double uProslo = u0 * Math.Sin(w * (brojac - 1));
-            double iProslo = i0 * Math.Sin(w * (brojac - 1) - (brojac - 1));
-
-        }
-        private void pb1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void pb2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pb3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             phase += 15;
@@ -399,26 +377,9 @@ namespace SimulacijaElektricnihKola
             }
             else
             {
+                tbxJacinaStruje.Hide();
                 CrtanjeGrafika();
             }
-        }
-
-        private void pb1_Paint(object sender, PaintEventArgs e, double u, double i, double uProslo, double iProslo)
-        {
-            e.Graphics.DrawLine(olovka, brojac - 1, (float)uProslo, brojac, (float)u);
-            e.Graphics.DrawLine(olovka, brojac - 1, (float)iProslo, brojac, (float)i);
-        }
-
-        private void pb2_Paint(object sender, PaintEventArgs e, double u, double i, double uProslo, double iProslo)
-        {
-            e.Graphics.DrawLine(olovka, brojac - 1, (float)uProslo, brojac, (float)u);
-            e.Graphics.DrawLine(olovka, brojac - 1, (float)iProslo, brojac, (float)i);
-        }
-
-        private void pb3_Paint(object sender, PaintEventArgs e, double u, double i, double uProslo, double iProslo)
-        {
-            e.Graphics.DrawLine(olovka, brojac - 1, (float)uProslo, brojac, (float)u);
-            e.Graphics.DrawLine(olovka, brojac - 1, (float)iProslo, brojac, (float)i);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -710,10 +671,13 @@ namespace SimulacijaElektricnihKola
                         }
                         brojaclinija++;
                     }
+                    otpornikA = otporniciN[0].Otpor;
+                    kondenzatorA = kondenzatori[0].Kapacitet;
+                    kalemA = kalemi[0].Induktivnost;
+                    tbNapon.Minimum = (int)napon;
+                    tbNapon.Maximum = (int)napon*2;
                 }
-                //otpornikA = otporniciN[0].Otpor;
-                //kondenzatorA = kondenzatori[0].Kapacitet;
-                //kalemA = kalemi[0].Induktivnost;
+
                 if (izbor.izabranoKolo == "kolo1.txt")
                 {
                     pbxPrvi.Image = Properties.Resources.RednoKolo;
