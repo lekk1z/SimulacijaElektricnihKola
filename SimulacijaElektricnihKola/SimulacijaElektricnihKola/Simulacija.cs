@@ -860,7 +860,7 @@ namespace SimulacijaElektricnihKola
             }
             else if (vrstastruje == "J")
             {
-                otporniciJ[0].OtporVrednost = kondenzatorA * tbKondenzator.Value / 100;
+                otporniciJ[0].OtporVrednost = tbKondenzator.Value*100;
             }
             NapraviNovoKolo();
             timer1.Start();
@@ -876,7 +876,7 @@ namespace SimulacijaElektricnihKola
             }
             else if (vrstastruje == "J")
             {
-                otporniciJ[0].OtporVrednost = kalemA * tbKalem.Value / 100;
+                otporniciJ[1].OtporVrednost =   tbKalem.Value *100;
             }
             NapraviNovoKolo();
             timer1.Start();
@@ -892,7 +892,7 @@ namespace SimulacijaElektricnihKola
             }
             else if (vrstastruje == "J")
             {
-                otporniciJ[0].OtporVrednost = otpornikA * tbOtpornik.Value / 100;
+                otporniciJ[2].OtporVrednost =  tbOtpornik.Value * 100;
             }
             NapraviNovoKolo();
             timer1.Start();
