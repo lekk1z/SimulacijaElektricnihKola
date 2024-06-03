@@ -75,7 +75,6 @@
             this.tbOtpornik.Size = new System.Drawing.Size(280, 56);
             this.tbOtpornik.TabIndex = 24;
             this.tbOtpornik.Value = 1;
-            this.tbOtpornik.Scroll += new System.EventHandler(this.tbOtpornik_Scroll);
             this.tbOtpornik.ValueChanged += new System.EventHandler(this.tbOtpornik_ValueChanged);
             // 
             // lblKalem
@@ -195,7 +194,6 @@
             this.pbxDrugi.TabIndex = 6;
             this.pbxDrugi.TabStop = false;
             this.pbxDrugi.Click += new System.EventHandler(this.pb3_Click);
-            this.pbxDrugi.Paint += new System.Windows.Forms.PaintEventHandler(this.pb3_Paint);
             // 
             // pbxPrvi
             // 
@@ -206,7 +204,6 @@
             this.pbxPrvi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxPrvi.TabIndex = 29;
             this.pbxPrvi.TabStop = false;
-            this.pbxPrvi.Click += new System.EventHandler(this.pbxPrvi_Click);
             // 
             // Simulacija
             // 

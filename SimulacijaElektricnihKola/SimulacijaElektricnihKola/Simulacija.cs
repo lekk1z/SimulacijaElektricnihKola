@@ -15,14 +15,10 @@ namespace SimulacijaElektricnihKola
         //aleksa
         private const int PictureBoxWidth = 490;
         private const int PictureBoxHeight = 100;
-        private const int WaveLength = 50;
+        private const int DuzinaTalasa = 50;
         private const int Period = 100;
 
         private int phase = 0;
-
-        private const int VoltageAmplitude = 30; // Amplitude for voltage
-        private const int CurrentAmplitude = 20; // Amplitude for current
-
         static List<Otpornik<Srebro>> otporniciJ = new List<Otpornik<Srebro>>();
         static List<SerijskaVeza<Srebro>> serijskeVezeJ = new List<SerijskaVeza<Srebro>>();
         static List<ParalelnaVeza<Srebro>> paralelneVezeJ = new List<ParalelnaVeza<Srebro>>();
@@ -770,7 +766,7 @@ namespace SimulacijaElektricnihKola
                 int yPrevVoltage = halfHeight - (int)( napon * Math.Sin(2 * frekvencija * Math.PI / 180));
                 for (int x = 1; x < PictureBoxWidth; x++)
                 {
-                    int yVoltage = halfHeight - (int)( napon * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180));
+                    int yVoltage = halfHeight - (int)( napon * Math.Sin(2 * Math.PI * x / DuzinaTalasa + phase * Math.PI / 180));
                     g.DrawLine(naponPen, xPrevVoltage, yPrevVoltage, x, yVoltage);
                     xPrevVoltage = x;
                     yPrevVoltage = yVoltage;
@@ -783,7 +779,7 @@ namespace SimulacijaElektricnihKola
                     int yPrevCurrent = halfHeight - oduzmi;
                     for (int x = 1; x < PictureBoxWidth; x++)
                     {
-                        double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + faza));
+                        double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / DuzinaTalasa + phase * Math.PI / 180 + faza));
                         int yCurrent = halfHeight - (int)oduzmi2;
                         g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
                         xPrevCurrent = x;
@@ -800,7 +796,7 @@ namespace SimulacijaElektricnihKola
                     int yPrevCurrent = halfHeight - oduzmi;
                     for (int x = 1; x < PictureBoxWidth; x++)
                     {
-                        double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / WaveLength + phase * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor))) * 100_0000;
+                        double oduzmi2 = (kolo.IzracunajTrenutnuStruju(napon, frekvencija) * Math.Sin(2 * Math.PI * x / DuzinaTalasa + phase * Math.PI / 180 + kolo.Faza(napon, frekvencija, otporniciN[0].Otpor))) * 100_0000;
                         int yCurrent = halfHeight - (int)oduzmi2;
                         g.DrawLine(strujaPen, xPrevCurrent, yPrevCurrent, x, yCurrent);
                         xPrevCurrent = x;
@@ -812,17 +808,6 @@ namespace SimulacijaElektricnihKola
                     
             }
         }
-        private void pb3_Paint(object sender, PaintEventArgs e)
-        {
-
-
-        }
-
-        private void pbxPrvi_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbNapon_ValueChanged(object sender, EventArgs e)
         {
             if (vrstastruje == "N")
@@ -880,11 +865,6 @@ namespace SimulacijaElektricnihKola
             }
             NapraviNovoKolo();
             timer1.Start();
-        }
-
-        private void tbOtpornik_Scroll(object sender, EventArgs e)
-        {
-
         }
     }
 }
